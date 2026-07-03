@@ -1,3 +1,0 @@
-# Cloudflare Pages redirect rules
-# CMS OAuth callback
-/api/auth/*  https://cms-auth.groundworkstudios.workers.dev/api/auth/:splat  200
