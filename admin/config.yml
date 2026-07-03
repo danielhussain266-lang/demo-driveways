@@ -48,6 +48,8 @@ collections:
     label: "Testimonials"
     folder: "_data/testimonials"
     create: true
+    format: json
+    extension: json
     slug: "{{name}}"
     fields:
       - { label: "Customer Name",  name: "name",     widget: "string" }
@@ -59,6 +61,8 @@ collections:
     label: "Gallery (Before & After)"
     folder: "_data/gallery"
     create: true
+    format: json
+    extension: json
     slug: "{{caption}}"
     fields:
       - { label: "Caption",       name: "caption", widget: "string", hint: "e.g. Block paving driveway — Coventry" }
@@ -69,6 +73,8 @@ collections:
     label: "FAQs"
     folder: "_data/faqs"
     create: true
+    format: json
+    extension: json
     slug: "{{question}}"
     fields:
       - { label: "Question", name: "question", widget: "string" }
