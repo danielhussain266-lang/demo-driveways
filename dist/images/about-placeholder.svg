@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#d0d0d0"/>
+  <rect x="220" y="120" width="160" height="120" rx="6" fill="#bbb"/>
+  <circle cx="300" cy="165" r="28" fill="#999"/>
+  <path d="M220 240 L265 185 L295 215 L335 175 L380 240Z" fill="#aaa"/>
+  <text x="300" y="290" text-anchor="middle" fill="#999" font-family="sans-serif" font-size="14">Team photo</text>
+</svg>
