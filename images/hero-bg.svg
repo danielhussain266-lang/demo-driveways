@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <!-- Block paving texture pattern -->
+  <rect width="1200" height="700" fill="#888"/>
+  <defs>
+    <pattern id="paving" x="0" y="0" width="120" height="80" patternUnits="userSpaceOnUse">
+      <!-- Row 1 - standard bricks -->
+      <rect x="1" y="1" width="58" height="37" rx="1" fill="#9a9a9a" stroke="#666" stroke-width="1"/>
+      <rect x="61" y="1" width="58" height="37" rx="1" fill="#929292" stroke="#666" stroke-width="1"/>
+      <!-- Row 2 - offset bricks -->
+      <rect x="-29" y="40" width="58" height="37" rx="1" fill="#8a8a8a" stroke="#666" stroke-width="1"/>
+      <rect x="31" y="40" width="58" height="37" rx="1" fill="#959595" stroke="#666" stroke-width="1"/>
+      <rect x="91" y="40" width="58" height="37" rx="1" fill="#8d8d8d" stroke="#666" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="700" fill="url(#paving)"/>
+  <!-- subtle vignette overlay -->
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#vignette)"/>
+</svg>

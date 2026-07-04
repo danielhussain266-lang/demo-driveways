@@ -1,7 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
-  <rect width="600" height="400" fill="#d0d0d0"/>
-  <rect x="220" y="120" width="160" height="120" rx="6" fill="#bbb"/>
-  <circle cx="300" cy="165" r="28" fill="#999"/>
-  <path d="M220 240 L265 185 L295 215 L335 175 L380 240Z" fill="#aaa"/>
-  <text x="300" y="290" text-anchor="middle" fill="#999" font-family="sans-serif" font-size="14">Team photo</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1e1e2e"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grid)" opacity="0.06"/>
+  <!-- silhouette of a worker/team -->
+  <g transform="translate(400,270)" fill="#e8b84b" opacity="0.25">
+    <circle cx="0" cy="-80" r="38"/>
+    <path d="M-70 60 Q-70 0 0 0 Q70 0 70 60 L70 100 L-70 100Z"/>
+  </g>
+  <g transform="translate(400,270)" fill="none" stroke="#e8b84b" stroke-width="2.5">
+    <circle cx="0" cy="-80" r="38"/>
+    <path d="M-70 60 Q-70 0 0 0 Q70 0 70 60 L70 100 L-70 100Z"/>
+  </g>
+  <text x="400" y="390" font-family="Inter,Arial,sans-serif" font-size="14" fill="#e8b84b" text-anchor="middle" font-weight="600" letter-spacing="2">TEAM PHOTO COMING SOON</text>
+  <text x="400" y="412" font-family="Inter,Arial,sans-serif" font-size="12" fill="#888" text-anchor="middle">Add your team or job photo here</text>
 </svg>
