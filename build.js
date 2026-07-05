@@ -76,7 +76,7 @@ const services = (c.SERVICES || []).map(s => ({
 }));
 
 const domain      = c.DOMAIN || "example.co.uk";
-const businessShort = c.BUSINESS_NAME.split(" ")[0];
+const businessShort = c.LOGO_NAME || c.BUSINESS_NAME.split(" ")[0];
 const year        = new Date().getFullYear();
 const waMsg       = encodeURIComponent(c.WHATSAPP_MESSAGE || "Hi, I'd like a free quote please");
 const heroHeadline  = c.HERO_HEADLINE    || `Expert ${c.TRADE} in ${c.SERVICE_AREA}`;
@@ -324,24 +324,18 @@ function buildCtaBand() {
 
 function buildLightbox() {
   return `
-<div id="lightbox" role="dialog" aria-modal="true" aria-label="Project details">
+<div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Project details">
   <div class="lightbox-inner">
     <button class="lightbox-close" aria-label="Close">${svg("x", 18)}</button>
     <div class="lightbox-slider">
-      <div class="ba-slider" data-ba style="width:100%;height:100%;">
-        <div class="ba-before">
+      <div class="ba-pair ba-pair--lightbox">
+        <div class="ba-img">
           <img class="lb-before-img" src="" alt="" loading="lazy" />
           <span class="ba-label">Before</span>
         </div>
-        <div class="ba-after">
+        <div class="ba-img">
           <img class="lb-after-img" src="" alt="" loading="lazy" />
-          <span class="ba-label">After</span>
-        </div>
-        <div class="ba-handle" style="left:50%">
-          <div class="ba-handle-line"></div>
-          <button class="ba-handle-btn" aria-label="Drag to compare">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(6,0)"/></svg>
-          </button>
+          <span class="ba-label ba-label--after">After</span>
         </div>
       </div>
     </div>
@@ -371,32 +365,20 @@ ${buildLightbox()}
 
 // ── Hero section ──────────────────────────────────────────
 
-function buildHeroSlider() {
-  const before = c.HERO_BEFORE_IMAGE || "/images/placeholder.svg";
-  const after  = c.HERO_AFTER_IMAGE  || "/images/placeholder.svg";
-  return `
-  <div class="ba-slider hero-slider" data-ba>
-    <div class="ba-before">
-      <img src="${esc(before)}" alt="Before — ${esc(c.SERVICE_AREA)}" loading="eager" />
-      <span class="ba-label">Before</span>
-    </div>
-    <div class="ba-after">
-      <img src="${esc(after)}" alt="After — ${esc(c.SERVICE_AREA)}" loading="eager" />
-      <span class="ba-label">After</span>
-    </div>
-    <div class="ba-handle" style="left:50%">
-      <div class="ba-handle-line"></div>
-      <button class="ba-handle-btn" aria-label="Drag to compare before and after">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(6,0)"/></svg>
-      </button>
-    </div>
-  </div>
+function buildHeroBackground() {
+  const img = c.HERO_AFTER_IMAGE || "";
+  if (img) {
+    return `<div class="hero-bg" style="background-image:url('${esc(img)}')" role="img" aria-label="${esc(c.SERVICE_AREA)} driveway project"></div>
+  <div class="hero-overlay"></div>`;
+  }
+  // fallback: CSS texture
+  return `<div class="hero-bg hero-bg--texture" role="presentation"></div>
   <div class="hero-overlay"></div>`;
 }
 
 function buildHeroTrustChips() {
   const items = [];
-  if (c.RATING_TEXT)    items.push(`<span class="hero-trust-item">${svgFilled("star", 15)} ${esc(c.RATING_TEXT)}</span>`);
+  if (c.RATING_TEXT)    items.push(`<span class="hero-trust-item">${svgFilled("star", 15)} ${esc(c.RATING_SCORE || "5.0")}★ ${esc(c.RATING_TEXT)}</span>`);
   items.push(`<span class="hero-trust-item">${svg("shield", 15)} Fully Insured</span>`);
   items.push(`<span class="hero-trust-item">${svg("clock", 15)} ${esc(c.YEARS_TRADING)} Years Experience</span>`);
   items.push(`<span class="hero-trust-item">${svg("pin", 15)} ${esc(c.SERVICE_AREA)}</span>`);
@@ -437,6 +419,23 @@ function buildHeroMiniForm() {
     </div>`;
 }
 
+// ── Shared before/after pair (no slider) ─────────────────
+
+function baPair(before, after, altBefore, altAfter) {
+  const b = before || "/images/placeholder.svg";
+  const a = after  || "/images/placeholder.svg";
+  return `<div class="ba-pair">
+      <div class="ba-img">
+        <img src="${esc(b)}" alt="${esc(altBefore || "Before")}" loading="lazy" />
+        <span class="ba-label">Before</span>
+      </div>
+      <div class="ba-img">
+        <img src="${esc(a)}" alt="${esc(altAfter  || "After")}" loading="lazy" />
+        <span class="ba-label ba-label--after">After</span>
+      </div>
+    </div>`;
+}
+
 // ── Home page sections ────────────────────────────────────
 
 function buildBaTeaser() {
@@ -452,26 +451,11 @@ function buildBaTeaser() {
   <div class="container">
     <span class="section-label">Transformations</span>
     <h2 class="section-title" id="teaser-heading">Before &amp; After</h2>
-    <p class="section-intro">Real jobs, real results. Drag the handle to compare each transformation.</p>
+    <p class="section-intro">Real jobs, real results. See the before &amp; after on every project.</p>
     <div class="teaser-grid">
       ${placeholders.map(p => `
       <div class="teaser-card">
-        <div class="ba-slider" data-ba>
-          <div class="ba-before">
-            <img src="/images/placeholder.svg" alt="Before" loading="lazy" />
-            <span class="ba-label">Before</span>
-          </div>
-          <div class="ba-after">
-            <img src="/images/placeholder.svg" alt="After" loading="lazy" />
-            <span class="ba-label">After</span>
-          </div>
-          <div class="ba-handle" style="left:50%">
-            <div class="ba-handle-line"></div>
-            <button class="ba-handle-btn" aria-label="Drag to compare">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(6,0)"/></svg>
-            </button>
-          </div>
-        </div>
+        ${baPair("/images/placeholder.svg", "/images/placeholder.svg", "Before", "After")}
         <div class="teaser-caption">
           <span>${esc(p.caption)}</span>
           <span class="teaser-meta">${esc(p.meta)}</span>
@@ -490,26 +474,11 @@ function buildBaTeaser() {
   <div class="container">
     <span class="section-label">Transformations</span>
     <h2 class="section-title" id="teaser-heading">Before &amp; After</h2>
-    <p class="section-intro">Real jobs, real results. Drag the handle to compare each transformation.</p>
+    <p class="section-intro">Real jobs, real results. See the before &amp; after on every project.</p>
     <div class="teaser-grid">
       ${items.map(p => `
       <div class="teaser-card">
-        <div class="ba-slider" data-ba>
-          <div class="ba-before">
-            <img src="${esc(p.beforeImage || "/images/placeholder.svg")}" alt="Before — ${esc(p.title || p.caption || "")}" loading="lazy" />
-            <span class="ba-label">Before</span>
-          </div>
-          <div class="ba-after">
-            <img src="${esc(p.afterImage || "/images/placeholder.svg")}" alt="After — ${esc(p.title || p.caption || "")}" loading="lazy" />
-            <span class="ba-label">After</span>
-          </div>
-          <div class="ba-handle" style="left:50%">
-            <div class="ba-handle-line"></div>
-            <button class="ba-handle-btn" aria-label="Drag to compare">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(6,0)"/></svg>
-            </button>
-          </div>
-        </div>
+        ${baPair(p.beforeImage, p.afterImage, "Before — " + (p.title || p.caption || ""), "After — " + (p.title || p.caption || ""))}
         <div class="teaser-caption">
           <span>${esc(p.title || p.caption || c.SERVICE_AREA)}</span>
           <span class="teaser-meta">${esc([p.location, p.duration].filter(Boolean).join(" · "))}</span>
@@ -704,22 +673,7 @@ function buildProjectCard(p, hidden = false) {
     role="button"
     aria-label="View ${esc(p.title || "project")} details"
   >
-    <div class="ba-slider" data-ba>
-      <div class="ba-before">
-        <img src="${esc(p.beforeImage || "/images/placeholder.svg")}" alt="Before — ${esc(p.title || "")}" loading="lazy" />
-        <span class="ba-label">Before</span>
-      </div>
-      <div class="ba-after">
-        <img src="${esc(p.afterImage || "/images/placeholder.svg")}" alt="After — ${esc(p.title || "")}" loading="lazy" />
-        <span class="ba-label">After</span>
-      </div>
-      <div class="ba-handle" style="left:50%">
-        <div class="ba-handle-line"></div>
-        <button class="ba-handle-btn" aria-label="Drag to compare">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(6,0)"/></svg>
-        </button>
-      </div>
-    </div>
+    ${baPair(p.beforeImage, p.afterImage, "Before — " + (p.title || ""), "After — " + (p.title || ""))}
     <div class="project-card-body">
       ${cat ? `<span class="project-tag">${esc(cat)}</span>` : ""}
       <h3>${esc(p.title || "Project")}</h3>
@@ -750,7 +704,7 @@ ${buildHeader()}
 
 <main>
   <section id="hero" role="main">
-    ${buildHeroSlider()}
+    ${buildHeroBackground()}
     <div class="hero-inner">
       <div class="hero-content">
         <span class="hero-badge">${esc(c.SERVICE_AREA)}</span>

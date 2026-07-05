@@ -4,60 +4,6 @@
    mobile nav, FAQ accordion, forms, announcement bar.
    ===================================================== */
 
-/* ── Before / After Slider ────────────────────────── */
-class BASlider {
-  constructor(el) {
-    this.el      = el;
-    this.after   = el.querySelector('.ba-after');
-    this.handle  = el.querySelector('.ba-handle');
-    this.dragging = false;
-    this.pct     = 50;
-    if (!this.after || !this.handle) return;
-    this._bind();
-    this._setPos(50);
-  }
-
-  _setPos(pct) {
-    this.pct = Math.max(2, Math.min(98, pct));
-    this.after.style.clipPath = `inset(0 ${100 - this.pct}% 0 0)`;
-    this.handle.style.left    = `${this.pct}%`;
-  }
-
-  _pctFromEvent(e) {
-    const rect = this.el.getBoundingClientRect();
-    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-    return ((clientX - rect.left) / rect.width) * 100;
-  }
-
-  _bind() {
-    const start = () => { this.dragging = true; };
-    const stop  = () => { this.dragging = false; };
-    const move  = (e) => { if (this.dragging) this._setPos(this._pctFromEvent(e)); };
-
-    this.handle.addEventListener('mousedown',  start);
-    this.el.addEventListener('mousedown',      (e) => { start(); this._setPos(this._pctFromEvent(e)); });
-    document.addEventListener('mouseup',       stop);
-    document.addEventListener('mousemove',     move);
-
-    this.handle.addEventListener('touchstart', (e) => { start(); e.stopPropagation(); }, { passive: true });
-    this.el.addEventListener('touchstart',     (e) => { start(); this._setPos(this._pctFromEvent(e)); }, { passive: true });
-    document.addEventListener('touchend',      stop);
-    document.addEventListener('touchmove',     move, { passive: true });
-
-    const btn = this.el.querySelector('.ba-handle-btn');
-    if (btn) {
-      btn.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft')  { this._setPos(this.pct - 5); e.preventDefault(); }
-        if (e.key === 'ArrowRight') { this._setPos(this.pct + 5); e.preventDefault(); }
-      });
-    }
-  }
-}
-
-function initSliders(root) {
-  (root || document).querySelectorAll('[data-ba]').forEach((el) => new BASlider(el));
-}
-
 /* ── Mobile Nav ───────────────────────────────────── */
 function initNav() {
   const ham  = document.getElementById('hamburger');
@@ -179,8 +125,6 @@ function initLoadMore() {
 }
 
 /* ── Lightbox ─────────────────────────────────────── */
-let _lbSlider = null;
-
 function openLightbox(card) {
   const lb = document.getElementById('lightbox');
   if (!lb) return;
@@ -199,20 +143,16 @@ function openLightbox(card) {
   show('.lb-duration', card.dataset.duration); set('.lb-duration', card.dataset.duration || '');
   show('.lb-price',    card.dataset.price);    set('.lb-price',    card.dataset.price    || '');
 
+  lb.removeAttribute('hidden');
   lb.classList.add('open');
   document.body.style.overflow = 'hidden';
-
-  const sliderEl = lb.querySelector('[data-ba]');
-  if (sliderEl) {
-    if (_lbSlider) { _lbSlider._setPos(50); }
-    else { _lbSlider = new BASlider(sliderEl); }
-  }
 }
 
 function closeLightbox() {
   const lb = document.getElementById('lightbox');
   if (!lb) return;
   lb.classList.remove('open');
+  lb.setAttribute('hidden', '');
   document.body.style.overflow = '';
 }
 
@@ -229,7 +169,6 @@ function initLightbox() {
 
 /* ── Init ─────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
-  initSliders();
   initNav();
   initFaq();
   initAnnouncement();
