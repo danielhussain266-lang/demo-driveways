@@ -79,7 +79,7 @@ function initForm(formId) {
       const res  = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(form) });
       const json = await res.json();
       if (json.success) {
-        if (status) { status.className = 'form-status success'; status.textContent = '✓ Thanks! We'll be in touch within 24 hours.'; }
+        if (status) { status.className = 'form-status success'; status.textContent = "✓ Thanks! We'll be in touch within 24 hours."; }
         form.reset();
       } else {
         throw new Error(json.message || 'Submission failed');
