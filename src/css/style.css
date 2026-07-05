@@ -352,10 +352,11 @@ p  { font-size: 1.05rem; color: var(--muted); line-height: 1.7; }
 }
 #mobile-sticky .mob-quote:hover { background: var(--brand-2-dk); }
 /* offset body content so sticky bar doesn't cover content */
-body { padding-bottom: 64px; }
+@media (max-width: 899px) {
+  #site-footer { padding-bottom: 64px; }
+}
 @media (min-width: 900px) {
   #mobile-sticky { display: none; }
-  body { padding-bottom: 0; }
 }
 
 /* ── Before / After Pair ──────────────────────────── */
@@ -511,7 +512,7 @@ body { padding-bottom: 64px; }
 #ba-teaser { background: var(--card); }
 .teaser-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-columns: 1fr;
   margin-bottom: 2.5rem;
 }
@@ -521,7 +522,7 @@ body { padding-bottom: 64px; }
   box-shadow: var(--shadow);
   background: var(--white);
 }
-.teaser-card .ba-pair .ba-img { aspect-ratio: 4/3; }
+.teaser-card .ba-pair .ba-img { aspect-ratio: 3/2; }
 .teaser-caption {
   padding: 1rem 1.25rem;
   font-size: .9rem;

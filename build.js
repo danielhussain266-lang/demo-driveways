@@ -345,7 +345,7 @@ function buildLightbox() {
       <div class="project-meta">
         <span data-lb-row style="display:none">${svg("pin", 14)} <span class="lb-location"></span></span>
         <span data-lb-row style="display:none">${svg("clock", 14)} <span class="lb-duration"></span></span>
-        <span data-lb-row style="display:none">${svg("dollar", 14)} <span class="lb-price"></span></span>
+        <span data-lb-row style="display:none"><span class="lb-price"></span></span>
       </div>
       <p class="lb-desc" style="margin-top:.75rem;"></p>
     </div>
@@ -680,7 +680,7 @@ function buildProjectCard(p, hidden = false) {
       <div class="project-meta">
         ${p.location ? `<span>${svg("pin", 13)} ${esc(p.location)}</span>` : ""}
         ${p.duration  ? `<span>${svg("clock", 13)} ${esc(p.duration)}</span>` : ""}
-        ${p.priceBand ? `<span>${svg("dollar", 13)} ${esc(p.priceBand)}</span>` : ""}
+        ${p.priceBand ? `<span>${esc(p.priceBand)}</span>` : ""}
       </div>
       ${p.description ? `<p class="project-desc">${esc(p.description)}</p>` : ""}
     </div>
