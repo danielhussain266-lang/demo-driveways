@@ -272,7 +272,7 @@ const config = {
     },
     {
       q: "How do I get a quote?",
-      a: "Call us on 01788 298618 or fill in the contact form and we'll arrange a free visit. We'll measure up, talk through your options, and give you a written quote with no obligation."
+      a: "Call us or fill in the contact form and we'll arrange a free visit. We'll measure up, talk through your options, and give you a written quote with no obligation."
     },
   ],
 
