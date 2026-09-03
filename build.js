@@ -115,6 +115,10 @@ function svgFilled(name, size = 20) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="currentColor">${d}</svg>`;
 }
 
+// ── showcase modules ──────────────────────────────────────
+// Declared here, populated once the chrome builders below exist.
+let S = {}, P = {};
+
 // ── shared partials ───────────────────────────────────────
 
 function buildHead({ title, description, canonical, extraSchema = "" }) {
@@ -136,6 +140,7 @@ function buildHead({ title, description, canonical, extraSchema = "" }) {
   <meta property="og:url"         content="https://${esc(domain)}${esc(canonical)}" />
   <meta property="og:image"       content="https://${esc(domain)}/images/og-image.jpg" />
   <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="/src/css/showcase.css" />
   ${extraSchema}
   ${cfAnalytics}
 </head>
@@ -211,6 +216,24 @@ function buildServicesDropdown() {
 </div>`;
 }
 
+function buildMoreDropdown() {
+  const items = [
+    ["/case-studies/", "Case Studies"],
+    ["/advice/",       "Advice Hub"],
+    ["/team/",         "Meet the Team"],
+    ["/areas/",        "Areas We Cover"],
+    ["/guarantee/",    "Our Guarantee"],
+    ["/finance/",      "Finance Options"],
+    ["/social/",       "Latest on Social"],
+    ["/about/",        "About Us"],
+  ].map(([href, label]) => `<a href="${href}">${label}</a>`).join("");
+  return `
+<div class="nav-dropdown">
+  <button>${svg("chevron", 14)} More</button>
+  <div class="nav-dropdown-panel">${items}</div>
+</div>`;
+}
+
 function buildHeader() {
   return `
 <div id="announcement-bar-slot">${buildAnnouncementBar()}</div>
@@ -222,8 +245,8 @@ ${buildUtilityBar()}
       <a href="/">Home</a>
       ${buildServicesDropdown()}
       <a href="/portfolio/">Portfolio</a>
+      ${buildMoreDropdown()}
       <a href="/reviews/">Reviews</a>
-      <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
     </nav>
     <a href="/contact/" class="btn btn-primary nav-cta">Free Quote</a>
@@ -234,6 +257,13 @@ ${buildUtilityBar()}
   <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
     <a href="/">Home</a>
     <a href="/portfolio/">Portfolio</a>
+    <a href="/case-studies/">Case Studies</a>
+    <a href="/advice/">Advice Hub</a>
+    <a href="/team/">Meet the Team</a>
+    <a href="/areas/">Areas We Cover</a>
+    <a href="/guarantee/">Our Guarantee</a>
+    <a href="/finance/">Finance</a>
+    <a href="/social/">Latest on Social</a>
     <a href="/reviews/">Reviews</a>
     <a href="/about/">About</a>
     <a href="/contact/">Contact</a>
@@ -257,12 +287,8 @@ function buildMobileStickyBar() {
 </div>`;
 }
 
-function buildWhatsApp() {
-  if (!c.WHATSAPP_ENABLED || !c.WHATSAPP_NUMBER) return "";
-  return `<a id="whatsapp-btn" href="https://wa.me/${esc(c.WHATSAPP_NUMBER)}?text=${waMsg}" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-</a>`;
-}
+// WhatsApp is now the full chat widget — see build.showcase.js
+function buildWhatsApp() { return S.buildWhatsApp(); }
 
 function buildFooter() {
   const socialLinks = [
@@ -298,7 +324,13 @@ function buildFooter() {
     </div>
     <div class="footer-bottom">
       <span>&copy; ${year} ${esc(c.BUSINESS_NAME)}. All rights reserved.</span>
-      <span>Website by <a href="https://groundworkstudios.co.uk" rel="noopener" target="_blank">Groundwork Studios</a></span>
+      <a class="gw-credit" href="https://groundworkstudios.co.uk" rel="noopener" target="_blank">
+        <span class="gw-credit-mark" aria-hidden="true">GS</span>
+        <span class="gw-credit-text">
+          <span class="gw-credit-lead">Designed by</span>
+          <span class="gw-credit-name">Groundwork Studios</span>
+        </span>
+      </a>
     </div>
   </div>
 </footer>`;
@@ -330,11 +362,11 @@ function buildLightbox() {
     <div class="lightbox-slider">
       <div class="ba-pair ba-pair--lightbox">
         <div class="ba-img">
-          <img class="lb-before-img" src="" alt="" loading="lazy" />
+          <img class="lb-before-img" src="/images/placeholder.svg" alt="" loading="lazy" />
           <span class="ba-label">Before</span>
         </div>
         <div class="ba-img">
-          <img class="lb-after-img" src="" alt="" loading="lazy" />
+          <img class="lb-after-img" src="/images/placeholder.svg" alt="" loading="lazy" />
           <span class="ba-label ba-label--after">After</span>
         </div>
       </div>
@@ -356,9 +388,12 @@ function buildLightbox() {
 function buildScripts() {
   return `
 ${buildWhatsApp()}
+${S.buildDesignMenu()}
+${S.buildExitIntent()}
 ${buildMobileStickyBar()}
 ${buildLightbox()}
 <script src="/src/js/main.js"></script>
+<script src="/src/js/widgets.js"></script>
 </body>
 </html>`;
 }
@@ -478,13 +513,14 @@ function buildBaTeaser() {
     <div class="teaser-grid">
       ${items.map(p => `
       <div class="teaser-card">
-        ${baPair(p.beforeImage, p.afterImage, "Before — " + (p.title || p.caption || ""), "After — " + (p.title || p.caption || ""))}
+        ${S.baSlider(p.beforeImage, p.afterImage, p.title || p.caption || "Project", { start: 50 })}
         <div class="teaser-caption">
           <span>${esc(p.title || p.caption || c.SERVICE_AREA)}</span>
           <span class="teaser-meta">${esc([p.location, p.duration].filter(Boolean).join(" · "))}</span>
         </div>
       </div>`).join("")}
     </div>
+    <p class="ba-hint">${svg("arrow", 14)} Drag any slider to reveal the before</p>
     <div class="teaser-cta">
       <a href="/portfolio/" class="btn btn-dark">View Full Portfolio ${svg("arrow", 16)}</a>
     </div>
@@ -673,7 +709,7 @@ function buildProjectCard(p, hidden = false) {
     role="button"
     aria-label="View ${esc(p.title || "project")} details"
   >
-    ${baPair(p.beforeImage, p.afterImage, "Before — " + (p.title || ""), "After — " + (p.title || ""))}
+    ${S.baSlider(p.beforeImage, p.afterImage, p.title || "Project", { start: 50 })}
     <div class="project-card-body">
       ${cat ? `<span class="project-tag">${esc(cat)}</span>` : ""}
       <h3>${esc(p.title || "Project")}</h3>
@@ -704,7 +740,7 @@ ${buildHeader()}
 
 <main>
   <section id="hero" role="main">
-    ${buildHeroBackground()}
+    ${S.buildVideoHero() || buildHeroBackground()}
     <div class="hero-inner">
       <div class="hero-content">
         <span class="hero-badge">${esc(c.SERVICE_AREA)}</span>
@@ -722,12 +758,23 @@ ${buildHeader()}
     </div>
   </section>
 
+  ${S.buildAvailability()}
+  ${S.buildTrustBar()}
   ${buildBaTeaser()}
+  ${S.buildVideoReel()}
   ${buildServicesSection()}
+  ${S.buildVisualiser()}
+  ${S.buildQuoteCalc()}
+  ${S.buildMaterials()}
   ${buildWhyUs()}
+  ${S.buildStats()}
   ${buildProcess()}
+  ${S.buildCaseStudyTeaser()}
+  ${S.buildFinance()}
   ${buildTestimonialsSection(testimonials)}
-  ${buildAreasSection()}
+  ${S.buildSocialWall()}
+  ${S.buildCoverage()}
+  ${S.buildAdviceTeaser()}
   ${buildFaqSection(faqs)}
   ${buildCtaBand()}
 </main>
@@ -890,7 +937,7 @@ ${buildHeader()}
     <div class="container">
       <div class="about-grid">
         <div class="about-img">
-          <img src="/images/about.jpg" alt="${esc(c.BUSINESS_NAME)} team" loading="lazy"
+          <img src="/images/scenes/hero-after.jpg" alt="${esc(c.BUSINESS_NAME)} — completed block paving driveway in Rugby" loading="lazy"
             onerror="this.src='/images/about-placeholder.svg'" />
         </div>
         <div class="about-text">
@@ -1017,7 +1064,10 @@ ${buildHeader()}
       <div class="contact-grid">
         <div class="contact-form-wrap">
           <h2>Tell Us About Your Project</h2>
-          <p>Complete the form below and we'll prepare a tailored quote.</p>
+          <p>Four quick steps — about thirty seconds.</p>
+          ${S.buildWizard()}
+          <details class="classic-form-toggle">
+            <summary>Prefer a plain form? Open it here</summary>
           <div class="contact-reassurances">
             <div class="reassurance-item">${svg("check", 16)} No-obligation — free site visit included</div>
             <div class="reassurance-item">${svg("check", 16)} Respond within 24 hours</div>
@@ -1054,6 +1104,7 @@ ${buildHeader()}
             <button type="submit" class="btn btn-primary form-submit">Send Enquiry</button>
             <p class="form-status" id="contact-form-status" aria-live="polite"></p>
           </form>
+          </details>
         </div>
 
         <div class="contact-info-wrap">
@@ -1108,7 +1159,17 @@ function buildSitemap() {
     { loc: `https://${domain}/about/`, priority: "0.8" },
     { loc: `https://${domain}/reviews/`, priority: "0.8" },
     { loc: `https://${domain}/contact/`, priority: "0.9" },
+    { loc: `https://${domain}/case-studies/`, priority: "0.85" },
+    { loc: `https://${domain}/advice/`, priority: "0.8" },
+    { loc: `https://${domain}/team/`, priority: "0.7" },
+    { loc: `https://${domain}/areas/`, priority: "0.8" },
+    { loc: `https://${domain}/guarantee/`, priority: "0.75" },
+    { loc: `https://${domain}/finance/`, priority: "0.7" },
+    { loc: `https://${domain}/social/`, priority: "0.6" },
     ...services.map(s => ({ loc: `https://${domain}/services/${s.slug}/`, priority: "0.85" })),
+    ...(c.BLOG_POSTS   || []).map(p => ({ loc: `https://${domain}/advice/${p.slug}/`, priority: "0.7" })),
+    ...(c.CASE_STUDIES || []).map(s => ({ loc: `https://${domain}/case-studies/${s.slug}/`, priority: "0.8" })),
+    ...(c.AREA_PAGES   || []).map(a => ({ loc: `https://${domain}/areas/${a.slug}/`, priority: "0.75" })),
   ];
   const today = new Date().toISOString().split("T")[0];
   const urls  = pages.map(p =>
@@ -1116,6 +1177,16 @@ function buildSitemap() {
   ).join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
 }
+
+// ── wire up the showcase modules ──────────────────────────
+
+const HELPERS = {
+  c, esc, slug, svg, svgFilled, stars, domain, services, portfolio, testimonials, faqs,
+  buildHead, buildHeader, buildFooter, buildScripts, buildCtaBand, buildSchema,
+};
+
+Object.assign(S, require("./build.showcase.js")(HELPERS));
+Object.assign(P, require("./build.pages.js")(HELPERS, S));
 
 // ── Main build ────────────────────────────────────────────
 
@@ -1131,11 +1202,25 @@ services.forEach(service => {
   writeFile(path.join(DIST, `services/${service.slug}/index.html`), buildServicePage(service));
 });
 
+// ── showcase pages ────────────────────────────────────────
+writeFile(path.join(DIST, "team/index.html"),         P.buildTeamPage());
+writeFile(path.join(DIST, "advice/index.html"),       P.buildAdviceIndex());
+writeFile(path.join(DIST, "case-studies/index.html"), P.buildCaseStudyIndex());
+writeFile(path.join(DIST, "areas/index.html"),        P.buildAreaIndex());
+writeFile(path.join(DIST, "guarantee/index.html"),    P.buildGuaranteePage());
+writeFile(path.join(DIST, "finance/index.html"),      P.buildFinancePage());
+writeFile(path.join(DIST, "social/index.html"),       P.buildSocialPage());
+
+(c.BLOG_POSTS   || []).forEach(p => writeFile(path.join(DIST, `advice/${p.slug}/index.html`),       P.buildAdvicePost(p)));
+(c.CASE_STUDIES || []).forEach(s => writeFile(path.join(DIST, `case-studies/${s.slug}/index.html`), P.buildCaseStudyPage(s)));
+(c.AREA_PAGES   || []).forEach(a => writeFile(path.join(DIST, `areas/${a.slug}/index.html`),        P.buildAreaPage(a)));
+
 writeFile(path.join(DIST, "sitemap.xml"), buildSitemap());
 
 copyDir(path.join(ROOT, "src"),    path.join(DIST, "src"));
 copyDir(path.join(ROOT, "images"), path.join(DIST, "images"));
 copyDir(path.join(ROOT, "admin"),  path.join(DIST, "admin"));
+copyDir(path.join(ROOT, "videos"), path.join(DIST, "videos"));
 
 if (fs.existsSync(path.join(ROOT, "_redirects"))) {
   fs.copyFileSync(path.join(ROOT, "_redirects"), path.join(DIST, "_redirects"));
