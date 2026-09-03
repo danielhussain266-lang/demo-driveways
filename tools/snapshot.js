@@ -19,25 +19,44 @@ const MIME = {
   ".webm": "video/webm", ".mp4": "video/mp4",
 };
 
-const dataCache = new Map();
-function dataUri(assetPath) {
+// Assets are emitted ONCE into a lookup table and referenced by token.
+// Inlining the data URI at each use point duplicates every shared image
+// across all ~35 routes and blows the page size up by an order of magnitude.
+const ASSETS = [];
+const assetIndex = new Map();
+
+function assetToken(assetPath) {
   const clean = assetPath.split("?")[0].split("#")[0];
-  if (dataCache.has(clean)) return dataCache.get(clean);
+  if (assetIndex.has(clean)) return `%%A${assetIndex.get(clean)}%%`;
   const abs = path.join(DIST, clean.replace(/^\//, ""));
   if (!fs.existsSync(abs) || fs.statSync(abs).isDirectory()) return assetPath;
   const ext = path.extname(abs).toLowerCase();
   const mime = MIME[ext];
   if (!mime) return assetPath;
-  const uri = `data:${mime};base64,${fs.readFileSync(abs).toString("base64")}`;
-  dataCache.set(clean, uri);
-  return uri;
+  const i = ASSETS.length;
+  ASSETS.push(`data:${mime};base64,${fs.readFileSync(abs).toString("base64")}`);
+  assetIndex.set(clean, i);
+  return `%%A${i}%%`;
 }
 
-// Replace url(/images/x.jpg) and src="/images/x.jpg" with data URIs
+// CSS is emitted once, so it can take the real data URI directly.
+function dataUri(assetPath) {
+  const t = assetToken(assetPath);
+  const m = /^%%A(\d+)%%$/.exec(t);
+  return m ? ASSETS[Number(m[1])] : assetPath;
+}
+
+// CSS: real data URIs (emitted once).
+function inlineCss(str) {
+  return str.replace(/url\((['"]?)(\/[^)'"]+)\1\)/g, (m, q, p) => `url(${q}${dataUri(p)}${q})`);
+}
+
+// HTML: tokens, resolved at runtime from the shared ASSETS table.
 function inlineAssets(str) {
   return str
-    .replace(/url\((['"]?)(\/[^)'"]+)\1\)/g, (m, q, p) => `url(${q}${dataUri(p)}${q})`)
-    .replace(/(src|href)=("|')(\/images\/[^"']+)\2/g, (m, a, q, p) => `${a}=${q}${dataUri(p)}${q}`);
+    .replace(/url\((['"]?)(\/(?:images|videos)\/[^)'"]+)\1\)/g, (m, q, p) => `url(${q}${assetToken(p)}${q})`)
+    .replace(/(src|href|poster)=("|')(\/(?:images|videos)\/[^"']+)\2/g,
+      (m, a, q, p) => `${a}=${q}${assetToken(p)}${q}`);
 }
 
 // ── gather pages ─────────────────────────────────────────────
@@ -93,17 +112,31 @@ const routes = pages.map(p => {
 
 // ── assets ───────────────────────────────────────────────────
 
-const cssPath = path.join(DIST, "src/css/style.css");
-const css = fs.existsSync(cssPath) ? inlineAssets(fs.readFileSync(cssPath, "utf8")) : "";
+const cssFiles = ["src/css/style.css", "src/css/showcase.css"];
+const css = cssFiles
+  .map(f => path.join(DIST, f))
+  .filter(fs.existsSync)
+  .map(f => inlineCss(fs.readFileSync(f, "utf8")))
+  .join("\n\n");
 
-const jsPath = path.join(DIST, "src/js/main.js");
-const js = fs.existsSync(jsPath) ? fs.readFileSync(jsPath, "utf8") : "";
+const jsFiles = ["src/js/main.js", "src/js/widgets.js"];
+const js = jsFiles
+  .map(f => path.join(DIST, f))
+  .filter(fs.existsSync)
+  .map(f => fs.readFileSync(f, "utf8"))
+  .join("\n\n");
 
 // Utility bar / announcement live outside <header> in this build
 const utilBar = (first.match(/<div id="utility-bar">[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/i) || [""])[0];
 
-// Floating widgets that sit after </main>
-const sticky  = (first.match(/<div id="mobile-sticky"[\s\S]*?<\/div>\s*<\/div>/i) || [""])[0];
+// Everything between </footer> and the first <script src> is the floating
+// furniture: WhatsApp widget, design menu, exit intent, sticky bar, lightbox.
+const afterFooter = (() => {
+  const start = first.indexOf("</footer>");
+  const end = first.indexOf('<script src=', start);
+  if (start < 0 || end < 0) return "";
+  return first.slice(start + "</footer>".length, end);
+})();
 
 const payload = routes.map(r => ({
   route: r.route,
@@ -134,7 +167,7 @@ body{padding-bottom:56px}
   ${inlineAssets(headerHtml)}
   <div id="route-outlet"></div>
   ${inlineAssets(footerHtml)}
-  ${inlineAssets(sticky)}
+  ${inlineAssets(afterFooter)}
 </div>
 
 <nav id="snapbar" aria-label="Snapshot page switcher">
@@ -142,9 +175,20 @@ body{padding-bottom:56px}
 </nav>
 
 <script>
+const ASSETS = ${JSON.stringify(ASSETS)};
+const deref = s => s.replace(/%%A(\\d+)%%/g, (m, i) => ASSETS[+i] || "");
 const ROUTES = ${JSON.stringify(payload)};
 const outlet = document.getElementById("route-outlet");
 const bar = document.getElementById("snapbar");
+
+// resolve tokens in the static chrome that shipped outside the route payload
+document.querySelectorAll("#snapshot-root [src],#snapshot-root [poster],#snapshot-root [style]")
+  .forEach(el => {
+    ["src", "poster", "style"].forEach(a => {
+      const v = el.getAttribute(a);
+      if (v && v.indexOf("%%A") > -1) el.setAttribute(a, deref(v));
+    });
+  });
 
 function label(route){
   if(route === "/") return "Home";
@@ -154,7 +198,7 @@ function label(route){
 
 function show(route){
   const r = ROUTES.find(x => x.route === route) || ROUTES[0];
-  outlet.innerHTML = r.html;
+  outlet.innerHTML = deref(r.html);
   bar.querySelectorAll("button").forEach(b =>
     b.setAttribute("aria-current", String(b.dataset.route === r.route)));
   window.scrollTo(0,0);
