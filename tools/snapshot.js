@@ -149,16 +149,31 @@ const out = `<title>${TITLE}</title>
 ${css}
 
 /* ---- snapshot chrome (not part of the original site) ---- */
-#snapbar{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:flex;gap:.5rem;
-  align-items:center;justify-content:center;flex-wrap:wrap;
-  padding:.5rem .75rem;background:#12211c;color:#fff;
+/* Preview-only chrome. Not part of the website — it exists so all the
+   pages are reachable from a single-page artifact. */
+#snapbar{position:fixed;left:0;right:0;bottom:0;z-index:9999;
+  display:flex;gap:.75rem;align-items:center;justify-content:center;flex-wrap:wrap;
+  padding:.55rem .9rem;background:#12211c;color:#fff;
   font:500 12px/1.3 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  box-shadow:0 -2px 14px rgba(0,0,0,.3)}
-#snapbar b{color:#d9b036;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:11px}
-#snapbar button{appearance:none;border:1px solid rgba(255,255,255,.22);background:transparent;
-  color:#fff;border-radius:999px;padding:.3rem .7rem;font:inherit;cursor:pointer}
-#snapbar button:hover{background:rgba(255,255,255,.12)}
-#snapbar button[aria-current="true"]{background:#d9b036;border-color:#d9b036;color:#12211c;font-weight:700}
+  box-shadow:0 -2px 14px rgba(0,0,0,.35)}
+#snapbar .sb-mark{display:inline-flex;align-items:center;gap:.45rem;
+  color:#d9b036;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:10.5px}
+#snapbar .sb-mark i{width:20px;height:20px;border-radius:5px;background:#d9b036;color:#12211c;
+  display:grid;place-items:center;font-style:normal;font-weight:800;font-size:9px;letter-spacing:0}
+#snapbar .sb-note{opacity:.55;font-size:11px}
+#snapbar select{appearance:none;background:rgba(255,255,255,.08);color:#fff;
+  border:1px solid rgba(255,255,255,.28);border-radius:6px;padding:.34rem 1.9rem .34rem .6rem;
+  font:inherit;cursor:pointer;max-width:min(46vw,300px);
+  background-image:linear-gradient(45deg,transparent 50%,#d9b036 50%),
+    linear-gradient(135deg,#d9b036 50%,transparent 50%);
+  background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+#snapbar select:focus-visible{outline:2px solid #d9b036;outline-offset:1px}
+#snapbar option{background:#12211c;color:#fff}
+#snapbar .sb-nav{appearance:none;border:1px solid rgba(255,255,255,.28);background:transparent;
+  color:#fff;border-radius:6px;width:28px;height:28px;cursor:pointer;font:inherit;line-height:1}
+#snapbar .sb-nav:hover{background:rgba(255,255,255,.14)}
+@media (max-width:620px){#snapbar .sb-note{display:none}}
 body{padding-bottom:56px}
 </style>
 
@@ -170,8 +185,13 @@ body{padding-bottom:56px}
   ${inlineAssets(afterFooter)}
 </div>
 
-<nav id="snapbar" aria-label="Snapshot page switcher">
-  <b>Archived build</b>
+<nav id="snapbar" aria-label="Preview page switcher">
+  <span class="sb-mark"><i>GS</i> Preview</span>
+  <button class="sb-nav" id="sb-prev" aria-label="Previous page" title="Previous page">&#8249;</button>
+  <label class="sr-only" for="sb-select">Jump to page</label>
+  <select id="sb-select"></select>
+  <button class="sb-nav" id="sb-next" aria-label="Next page" title="Next page">&#8250;</button>
+  <span class="sb-note">Page switcher for this preview only — not part of the site</span>
 </nav>
 
 <script>
@@ -190,28 +210,58 @@ document.querySelectorAll("#snapshot-root [src],#snapshot-root [poster],#snapsho
     });
   });
 
+const sel = document.getElementById("sb-select");
+
+function titleCase(s){
+  return s.replace(/-/g," ").replace(/\\b\\w/g, m => m.toUpperCase());
+}
 function label(route){
   if(route === "/") return "Home";
-  return route.replace(/^\\/|\\/$/g,"").split("/").pop()
-    .replace(/-/g," ").replace(/\\b\\w/g, m => m.toUpperCase());
+  const parts = route.replace(/^\\/|\\/$/g,"").split("/");
+  return titleCase(parts[parts.length - 1]);
 }
+// group by top-level section so 35 routes stay navigable
+function section(route){
+  if(route === "/") return "";
+  const parts = route.replace(/^\\/|\\/$/g,"").split("/");
+  return parts.length > 1 ? titleCase(parts[0]) : "";
+}
+
+const groups = new Map();
+ROUTES.forEach(r => {
+  const g = section(r.route) || "Main pages";
+  if(!groups.has(g)) groups.set(g, []);
+  groups.get(g).push(r);
+});
+groups.forEach((rs, name) => {
+  const og = document.createElement("optgroup");
+  og.label = name;
+  rs.forEach(r => {
+    const o = document.createElement("option");
+    o.value = r.route;
+    o.textContent = label(r.route);
+    og.appendChild(o);
+  });
+  sel.appendChild(og);
+});
 
 function show(route){
   const r = ROUTES.find(x => x.route === route) || ROUTES[0];
   outlet.innerHTML = deref(r.html);
-  bar.querySelectorAll("button").forEach(b =>
-    b.setAttribute("aria-current", String(b.dataset.route === r.route)));
+  if(sel.value !== r.route) sel.value = r.route;
   window.scrollTo(0,0);
   wire();
 }
 
-ROUTES.forEach(r => {
-  const b = document.createElement("button");
-  b.textContent = label(r.route);
-  b.dataset.route = r.route;
-  b.addEventListener("click", () => show(r.route));
-  bar.appendChild(b);
-});
+sel.addEventListener("change", () => show(sel.value));
+
+function step(delta){
+  const i = ROUTES.findIndex(x => x.route === sel.value);
+  const next = ROUTES[(i + delta + ROUTES.length) % ROUTES.length];
+  show(next.route);
+}
+document.getElementById("sb-prev").addEventListener("click", () => step(-1));
+document.getElementById("sb-next").addEventListener("click", () => step(1));
 
 // Intercept in-site links so the snapshot stays self-contained
 function wire(){
