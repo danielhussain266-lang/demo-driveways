@@ -104,7 +104,7 @@
       noteEl.textContent = btn.dataset.note;
       traits.innerHTML = (btn.dataset.traits || "").split("|").filter(Boolean)
         .map(t => '<span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> ' + t + "</span>").join("");
-      if (btn.dataset.service) link.href = "/services/" + slugify(btn.dataset.service) + "/";
+      if (btn.dataset.service) link.href = "/demo-driveways/services/" + slugify(btn.dataset.service) + "/";
     }));
   }
 
@@ -145,7 +145,7 @@
       jobs.textContent = d.dataset.jobs;
       drive.textContent = d.dataset.drive;
       note.textContent = d.dataset.note;
-      link.href = "/areas/" + d.dataset.area + "/";
+      link.href = "/demo-driveways/areas/" + d.dataset.area + "/";
     }
     dots.forEach(d => {
       d.addEventListener("click", () => select(d));
