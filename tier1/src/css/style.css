@@ -510,9 +510,10 @@ p  { font-size: 1.05rem; color: var(--muted); line-height: 1.7; }
 
 /* ── BA Teaser (home page 3-up) ───────────────────── */
 #ba-teaser { background: var(--card); }
+#ba-teaser .container { max-width: 1400px; }
 .teaser-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   grid-template-columns: 1fr;
   margin-bottom: 2.5rem;
 }
@@ -522,17 +523,17 @@ p  { font-size: 1.05rem; color: var(--muted); line-height: 1.7; }
   box-shadow: var(--shadow);
   background: var(--white);
 }
-.teaser-card .ba-pair .ba-img { aspect-ratio: 3/2; }
+.teaser-card .ba-pair .ba-img { aspect-ratio: 1/1; }
 .teaser-caption {
-  padding: 1rem 1.25rem;
-  font-size: .9rem;
+  padding: 1.1rem 1.35rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--ink);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.teaser-caption .teaser-meta { font-size: .8rem; color: var(--muted); font-weight: 400; }
+.teaser-caption .teaser-meta { font-size: .84rem; color: var(--muted); font-weight: 400; }
 .teaser-cta { text-align: center; }
 @media (min-width: 640px) { .teaser-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 900px) { .teaser-grid { grid-template-columns: repeat(3, 1fr); } }
