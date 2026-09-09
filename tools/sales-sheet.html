@@ -1,0 +1,362 @@
+<title>Foundation vs Growth</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+  :root {
+    --brand:      #1E3A2F;
+    --brand-dk:   #14261E;
+    --brand-2:    #C9A227;
+    --brand-2-dk: #A8851C;
+    --surface:    #FAF8F4;
+    --card:       #F2EFE9;
+    --card-2:     #EAE5DA;
+    --border:     #E0DACD;
+    --ink:        #17201B;
+    --muted:      #667065;
+    --white:      #FFFFFF;
+    --green-tint: #E8F0EB;
+    --good:       #2F6B47;
+    --good-bg:    #E7F2EA;
+
+    --radius:     10px;
+    --radius-lg:  18px;
+    --shadow:     0 2px 18px rgba(23,32,27,.07);
+    --shadow-md:  0 10px 34px rgba(23,32,27,.12);
+
+    --font-head:  'Fraunces', Georgia, serif;
+    --font-body:  'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --surface:    #121814;
+      --card:       #182019;
+      --card-2:     #1E2721;
+      --border:     #2A342C;
+      --ink:        #EDEEE9;
+      --muted:      #96A197;
+      --white:      #1A2219;
+      --green-tint: #1C2A21;
+      --good:       #6FBF8B;
+      --good-bg:    #1A2E22;
+      --shadow:     0 2px 18px rgba(0,0,0,.35);
+      --shadow-md:  0 10px 34px rgba(0,0,0,.45);
+    }
+  }
+  :root[data-theme="dark"] {
+    --surface:    #121814;
+    --card:       #182019;
+    --card-2:     #1E2721;
+    --border:     #2A342C;
+    --ink:        #EDEEE9;
+    --muted:      #96A197;
+    --white:      #1A2219;
+    --green-tint: #1C2A21;
+    --good:       #6FBF8B;
+    --good-bg:    #1A2E22;
+    --shadow:     0 2px 18px rgba(0,0,0,.35);
+    --shadow-md:  0 10px 34px rgba(0,0,0,.45);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--font-head); color: var(--ink); text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* ── Masthead ─────────────────────────────────────── */
+  .masthead { background: var(--brand); color: #fff; padding: 2.75rem 0 2.25rem; }
+  .masthead .wrap { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+  .mark-row { display: flex; align-items: center; gap: .85rem; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 10px; background: var(--brand-2); color: var(--brand-dk);
+    display: grid; place-items: center; font-family: var(--font-head); font-weight: 900; font-size: 1.05rem; flex: 0 0 auto;
+  }
+  .wordmark { font-family: var(--font-head); font-weight: 800; font-size: 1.3rem; letter-spacing: -.01em; }
+  .doc-label {
+    font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brand-2);
+    font-weight: 700; margin-top: .35rem;
+  }
+  .masthead h1 { font-size: clamp(1.9rem, 3.4vw, 2.5rem); font-weight: 800; margin-top: .6rem; max-width: 20ch; color: #fff; }
+  .masthead-sub { max-width: 46ch; color: rgba(255,255,255,.78); font-size: .98rem; margin-top: .6rem; }
+  .rep-note {
+    flex: 0 0 auto; max-width: 260px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18);
+    border-radius: var(--radius); padding: 1rem 1.15rem; font-size: .85rem; color: rgba(255,255,255,.85);
+  }
+  .rep-note b { display: block; color: var(--brand-2); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .4rem; }
+
+  section { padding: 3rem 0; }
+  .section-eyebrow {
+    font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--brand-2-dk);
+  }
+  .section-title { font-size: clamp(1.5rem, 2.6vw, 1.9rem); font-weight: 800; margin-top: .4rem; }
+  .section-intro { color: var(--muted); font-size: .98rem; max-width: 62ch; margin-top: .6rem; }
+
+  /* ── Live demo strip ──────────────────────────────── */
+  .demo-strip { background: var(--card-2); border-bottom: 1px solid var(--border); padding: 1.35rem 0; }
+  .demo-strip .wrap { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+  .demo-strip-label { font-size: .84rem; font-weight: 700; color: var(--ink); flex: 0 0 auto; }
+  .demo-strip-label span { display: block; font-weight: 400; color: var(--muted); font-size: .8rem; margin-top: .1rem; }
+  .demo-links { display: flex; gap: .7rem; flex-wrap: wrap; }
+  .demo-link {
+    display: inline-flex; align-items: center; gap: .5rem; padding: .6rem 1rem; border-radius: 999px;
+    background: var(--white); border: 1px solid var(--border); color: var(--ink); font-size: .86rem; font-weight: 600;
+    text-decoration: none; box-shadow: var(--shadow);
+  }
+  .demo-link i { width: 8px; height: 8px; border-radius: 50%; background: var(--good); flex: 0 0 auto; }
+  .demo-link b { color: var(--brand-2-dk); }
+
+  /* ── Tier cards ───────────────────────────────────── */
+  .tier-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; margin-top: 2rem; }
+  @media (min-width: 780px) { .tier-grid { grid-template-columns: 1fr 1fr; } }
+  .tier-card {
+    background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 1.9rem; box-shadow: var(--shadow); display: flex; flex-direction: column;
+  }
+  .tier-card.is-growth { border-color: var(--brand-2); box-shadow: var(--shadow-md); position: relative; }
+  .tier-flag {
+    position: absolute; top: -12px; right: 1.6rem; background: var(--brand-2); color: var(--brand-dk);
+    font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+    padding: .3rem .7rem; border-radius: 999px;
+  }
+  .tier-name { font-size: 1.45rem; font-weight: 800; }
+  .tier-tagline { color: var(--muted); font-size: .92rem; margin-top: .35rem; }
+  .tier-for {
+    margin-top: 1.1rem; padding: .8rem .95rem; background: var(--green-tint); border-radius: var(--radius);
+    font-size: .85rem; color: var(--ink);
+  }
+  .tier-for b { color: var(--good); }
+  .tier-bullets { list-style: none; margin: 1.3rem 0 0; padding: 0; display: grid; gap: .6rem; flex: 1; }
+  .tier-bullets li { display: flex; gap: .55rem; align-items: flex-start; font-size: .89rem; }
+  .tier-bullets svg { flex: 0 0 auto; margin-top: 3px; color: var(--good); }
+  .tier-count {
+    display: flex; align-items: baseline; gap: .4rem; margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px dashed var(--border);
+  }
+  .tier-count b { font-family: var(--font-head); font-size: 2rem; font-variant-numeric: tabular-nums; color: var(--brand-2-dk); }
+  .tier-count span { font-size: .8rem; color: var(--muted); }
+
+  /* ── Comparison table ─────────────────────────────── */
+  .table-scroll { overflow-x: auto; margin-top: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; background: var(--white); font-size: .89rem; min-width: 600px; }
+  thead th {
+    text-align: left; padding: .95rem 1.1rem; background: var(--card-2); font-family: var(--font-head);
+    font-weight: 700; font-size: .95rem; border-bottom: 1px solid var(--border);
+  }
+  thead th.col-tier { text-align: center; width: 130px; }
+  tbody tr:not(:last-child) td { border-bottom: 1px solid var(--border); }
+  tbody tr.group-row td { background: var(--card); font-weight: 700; font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding: .6rem 1.1rem; }
+  tbody td { padding: .8rem 1.1rem; }
+  tbody td.col-tier { text-align: center; }
+  .yes { color: var(--good); font-size: 1.3rem; line-height: 1; }
+  .no { color: var(--muted); opacity: .45; }
+
+  /* ── Why it earns its price ───────────────────────── */
+  .why-grid { display: grid; gap: 1.1rem; grid-template-columns: 1fr; margin-top: 1.8rem; }
+  @media (min-width: 720px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+  .why-card { background: var(--card); border-radius: var(--radius-lg); padding: 1.4rem 1.5rem; border-left: 3px solid var(--brand-2); }
+  .why-card h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: .45rem; }
+  .why-card p { font-size: .89rem; color: var(--muted); }
+
+  /* ── Objections ───────────────────────────────────── */
+  .qa-list { display: grid; gap: 1rem; margin-top: 1.8rem; }
+  .qa-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.3rem; }
+  .qa-q { font-weight: 700; font-size: .93rem; display: flex; gap: .55rem; }
+  .qa-q b { color: var(--brand-2-dk); font-family: var(--font-head); }
+  .qa-a { color: var(--muted); font-size: .89rem; margin-top: .4rem; padding-left: 1.55rem; }
+
+  /* ── Close ────────────────────────────────────────── */
+  .close-band { background: var(--brand); color: #fff; padding: 2.75rem 0; margin-top: 1rem; }
+  .close-band .wrap { display: grid; gap: 1.6rem; grid-template-columns: 1fr; }
+  @media (min-width: 780px) { .close-band .wrap { grid-template-columns: 1.3fr 1fr; align-items: center; } }
+  .close-band h2 { font-size: 1.4rem; font-weight: 800; color: #fff; }
+  .script {
+    background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); border-radius: var(--radius);
+    padding: 1rem 1.2rem; font-size: .92rem; color: rgba(255,255,255,.9); font-style: italic;
+  }
+  .script b { font-style: normal; color: var(--brand-2); }
+  footer { padding: 1.5rem 0 2.5rem; text-align: center; color: var(--muted); font-size: .78rem; }
+
+  @media print {
+    .demo-strip, .close-band { break-inside: avoid; }
+    section { padding: 1.5rem 0; }
+  }
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div>
+      <div class="mark-row">
+        <span class="mark">GS</span>
+        <span class="wordmark">Groundwork Studios</span>
+      </div>
+      <div class="doc-label">Sales Reference · Website Packages</div>
+      <h1>Foundation vs Growth</h1>
+      <p class="masthead-sub">Two tiers of the same build quality — the difference is how much of the customer's buying journey the site actually does for you.</p>
+    </div>
+    <div class="rep-note">
+      <b>For the call</b>
+      Both tiers use the same design system and the same business content, so a prospect can compare them directly without any "which one is the cheap one" awkwardness.
+    </div>
+  </div>
+</header>
+
+<div class="demo-strip">
+  <div class="wrap">
+    <div class="demo-strip-label">Live examples<span>Same fictional business, both tiers — pull these up on the call</span></div>
+    <div class="demo-links">
+      <a class="demo-link" href="https://danielhussain266-lang.github.io/demo-driveways/tier1/" target="_blank" rel="noopener"><i></i>Foundation demo</a>
+      <a class="demo-link" href="https://danielhussain266-lang.github.io/demo-driveways/" target="_blank" rel="noopener"><i></i>Growth demo</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <section id="tiers">
+      <span class="section-eyebrow">The Two Packages</span>
+      <h2 class="section-title">What each one actually gets them</h2>
+      <p class="section-intro">Every site — either tier — is custom-designed, mobile-first, and built on the client's real content. Nothing templated, nothing generic.</p>
+
+      <div class="tier-grid">
+        <article class="tier-card">
+          <div class="tier-name">Foundation</div>
+          <p class="tier-tagline">A complete, professional site that gets a business found and contacted.</p>
+          <div class="tier-for"><b>Best for:</b> businesses that need to look credible online and take enquiries — not yet ready to invest in active lead-generation tools.</div>
+          <ul class="tier-bullets">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Home, About, Portfolio, Reviews and Contact pages</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>A page per service or product line</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Before/after or work-sample gallery</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Contact form, click-to-call, service-area listing</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>FAQ section and on-page SEO basics</li>
+          </ul>
+          <div class="tier-count"><b>10</b><span>pages, typical build</span></div>
+        </article>
+
+        <article class="tier-card is-growth">
+          <span class="tier-flag">Most chosen</span>
+          <div class="tier-name">Growth</div>
+          <p class="tier-tagline">Everything in Foundation, plus the tools that turn visitors into qualified leads without a phone call.</p>
+          <div class="tier-for"><b>Best for:</b> businesses that want the website actively selling — multiple services, a wider area to cover, or enough volume that self-service tools save real staff time.</div>
+          <ul class="tier-bullets">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Interactive quote/estimate calculator</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Drag-to-reveal before/after comparisons</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Multi-step booking or qualifying flow</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Chat-style enquiry widget</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Case studies, blog/advice hub, location pages, team bios</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Video hero and highlight reel</li>
+          </ul>
+          <div class="tier-count"><b>36</b><span>pages, typical build</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="comparison">
+      <span class="section-eyebrow">Side by Side</span>
+      <h2 class="section-title">Full feature comparison</h2>
+      <p class="section-intro">Use this if the prospect wants the specifics rather than the pitch.</p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Feature</th><th class="col-tier">Foundation</th><th class="col-tier">Growth</th></tr>
+          </thead>
+          <tbody>
+            <tr class="group-row"><td colspan="3">Core site</td></tr>
+            <tr><td>Custom design on the client's brand</td><td class="col-tier yes">•</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Mobile-first, fully responsive</td><td class="col-tier yes">•</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Service / product pages</td><td class="col-tier yes">•</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Testimonials and rating display</td><td class="col-tier yes">•</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Contact form</td><td class="col-tier yes">•</td><td class="col-tier yes">•</td></tr>
+
+            <tr class="group-row"><td colspan="3">Lead generation</td></tr>
+            <tr><td>Before/after or work gallery</td><td class="col-tier">Static pairs</td><td class="col-tier">Drag-to-reveal</td></tr>
+            <tr><td>Enquiry flow</td><td class="col-tier">Single form</td><td class="col-tier">Guided multi-step</td></tr>
+            <tr><td>Instant quote / estimate tool</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Chat-style widget</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+
+            <tr class="group-row"><td colspan="3">Content depth &amp; SEO</td></tr>
+            <tr><td>Indexable pages</td><td class="col-tier">~10</td><td class="col-tier">~36</td></tr>
+            <tr><td>Case studies / in-depth project write-ups</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Blog / advice content</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Location-specific landing pages</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Team / about-the-people page</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+
+            <tr class="group-row"><td colspan="3">Trust &amp; polish</td></tr>
+            <tr><td>Guarantee / trust page</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Video hero and highlight reel</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Dark mode</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+            <tr><td>Animated stats and scroll detail</td><td class="col-tier no">—</td><td class="col-tier yes">•</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="why">
+      <span class="section-eyebrow">The Upsell Case</span>
+      <h2 class="section-title">Why Growth earns the difference</h2>
+      <p class="section-intro">Real reasons, not feature-count padding — use whichever lands for the prospect in front of you.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>More pages means more ways to be found</h3>
+          <p>Search engines rank pages, not sites. Every case study, blog post and location page is another door someone can walk through from a search that Foundation's ten pages simply can't open.</p>
+        </div>
+        <div class="why-card">
+          <h3>Tools convert before the phone even rings</h3>
+          <p>A quote calculator or visualiser lets a visitor self-qualify at 11pm on a Sunday. By the time they call, they're not shopping around — they're ready to book.</p>
+        </div>
+        <div class="why-card">
+          <h3>Friction is the real drop-off point</h3>
+          <p>A flat contact form asks someone to write an essay. A guided flow asks four easy questions. Completion rates follow the path of least resistance.</p>
+        </div>
+        <div class="why-card">
+          <h3>Trust content closes the gap a quote can't</h3>
+          <p>Case studies and team bios answer the question a price never can: "will these specific people do a good job for me?" That's what turns a quote into a signature.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="objections">
+      <span class="section-eyebrow">Objection Handling</span>
+      <h2 class="section-title">What they'll actually ask</h2>
+      <div class="qa-list">
+        <div class="qa-item">
+          <div class="qa-q"><b>Q.</b> Isn't Foundation enough to get started?</div>
+          <div class="qa-a">Enough to look credible and take enquiries — yes. It's not built to actively generate or qualify leads on its own. Foundation is the front door; Growth is the sales floor behind it.</div>
+        </div>
+        <div class="qa-item">
+          <div class="qa-q"><b>Q.</b> Can we start with Foundation and upgrade later?</div>
+          <div class="qa-a">Yes, and it's the more common path. Growth is built on the exact same design system and content, so nothing from Foundation gets thrown away — it's extended, not replaced.</div>
+        </div>
+        <div class="qa-item">
+          <div class="qa-q"><b>Q.</b> We only offer one service — do we still need Growth?</div>
+          <div class="qa-a">Growth's edge is sharpest for businesses with several services or a wide coverage area, where extra pages and location targeting compound. A single-service business may get everything it needs from Foundation.</div>
+        </div>
+        <div class="qa-item">
+          <div class="qa-q"><b>Q.</b> Isn't this just "more pages" for a higher price?</div>
+          <div class="qa-a">The page count is a symptom, not the pitch. The actual difference is tools that do work — a calculator, a visualiser, a booking flow — versus a site that just describes the business and waits for the phone to ring.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="close-band">
+    <div class="wrap">
+      <div>
+        <h2>Show, don't just tell</h2>
+        <p style="color:rgba(255,255,255,.78);margin-top:.5rem;font-size:.95rem;">The two live demos above are the strongest asset in this pitch — a prospect clicking between them feels the difference in about ninety seconds, before you've said a word about price.</p>
+      </div>
+      <div class="script">
+        <b>Opening line:</b> "I want to show you two versions of the same website — same business, same design — so you can see exactly what the difference between our packages actually looks like."
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>Groundwork Studios — internal sales reference. Not for external distribution.</footer>
