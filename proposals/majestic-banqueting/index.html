@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Website & Social Growth Proposal — Majestic Banqueting</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+  :root {
+    --brand:      #1E3A2F;
+    --brand-dk:   #14261E;
+    --brand-2:    #C9A227;
+    --brand-2-dk: #A8851C;
+    --surface:    #FAF8F4;
+    --card:       #F2EFE9;
+    --card-2:     #EAE5DA;
+    --border:     #E0DACD;
+    --ink:        #17201B;
+    --muted:      #667065;
+    --white:      #FFFFFF;
+    --green-tint: #E8F0EB;
+    --good:       #2F6B47;
+    --good-bg:    #E7F2EA;
+    --bad:        #A23B3B;
+    --bad-bg:     #F5E7E5;
+
+    --radius:     10px;
+    --radius-lg:  18px;
+    --shadow:     0 2px 18px rgba(23,32,27,.07);
+    --shadow-md:  0 10px 34px rgba(23,32,27,.12);
+
+    --font-head:  'Fraunces', Georgia, serif;
+    --font-body:  'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --surface:    #121814;
+      --card:       #182019;
+      --card-2:     #1E2721;
+      --border:     #2A342C;
+      --ink:        #EDEEE9;
+      --muted:      #96A197;
+      --white:      #1A2219;
+      --green-tint: #1C2A21;
+      --good:       #6FBF8B;
+      --good-bg:    #1A2E22;
+      --bad:        #E08A8A;
+      --bad-bg:     #2E1D1D;
+      --shadow:     0 2px 18px rgba(0,0,0,.35);
+      --shadow-md:  0 10px 34px rgba(0,0,0,.45);
+    }
+  }
+  :root[data-theme="dark"] {
+    --surface:    #121814;
+    --card:       #182019;
+    --card-2:     #1E2721;
+    --border:     #2A342C;
+    --ink:        #EDEEE9;
+    --muted:      #96A197;
+    --white:      #1A2219;
+    --green-tint: #1C2A21;
+    --good:       #6FBF8B;
+    --good-bg:    #1A2E22;
+    --bad:        #E08A8A;
+    --bad-bg:     #2E1D1D;
+    --shadow:     0 2px 18px rgba(0,0,0,.35);
+    --shadow-md:  0 10px 34px rgba(0,0,0,.45);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--font-head); color: var(--ink); text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* ── Masthead ─────────────────────────────────────── */
+  .masthead { background: var(--brand); color: #fff; padding: 3rem 0 2.5rem; }
+  .mark-row { display: flex; align-items: center; gap: .85rem; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 10px; background: var(--brand-2); color: var(--brand-dk);
+    display: grid; place-items: center; font-family: var(--font-head); font-weight: 900; font-size: 1.05rem; flex: 0 0 auto;
+  }
+  .wordmark { font-family: var(--font-head); font-weight: 800; font-size: 1.3rem; letter-spacing: -.01em; }
+  .doc-label {
+    font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brand-2);
+    font-weight: 700; margin-top: 1.4rem;
+  }
+  .masthead h1 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); font-weight: 800; margin-top: .55rem; max-width: 24ch; color: #fff; }
+  .masthead-meta { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.4rem; }
+  .masthead-meta div { font-size: .82rem; color: rgba(255,255,255,.65); }
+  .masthead-meta b { display: block; color: #fff; font-size: .95rem; font-weight: 600; margin-top: .15rem; }
+
+  section { padding: 3rem 0; }
+  .section-eyebrow {
+    font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--brand-2-dk);
+  }
+  .section-title { font-size: clamp(1.4rem, 2.4vw, 1.7rem); font-weight: 800; margin-top: .4rem; }
+  .section-intro { color: var(--muted); font-size: .98rem; max-width: 66ch; margin-top: .7rem; }
+
+  /* ── Stat strip ───────────────────────────────────── */
+  .stat-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); margin-top: 1.8rem; }
+  @media (min-width: 700px) { .stat-grid { grid-template-columns: repeat(4, 1fr); } }
+  .stat-tile { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.3rem 1.2rem; box-shadow: var(--shadow); }
+  .stat-tile b { display: block; font-family: var(--font-head); font-size: 1.9rem; font-variant-numeric: tabular-nums; color: var(--brand-2-dk); }
+  .stat-tile span { font-size: .78rem; color: var(--muted); }
+
+  /* ── Findings list ────────────────────────────────── */
+  .finding-list { display: grid; gap: .9rem; margin-top: 1.8rem; }
+  .finding { display: flex; gap: 1rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.2rem; align-items: flex-start; }
+  .finding .num { font-family: var(--font-head); font-weight: 800; font-size: 1.1rem; color: var(--brand-2-dk); flex: 0 0 auto; width: 1.6rem; }
+  .finding p { font-size: .92rem; }
+  .finding b { color: var(--ink); }
+
+  /* ── Scope cards ──────────────────────────────────── */
+  .scope-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; margin-top: 1.8rem; }
+  @media (min-width: 780px) { .scope-grid { grid-template-columns: 1fr 1fr; } }
+  .scope-card {
+    background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 1.8rem; box-shadow: var(--shadow); display: flex; flex-direction: column;
+  }
+  .scope-name { font-size: 1.25rem; font-weight: 800; }
+  .scope-tag { display: inline-block; margin-top: .5rem; padding: .3rem .7rem; background: var(--green-tint); color: var(--good); font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; border-radius: 999px; }
+  .scope-bullets { list-style: none; margin: 1.2rem 0 0; padding: 0; display: grid; gap: .55rem; flex: 1; }
+  .scope-bullets li { display: flex; gap: .55rem; align-items: flex-start; font-size: .89rem; }
+  .scope-bullets li svg { flex: 0 0 auto; margin-top: 3px; color: var(--good); }
+  .scope-price { display: flex; align-items: baseline; gap: .4rem; margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px dashed var(--border); }
+  .scope-price b { font-family: var(--font-head); font-size: 1.7rem; color: var(--brand-2-dk); }
+  .scope-price span { font-size: .82rem; color: var(--muted); }
+
+  /* ── Investment table ─────────────────────────────── */
+  .invest-table { width: 100%; border-collapse: collapse; margin-top: 1.8rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; font-size: .92rem; }
+  .invest-table th { text-align: left; padding: .9rem 1.1rem; background: var(--card-2); font-family: var(--font-head); font-weight: 700; border-bottom: 1px solid var(--border); }
+  .invest-table td { padding: .9rem 1.1rem; border-bottom: 1px solid var(--border); }
+  .invest-table tr:last-child td { border-bottom: none; }
+  .invest-table td.amt { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--brand-2-dk); white-space: nowrap; }
+  .invest-note { margin-top: 1rem; font-size: .85rem; color: var(--muted); }
+
+  /* ── Timeline ─────────────────────────────────────── */
+  .tl-grid { display: grid; gap: 1.1rem; grid-template-columns: 1fr; margin-top: 1.8rem; }
+  @media (min-width: 720px) { .tl-grid { grid-template-columns: repeat(3, 1fr); } }
+  .tl-step { background: var(--card); border-radius: var(--radius-lg); padding: 1.3rem 1.4rem; border-left: 3px solid var(--brand-2); }
+  .tl-step b.tl-num { display: block; font-family: var(--font-head); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brand-2-dk); margin-bottom: .4rem; }
+  .tl-step h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+  .tl-step p { font-size: .87rem; color: var(--muted); }
+
+  /* ── Close / signature ───────────────────────────── */
+  .close-band { background: var(--brand); color: #fff; padding: 3rem 0; margin-top: 1rem; }
+  .close-band h2 { font-size: 1.5rem; font-weight: 800; color: #fff; max-width: 30ch; }
+  .close-band p.lead { color: rgba(255,255,255,.78); margin-top: .7rem; font-size: .98rem; max-width: 58ch; }
+  .sig-grid { display: grid; gap: 1.2rem; grid-template-columns: 1fr; margin-top: 2.2rem; }
+  @media (min-width: 640px) { .sig-grid { grid-template-columns: 1fr 1fr; } }
+  .sig-box { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.18); border-radius: var(--radius); padding: 1.1rem 1.3rem; }
+  .sig-box b { display: block; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--brand-2); margin-bottom: .7rem; }
+  .sig-line { border-bottom: 1px solid rgba(255,255,255,.35); height: 2.1rem; }
+  .sig-box span { display: block; margin-top: .5rem; font-size: .78rem; color: rgba(255,255,255,.6); }
+
+  footer { padding: 1.6rem 0 2.5rem; text-align: center; color: var(--muted); font-size: .78rem; }
+  footer .contact { margin-top: .3rem; }
+
+  @media print {
+    .close-band { break-inside: avoid; }
+    section { padding: 1.5rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mark-row">
+      <span class="mark">GS</span>
+      <span class="wordmark">Groundwork Studios</span>
+    </div>
+    <div class="doc-label">Proposal · Prepared for Majestic Banqueting</div>
+    <h1>Website &amp; Social Media Growth Proposal</h1>
+    <div class="masthead-meta">
+      <div>Prepared for<b>Majestic Banqueting, Aston, Birmingham</b></div>
+      <div>Date<b>10 September 2026</b></div>
+      <div>Prepared by<b>Groundwork Studios</b></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section id="opportunity">
+      <span class="section-eyebrow">The Opportunity</span>
+      <h2 class="section-title">The demand is already there — the website isn't capturing it</h2>
+      <p class="section-intro">We carried out a full technical audit of majesticbanqueting.com, your Google Business Profile, and your social channels. The headline finding: your reputation and reach are genuinely strong. The website sitting between that audience and a booking is where enquiries are being lost.</p>
+
+      <div class="stat-grid">
+        <div class="stat-tile"><b>4.1★</b><span>833 Google reviews</span></div>
+        <div class="stat-tile"><b>79K</b><span>Facebook followers</span></div>
+        <div class="stat-tile"><b>41.4K</b><span>Instagram followers</span></div>
+        <div class="stat-tile"><b>0</b><span>pages with working analytics</span></div>
+      </div>
+    </section>
+
+    <section id="findings">
+      <span class="section-eyebrow">What We Found</span>
+      <h2 class="section-title">Five gaps costing you enquiries today</h2>
+      <p class="section-intro">The full technical audit covered all 12 pages of the site, your Google Business Profile, and Facebook, Instagram and TikTok. Here's what matters most for booking volume.</p>
+
+      <div class="finding-list">
+        <div class="finding"><span class="num">01</span><p><b>No tracking installed anywhere on the site.</b> There's no way to know which enquiries come from Google, Facebook, or Instagram — or whether marketing spend is working at all.</p></div>
+        <div class="finding"><span class="num">02</span><p><b>No pricing on either package page.</b> Couples can't budget-check themselves before enquiring, so they either don't enquire or enquire unqualified.</p></div>
+        <div class="finding"><span class="num">03</span><p><b>Your Instagram bio link — seen by 41.4K followers — leads to a 13-word dead end</b> with no form, phone number, or pricing.</p></div>
+        <div class="finding"><span class="num">04</span><p><b>Negative reviews go unanswered.</b> None of your reviews at 3 stars or below have a reply, while your 5-star reviews are answered warmly. Every prospect reading reviews sees the complaints sitting unaddressed.</p></div>
+        <div class="finding"><span class="num">05</span><p><b>Links shared in WhatsApp or Facebook groups show no image or title</b> — just a bare grey link, in a market that runs on exactly that kind of sharing.</p></div>
+      </div>
+    </section>
+
+    <section id="plan">
+      <span class="section-eyebrow">The Plan</span>
+      <h2 class="section-title">Two workstreams, built to fix what we found</h2>
+      <p class="section-intro">The website work closes the leaks. The social management turns your existing 120K-follower audience into a channel we can actually measure and grow.</p>
+
+      <div class="scope-grid">
+        <article class="scope-card">
+          <div class="scope-name">Website Upgrade</div>
+          <span class="scope-tag">One-off project</span>
+          <ul class="scope-bullets">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Analytics &amp; tracking installed (Google Analytics, Meta Pixel) so every enquiry can be traced to its source</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Package pages rebuilt with clear "from £X" pricing bands and a side-by-side comparison</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Proper Instagram/social landing page with a real enquiry form, pricing and gallery — replacing the current dead end</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Homepage and About page rewritten around your real strengths — reviews, capacity, real event photography</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Live reviews widget showing your real 4.1★/833-review count instead of the current handful of stale testimonials</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp click-to-chat added site-wide, and the click-to-call links fixed so they work on every phone</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Search &amp; sharing fixes: page titles, meta descriptions, and social share previews on every page</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>FAQ sections added to key pages (capacity, parking, catering, pricing) — written and structured so AI tools like ChatGPT and Google's AI Overviews can find and recommend you when someone asks about wedding venues in Birmingham</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Mobile fix on the Contact page, plus event-page content built out for mehndi, birthdays and graduations</li>
+          </ul>
+          <div class="scope-price"><b>£750</b><span>one-off project</span></div>
+        </article>
+
+        <article class="scope-card">
+          <div class="scope-name">Social Media Management</div>
+          <span class="scope-tag">Monthly retainer</span>
+          <ul class="scope-bullets">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Regular posting and scheduling across Instagram, Facebook and TikTok, built from your existing event photo and video library</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Community management — comments and DMs monitored and answered day to day</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Review response management on Google and Facebook — including the negative reviews currently going unanswered</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Organic content only, built from the photos and clips you send us — paid ads aren't included for now, but can be added on as a package if you'd like to explore that down the line</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Monthly summary of what was posted, how the pages performed, and what's next</li>
+          </ul>
+          <div class="scope-price"><b>£350</b><span>per month, 3-month minimum term</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="investment">
+      <span class="section-eyebrow">Investment</span>
+      <h2 class="section-title">Summary</h2>
+      <table class="invest-table">
+        <tbody>
+          <tr><td>Website Upgrade <span style="color:var(--muted);font-size:.85rem;">— one-off</span></td><td class="amt">£750</td></tr>
+          <tr><td>Social Media Management <span style="color:var(--muted);font-size:.85rem;">— per month, from month 1</span></td><td class="amt">£350 / mo</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Groundwork Studios — this proposal is valid for 30 days from the date above.
+  <div class="contact">Daniel Hussain · daniel@groundworkstudios.co.uk · 07757 409589</div>
+</footer>
+
+</body>
+</html>
