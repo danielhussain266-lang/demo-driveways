@@ -415,7 +415,7 @@ p  { font-size: 1.05rem; color: var(--muted); line-height: 1.7; }
   background-repeat: no-repeat;
 }
 .hero-bg--texture {
-  background-image: url('/demo-driveways/tier1/images/hero-bg.svg');
+  background-image: url('/tier1/images/hero-bg.svg');
   opacity: .18;
 }
 .hero-overlay {
@@ -883,7 +883,7 @@ p  { font-size: 1.05rem; color: var(--muted); line-height: 1.7; }
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/demo-driveways/tier1/images/hero-bg.svg') center/cover;
+  background: url('/tier1/images/hero-bg.svg') center/cover;
   opacity: .08;
 }
 .service-page-hero .container { position: relative; z-index: 1; }
