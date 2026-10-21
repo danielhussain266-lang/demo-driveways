@@ -224,6 +224,7 @@ ${buildUtilityBar()}
       <a href="/portfolio/">Portfolio</a>
       <a href="/reviews/">Reviews</a>
       <a href="/about/">About</a>
+      <a href="/book/">Book Online</a>
       <a href="/contact/">Contact</a>
     </nav>
     <a href="/contact/" class="btn btn-primary nav-cta">Free Quote</a>
@@ -236,6 +237,7 @@ ${buildUtilityBar()}
     <a href="/portfolio/">Portfolio</a>
     <a href="/reviews/">Reviews</a>
     <a href="/about/">About</a>
+    <a href="/book/">Book Online</a>
     <a href="/contact/">Contact</a>
     ${services.map(s => `<a href="/services/${esc(s.slug)}/">&nbsp;&nbsp;↳ ${esc(s.name)}</a>`).join("")}
     <a href="/contact/" class="btn btn-primary mob-cta">Get a Free Quote</a>
@@ -1101,12 +1103,130 @@ ${buildFooter()}
 ${buildScripts()}`;
 }
 
+function buildBookingPage() {
+  const serviceOpts = services.map(s =>
+    `<option value="${esc(s.name)}">${esc(s.name)}</option>`
+  ).concat([`<option value="Other / Not sure">Other / Not sure</option>`]).join("\n");
+
+  const schema = `<script type="application/ld+json">${buildSchema()}</script>`;
+  return buildHead({
+    title: `Book Online — ${c.BUSINESS_NAME}`,
+    description: `Book your ${c.TRADE} appointment online with ${c.BUSINESS_NAME} — pick a service and a time, no phone call needed.`,
+    canonical: "/book/",
+    extraSchema: schema,
+  }) + `
+
+${buildHeader()}
+
+<main>
+  <div class="contact-hero">
+    <div class="container">
+      <span class="section-label">Book Online</span>
+      <h1>Pick a Service, Pick a Time</h1>
+      <p>Choose what you need and a slot that works for you. No phone tag, no waiting for a callback — we'll confirm your booking request directly.</p>
+    </div>
+  </div>
+
+  <section class="contact-body">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-wrap" id="booking-form-wrap">
+          <h2>Request Your Slot</h2>
+          <p>Fill this in and we'll confirm your booking shortly.</p>
+          <div class="contact-reassurances">
+            <div class="reassurance-item">${svg("check", 16)} No payment needed to request a slot</div>
+            <div class="reassurance-item">${svg("check", 16)} We confirm by phone or text, usually same day</div>
+            <div class="reassurance-item">${svg("check", 16)} Change or cancel anytime — just get in touch</div>
+          </div>
+
+          <form id="booking-form" novalidate>
+            <div class="form-group">
+              <label for="b-service">Service Required *</label>
+              <select id="b-service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                ${serviceOpts}
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="b-date">Preferred Date *</label>
+              <input type="date" id="b-date" name="date" required />
+            </div>
+
+            <div class="form-group" id="slot-group" hidden>
+              <label>Available Times *</label>
+              <div class="slot-grid" id="slot-grid" role="group" aria-label="Available time slots"></div>
+              <input type="hidden" id="b-slot" name="slot" required />
+            </div>
+
+            <div class="form-group">
+              <label for="b-name">Your Name *</label>
+              <input type="text" id="b-name" name="name" required placeholder="John Smith" />
+            </div>
+            <div class="form-group">
+              <label for="b-phone">Phone Number *</label>
+              <input type="tel" id="b-phone" name="phone" required placeholder="07700 900000" />
+            </div>
+            <div class="form-group">
+              <label for="b-notes">Anything we should know?</label>
+              <textarea id="b-notes" name="notes" placeholder="e.g. Side access only, park on the drive…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send Enquiry</button>
+            <p class="form-status" id="booking-form-status" aria-live="polite"></p>
+          </form>
+
+          <div class="booking-success" id="booking-success" hidden>
+            ${svg("check", 28, "booking-success-icon")}
+            <h3>Enquiry Sent</h3>
+            <p id="booking-success-summary"></p>
+            <p class="booking-success-note">We'll confirm your slot by phone or text — nothing's booked in stone until we do.</p>
+            <button type="button" class="btn btn-dark" id="booking-reset">Make Another Enquiry</button>
+          </div>
+        </div>
+
+        <div class="contact-info-wrap">
+          <div class="contact-info-card">
+            <h3>How It Works</h3>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">${svg("layers", 20)}</div>
+              <div><h4>Step 1</h4><p style="margin:0;color:var(--ink)">Pick the service and a date that suits you</p></div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">${svg("clock", 20)}</div>
+              <div><h4>Step 2</h4><p style="margin:0;color:var(--ink)">Choose an available time slot</p></div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">${svg("check", 20)}</div>
+              <div><h4>Step 3</h4><p style="margin:0;color:var(--ink)">We confirm your booking directly — usually the same day</p></div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <h3>Prefer to Call?</h3>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">${svg("phone", 20)}</div>
+              <div><h4>Phone</h4><a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ${buildCtaBand()}
+</main>
+
+${buildFooter()}
+${buildScripts()}`;
+}
+
 function buildSitemap() {
   const pages = [
     { loc: `https://${domain}/`, priority: "1.0" },
     { loc: `https://${domain}/portfolio/`, priority: "0.9" },
     { loc: `https://${domain}/about/`, priority: "0.8" },
     { loc: `https://${domain}/reviews/`, priority: "0.8" },
+    { loc: `https://${domain}/book/`, priority: "0.85" },
     { loc: `https://${domain}/contact/`, priority: "0.9" },
     ...services.map(s => ({ loc: `https://${domain}/services/${s.slug}/`, priority: "0.85" })),
   ];
@@ -1125,6 +1245,7 @@ writeFile(path.join(DIST, "index.html"), buildHomePage());
 writeFile(path.join(DIST, "portfolio/index.html"), buildPortfolioPage());
 writeFile(path.join(DIST, "about/index.html"), buildAboutPage());
 writeFile(path.join(DIST, "reviews/index.html"), buildReviewsPage());
+writeFile(path.join(DIST, "book/index.html"), buildBookingPage());
 writeFile(path.join(DIST, "contact/index.html"), buildContactPage());
 
 services.forEach(service => {
@@ -1144,6 +1265,6 @@ if (fs.existsSync(path.join(ROOT, "_redirects"))) {
 console.log("✅ Build complete →");
 console.log(`   Home:      dist/index.html`);
 console.log(`   Portfolio: dist/portfolio/`);
-console.log(`   Pages:     about, reviews, contact`);
+console.log(`   Pages:     about, reviews, book, contact`);
 console.log(`   Services:  ${services.map(s => s.slug).join(", ")}`);
 console.log(`   Sitemap:   dist/sitemap.xml`);
