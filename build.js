@@ -12,6 +12,14 @@ const c    = require("./site.config.js");
 const ROOT = __dirname;
 const DIST = path.join(ROOT, "dist");
 
+// `node build.js salon` (or SITE=salon) builds only the salon demo, at the
+// site root, so it can be deployed as its own Cloudflare Pages project.
+if (process.argv[2] === "salon" || process.env.SITE === "salon") {
+  fs.rmSync(DIST, { recursive: true, force: true });
+  require("./salon/build.js").build({ dist: DIST, base: "" });
+  return;
+}
+
 // ── helpers ──────────────────────────────────────────────
 
 function esc(str) {
@@ -1261,6 +1269,9 @@ copyDir(path.join(ROOT, "admin"),  path.join(DIST, "admin"));
 if (fs.existsSync(path.join(ROOT, "_redirects"))) {
   fs.copyFileSync(path.join(ROOT, "_redirects"), path.join(DIST, "_redirects"));
 }
+
+// The salon demo also ships inside this site at /salon/ as a preview.
+require("./salon/build.js").build({ dist: path.join(DIST, "salon"), base: "/salon" });
 
 console.log("✅ Build complete →");
 console.log(`   Home:      dist/index.html`);
