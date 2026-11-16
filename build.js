@@ -20,6 +20,13 @@ if (process.argv[2] === "salon" || process.env.SITE === "salon") {
   return;
 }
 
+// `node build.js clinic` (or SITE=clinic) builds only the clinic draft, at the site root.
+if (process.argv[2] === "clinic" || process.env.SITE === "clinic") {
+  fs.rmSync(DIST, { recursive: true, force: true });
+  require("./clinic/build.js").build({ dist: DIST, base: "" });
+  return;
+}
+
 // ── helpers ──────────────────────────────────────────────
 
 function esc(str) {
@@ -1272,6 +1279,8 @@ if (fs.existsSync(path.join(ROOT, "_redirects"))) {
 
 // The salon demo also ships inside this site at /salon/ as a preview.
 require("./salon/build.js").build({ dist: path.join(DIST, "salon"), base: "/salon" });
+// The Edgbaston clinic draft ships at /edgbaston/ as a preview.
+require("./clinic/build.js").build({ dist: path.join(DIST, "edgbaston"), base: "/edgbaston" });
 
 console.log("✅ Build complete →");
 console.log(`   Home:      dist/index.html`);
