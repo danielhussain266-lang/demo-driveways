@@ -37,6 +37,25 @@ const config = {
   EMAIL:      "hello@wrenandwillow.example",
   INSTAGRAM_HANDLE: "wrenandwillowhair",
 
+  // --- WhatsApp: international format, digits only (44 + number without the 0).
+  // Leave WHATSAPP_NUMBER as "" to switch the button off.
+  // The demo number is a reserved sample: it never reaches a real phone.
+  WHATSAPP_NUMBER: "441632960432",
+  WHATSAPP_OPTIONS: [
+    { label: "Book an appointment",         hint: "See what's free this week",
+      message: "Hi {name}, I'd like to book an appointment. Could you tell me what you have free this week?" },
+    { label: "Ask about prices",            hint: "Cuts, colour, nails, brows",
+      message: "Hi {name}, could you tell me the price for [service]? I'd like to know roughly how long it takes too." },
+    { label: "Colour consultation",         hint: "Free chat and patch test",
+      message: "Hi {name}, I'd like to arrange a free colour consultation and patch test. What day would suit?" },
+    { label: "Bridal or occasion enquiry",  hint: "Weddings, proms, events",
+      message: "Hi {name}, I'm enquiring about hair and make-up for an occasion. The date is [date] and there are [number] of us." },
+    { label: "Change or cancel",            hint: "Already booked in",
+      message: "Hi {name}, I need to change or cancel my appointment. My name is [name] and it's on [day]." },
+    { label: "Something else",              hint: "Any other question",
+      message: "Hi {name}, I have a question." },
+  ],
+
   ADDRESS_STREET:   "12 Sample Street",
   ADDRESS_AREA:     "Earlsdon",
   ADDRESS_CITY:     "Coventry",
