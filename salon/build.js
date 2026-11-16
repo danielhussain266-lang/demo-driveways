@@ -133,7 +133,7 @@ function build({ dist, base = "" }) {
 
   function demoBar() {
     if (!c.DEMO_NOTICE) return "";
-    return `<div class="demo-bar"><span>${esc(c.DEMO_NOTICE)}</span> <a href="${esc(c.STUDIO_URL)}" target="_blank" rel="noopener">Want one like this?</a></div>`;
+    return `<div class="demo-bar"><span>${esc(c.DEMO_NOTICE)}</span> <a href="${esc(c.DEMO_LINK_URL || c.STUDIO_URL)}" target="_blank" rel="noopener">Want one like this?</a></div>`;
   }
 
   const NAV = [
