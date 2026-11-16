@@ -348,8 +348,24 @@
     render(false);
   }
 
+  /* ── WhatsApp menu ──────────────────────────────── */
+  function initWhatsApp() {
+    var fab = $('wa-fab'), panel = $('wa-panel'), close = $('wa-close');
+    if (!fab || !panel) return;
+    function set(open) {
+      panel.hidden = !open;
+      fab.setAttribute('aria-expanded', String(open));
+      if (open) { var first = panel.querySelector('a'); if (first) first.focus(); } else { fab.focus(); }
+    }
+    fab.addEventListener('click', function () { set(panel.hidden); });
+    close.addEventListener('click', function () { set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) set(false); });
+    document.addEventListener('click', function (e) { if (!panel.hidden && !$('wa').contains(e.target)) { panel.hidden = true; fab.setAttribute('aria-expanded', 'false'); } });
+  }
+
   initNav();
   initHours();
+  initWhatsApp();
   initGallery();
   initMessageForm();
   initBooking();
