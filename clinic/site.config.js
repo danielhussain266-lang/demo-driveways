@@ -54,6 +54,17 @@ const config = {
       message: "Hi {name}, I have a question." },
   ],
 
+  // Email sign-up on the home page. In this draft nothing is sent or stored.
+  // To go live, set ACTION to the form address from the clinic's email tool
+  // (Mailchimp, Brevo, etc.) and check the field names it expects.
+  EMAIL_SIGNUP: {
+    EYEBROW: "Stay in touch",
+    HEADING: "News and offers from the clinic",
+    TEXT: "Leave your email and we'll send occasional updates on treatments, seasonal offers and clinic news. No spam, and you can unsubscribe at any time.",
+    CONSENT: "Yes, I'd like to receive emails from Edgbaston Wellness Clinic.",
+    ACTION: "",
+  },
+
   // Facts taken from their own website and Cliniko booking page. The clinic should confirm each.
   TRUST: [
     "Established in 2019",

@@ -362,9 +362,37 @@ ${header("/")}
     </div>
   </section>
 
+  ${emailSignup()}
+
   ${ctaBand()}
 </main>
 ${footer()}`;
+  }
+
+  function emailSignup() {
+    const e = c.EMAIL_SIGNUP;
+    if (!e) return "";
+    return `<section class="section" id="signup">
+    <div class="container">
+      <div class="signup">
+        <div class="signup-text">
+          <span class="eyebrow">${esc(e.EYEBROW)}</span>
+          <h2>${esc(e.HEADING)}</h2>
+          <p>${esc(e.TEXT)}</p>
+        </div>
+        <form class="signup-form" id="signup-form" novalidate${e.ACTION ? ` action="${esc(e.ACTION)}" method="post"` : ""}>
+          <div class="field">
+            <label for="s-email">Email address</label>
+            <input type="email" id="s-email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required />
+          </div>
+          <label class="check"><input type="checkbox" id="s-consent" name="consent" required /> <span>${esc(e.CONSENT)}</span></label>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+          <p class="form-status" id="signup-status" role="status" hidden></p>
+          <p class="fine">We'll only use your email to send the updates you asked for.${c.DEMO_NOTICE && !e.ACTION ? " Draft: this form does not send or store anything yet." : ""}</p>
+        </form>
+      </div>
+    </div>
+  </section>`;
   }
 
   function mapEmbed() {

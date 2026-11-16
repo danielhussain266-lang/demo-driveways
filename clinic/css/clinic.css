@@ -255,6 +255,15 @@ p { text-wrap: pretty; }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
 .contact-cards, .contact-side { display: grid; gap: 16px; align-content: start; }
 
+/* ── Email sign-up ────────────────────────────────── */
+.signup { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 22px; box-shadow: var(--shadow); border-top: 4px solid var(--gold); }
+.signup-text p { color: var(--muted); margin-top: 10px; }
+.signup-form .field { margin-bottom: 12px; }
+.check { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 14px; font-size: .94rem; cursor: pointer; }
+.check input { width: 22px; height: 22px; margin-top: 1px; flex: none; accent-color: var(--mid); }
+.signup-form .btn { width: 100%; }
+.signup-form .fine { margin-top: 12px; }
+
 /* ── Footer ───────────────────────────────────────── */
 .site-footer { background: var(--deep); color: #D5DCEC; padding: 52px 0 28px; font-size: .95rem; }
 .site-footer a { color: #fff; text-decoration: none; }
@@ -347,6 +356,8 @@ p { text-wrap: pretty; }
   .contact-grid { grid-template-columns: 4fr 7fr; gap: 32px; }
   .book-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 28px; }
   .detail-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 40px; }
+  .signup { grid-template-columns: 1fr 1fr; gap: 56px; padding: 40px 44px; }
+  .signup-form .btn { width: auto; }
   .detail-side { position: sticky; top: 96px; }
   .book-side { position: sticky; top: 96px; }
   .wa { right: 24px; bottom: 24px; }
