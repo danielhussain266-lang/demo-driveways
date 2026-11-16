@@ -53,6 +53,7 @@ function build({ dist, base = "" }) {
   const data = JSON.parse(fs.readFileSync(path.join(SRC, "treatments.json"), "utf8"));
   const year = new Date().getFullYear();
   const u    = (p) => base + p;
+  const details = JSON.parse(fs.readFileSync(path.join(SRC, "treatment-details.json"), "utf8"));
   const cats = data.categories;
   const catName = (id) => cats.find(k => k.id === id).name;
   const treatmentsOf = (id) => data.treatments.filter(t => t.cat === id);
@@ -220,11 +221,24 @@ ${dataScript}
 </section>`;
   }
 
+  // First sentence or two of the clinic's own description, kept short for the card.
+  function summaryOf(t) {
+    const text = ((details[t.slug] || {}).intro || [])[0] || "";
+    if (text.length <= 170) return text;
+    const cut = text.slice(0, 170);
+    const stop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+    return stop > 70 ? cut.slice(0, stop + 1) : cut.slice(0, cut.lastIndexOf(" ")) + "…";
+  }
+  const detailHref = (t) => u(`/treatments/${t.cat}/${t.slug}/`);
+
   function treatmentCard(t) {
+    const sum = summaryOf(t);
     return `<article class="tr-card" data-name="${esc(t.name.toLowerCase())}">
       <span class="tr-kind">${esc(t.kind)}</span>
-      <h3>${esc(t.name)}</h3>
+      <h3><a href="${detailHref(t)}">${esc(t.name)}</a></h3>
       <p class="tr-price${t.price ? "" : " tr-price-none"}">${t.price ? esc(t.price) : "Price on consultation"}</p>
+      ${sum ? `<p class="tr-summary">${esc(sum)}</p>` : ""}
+      <a class="text-link tr-more" href="${detailHref(t)}">Read more ${icon("arrow", 16)}</a>
       <div class="tr-actions">
         <a class="btn btn-primary btn-sm" href="${u("/book/")}">Book a consultation</a>
         ${waOn ? `<a class="btn btn-outline btn-sm" href="${esc(waAbout(t.name))}" target="_blank" rel="noopener">${waIcon(16)} Ask about this</a>` : ""}
@@ -420,6 +434,58 @@ ${header("/treatments/")}
 ${footer()}`;
   }
 
+  function treatmentPage(t) {
+    const k = cats.find(x => x.id === t.cat);
+    const d = details[t.slug] || { intro: [], facts: {}, faqs: [] };
+    const factRows = [
+      ["Price", t.price || "On consultation"],
+      d.facts.time ? ["Treatment time", d.facts.time] : null,
+      d.facts.downtime ? ["Downtime", d.facts.downtime] : null,
+      d.facts.risks ? ["Possible effects", d.facts.risks] : null,
+    ].filter(Boolean);
+    return head({
+      title: `${t.name} | ${c.BUSINESS_NAME}`,
+      description: (d.intro[0] || `${t.name} at ${c.BUSINESS_NAME}, Edgbaston.`).slice(0, 155),
+      canonical: `/treatments/${t.cat}/${t.slug}/`,
+    }) + `
+${header("/treatments/")}
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="${u("/treatments/")}">Treatments</a> <span aria-hidden="true">/</span> <a href="${u("/treatments/" + k.id + "/")}">${esc(k.name)}</a> <span aria-hidden="true">/</span> <span>${esc(t.name)}</span></nav>
+      <span class="eyebrow">${esc(t.kind)}</span>
+      <h1>${esc(t.name)}</h1>
+    </div>
+  </section>
+  <section class="section section-tight">
+    <div class="container detail-layout">
+      <div class="detail-main">
+        ${d.intro.map((x, i) => `<p${i === 0 ? ' class="lead"' : ""}>${esc(x)}</p>`).join("\n        ")}
+        ${d.faqs.length ? `<h2 class="detail-h">Common questions</h2>
+        <div class="faq">
+          ${d.faqs.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("\n          ")}
+        </div>` : ""}
+        <p class="fine">${c.DEMO_NOTICE ? "Draft: this text is the clinic's own wording from their website, and the clinic should check and approve it. " : ""}${t.orig ? `<a href="${esc(t.orig)}" target="_blank" rel="noopener">See it on their current website</a>` : ""}</p>
+      </div>
+      <aside class="detail-side">
+        <div class="info-card">
+          <h2>At a glance</h2>
+          <ul class="price-rows">
+            ${factRows.map(r => `<li><span>${esc(r[0])}</span><strong>${esc(r[1])}</strong></li>`).join("\n            ")}
+          </ul>
+          <p class="detail-actions">
+            <a class="btn btn-primary" href="${u("/book/")}">Book a consultation</a>
+            ${waOn ? `<a class="btn btn-outline" href="${esc(waAbout(t.name))}" target="_blank" rel="noopener">${waIcon(18)} Ask about this</a>` : ""}
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  ${ctaBand()}
+</main>
+${footer()}`;
+  }
+
   function bookPage() {
     return head({
       title: `Book Online | ${c.BUSINESS_NAME}`,
@@ -542,6 +608,7 @@ ${footer()}`;
   writeFile(path.join(dist, "index.html"),            homePage());
   writeFile(path.join(dist, "treatments/index.html"), treatmentsPage());
   cats.forEach(k => writeFile(path.join(dist, `treatments/${k.id}/index.html`), categoryPage(k)));
+  data.treatments.forEach(t => writeFile(path.join(dist, `treatments/${t.cat}/${t.slug}/index.html`), treatmentPage(t)));
   writeFile(path.join(dist, "book/index.html"),       bookPage());
   writeFile(path.join(dist, "about/index.html"),      aboutPage());
   writeFile(path.join(dist, "contact/index.html"),    contactPage());

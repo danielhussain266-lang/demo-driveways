@@ -195,12 +195,33 @@ p { text-wrap: pretty; }
 .tr-card h3 { font-size: 1.35rem; }
 .tr-price { font-weight: 700; color: var(--deep); }
 .tr-price-none { font-weight: 500; color: var(--muted); }
+.tr-card h3 a { text-decoration: none; }
+.tr-card h3 a:hover { color: var(--mid); }
+.tr-summary { color: var(--muted); font-size: .95rem; }
+.tr-more { margin-top: 2px; font-size: .94rem; }
 .tr-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; }
 .tr-actions .btn-outline { color: var(--wa-dk); border-color: var(--wa); }
 .tr-actions .btn-outline:hover { background: #E7F5EC; }
 .tr-group.is-empty { display: none; }
 .more-note { margin-top: 28px; text-align: center; color: var(--muted); }
 .more-note a { color: var(--mid); font-weight: 600; }
+
+/* ── Treatment detail ─────────────────────────────── */
+.detail-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: start; }
+.detail-main > p { margin-bottom: 16px; color: var(--muted); }
+.detail-main > p.lead { color: var(--ink); }
+.detail-main > p.fine { margin-top: 24px; }
+.detail-h { font-size: 1.7rem; margin: 30px 0 12px; }
+.detail-main a { color: var(--mid); }
+.faq details { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; }
+.faq summary { cursor: pointer; padding: 15px 18px; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--mid); font-size: 1.3rem; line-height: 1; }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { padding: 0 18px 16px; color: var(--muted); }
+.detail-actions { display: grid; gap: 10px; margin-top: 18px; }
+.detail-side .price-rows li { padding: 10px 0; }
+.detail-side .price-rows strong { white-space: normal; text-align: right; }
 
 /* ── Booking ──────────────────────────────────────── */
 .book-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
@@ -214,7 +235,7 @@ p { text-wrap: pretty; }
 .info-card, .message-form { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px; box-shadow: var(--shadow); }
 .info-card h2, .message-form h2 { font-family: var(--font-body); font-size: 1.05rem; font-weight: 700; display: flex; align-items: center; gap: 8px; margin-bottom: 12px; color: var(--deep); }
 .info-card h2 .icon { color: var(--mid); }
-.info-card a { color: var(--mid); font-weight: 600; text-decoration: none; }
+.info-card a:not(.btn) { color: var(--mid); font-weight: 600; text-decoration: none; }
 .fine { color: var(--muted); font-size: .84rem; margin-top: 10px; }
 
 /* ── About / team ─────────────────────────────────── */
@@ -325,6 +346,8 @@ p { text-wrap: pretty; }
   .footer-grid { grid-template-columns: 1.3fr 1fr 1.3fr .8fr; gap: 40px; }
   .contact-grid { grid-template-columns: 4fr 7fr; gap: 32px; }
   .book-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 28px; }
+  .detail-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 40px; }
+  .detail-side { position: sticky; top: 96px; }
   .book-side { position: sticky; top: 96px; }
   .wa { right: 24px; bottom: 24px; }
   .theme-toggle { left: 24px; bottom: 24px; }
