@@ -1,0 +1,473 @@
+{
+ "categories": [
+  {
+   "id": "iv-therapies",
+   "name": "IV Therapies",
+   "orig": "https://edgbastonwellness.co.uk/iv-therapies/"
+  },
+  {
+   "id": "facial-aesthetics",
+   "name": "Facial Aesthetics",
+   "orig": "https://edgbastonwellness.co.uk/facial-aesthetics/"
+  },
+  {
+   "id": "body-treatments",
+   "name": "Body Treatments",
+   "orig": "https://edgbastonwellness.co.uk/body-treatments/"
+  },
+  {
+   "id": "hair-treatments",
+   "name": "Hair Treatments",
+   "orig": "https://edgbastonwellness.co.uk/hair-treatments/"
+  },
+  {
+   "id": "womens-health",
+   "name": "Women's Health",
+   "orig": "https://edgbastonwellness.co.uk/womens-health/"
+  },
+  {
+   "id": "mens-health",
+   "name": "Men's Health",
+   "orig": "https://edgbastonwellness.co.uk/mens-health/"
+  },
+  {
+   "id": "medical-services",
+   "name": "Medical Services",
+   "orig": "https://edgbastonwellness.co.uk/medical-services/"
+  }
+ ],
+ "treatments": [
+  {
+   "cat": "iv-therapies",
+   "slug": "iv-advanced-energiser-drip",
+   "name": "Advanced Energiser IV",
+   "kind": "IV drip",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/iv-advanced-energiser-drip/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "iv-anti-ageing-drip",
+   "name": "Anti Ageing IV",
+   "kind": "IV drip",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/iv-anti-ageing-drip/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "iv-fat-burner-plus-3",
+   "name": "Fat Burner Plus IV",
+   "kind": "IV drip",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/iv-fat-burner-plus-3/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "glutathione-shot",
+   "name": "Glutathione IV",
+   "kind": "IV drip",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/glutathione-shot/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "iv-hair-nourishment-drip",
+   "name": "Biotin Hair Nourishment IV",
+   "kind": "IV drip",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/iv-hair-nourishment-drip/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "iv-nadh-drip-2",
+   "name": "NADH IV",
+   "kind": "IV drip",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/iv-nadh-drip-2/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "iv-modified-wellness-myers-formula",
+   "name": "Myers Formula IV",
+   "kind": "IV drip",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/iv-modified-wellness-myers-formula/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "im-vitamin-d-shot",
+   "name": "Vitamin D Shot",
+   "kind": "Vitamin shot",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/im-vitamin-d-shot/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "vitamin-b-complex-shot",
+   "name": "IM/IV Vitamin B Complex Shot",
+   "kind": "Vitamin shot",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/vitamin-b-complex-shot/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "iv-immuno-booster",
+   "name": "Immuno Booster Shot",
+   "kind": "Vitamin shot",
+   "price": "From £250",
+   "orig": "https://edgbastonwellness.co.uk/iv-immuno-booster/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "fat-burner-shot",
+   "name": "Fat Burner Shot",
+   "kind": "Vitamin shot",
+   "price": "Consultation from £25",
+   "orig": "https://edgbastonwellness.co.uk/fat-burner-shot/"
+  },
+  {
+   "cat": "iv-therapies",
+   "slug": "iron-infusions-for-anemia",
+   "name": "Iron Infusions For Anemia",
+   "kind": "Infusion",
+   "price": "Consultation £99, infusion £650",
+   "orig": "https://edgbastonwellness.co.uk/iron-infusions-for-anemia/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "hydrafacial-syndeo",
+   "name": "Hydrafacials",
+   "kind": "Facial",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/hydrafacial-syndeo/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "clear-lift",
+   "name": "Clearlift Laser Facial",
+   "kind": "Laser treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/clear-lift/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "micro-needling",
+   "name": "Micro Needling",
+   "kind": "Skin treatment",
+   "price": "From £125",
+   "orig": "https://edgbastonwellness.co.uk/micro-needling/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "acne-scar-treatment",
+   "name": "Acne Scar Treatment",
+   "kind": "Skin treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/acne-scar-treatment/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "facial-and-chemical-skin-peels",
+   "name": "Facial and Chemical Skin Peels",
+   "kind": "Skin treatment",
+   "price": "£150 to £300, by peel and area",
+   "orig": "https://edgbastonwellness.co.uk/facial-and-chemical-skin-peels/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "mesotherapy-face",
+   "name": "Mesotherapy Face Treatment",
+   "kind": "Skin treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/mesotherapy-face/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "muscle-relaxing-injections",
+   "name": "Muscle Relaxing / Anti-Wrinkle Injections",
+   "kind": "Injection treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/muscle-relaxing-injections/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "neckasticity-nefertiti-neck-lift-treatment",
+   "name": "Nefertiti Neck Lift",
+   "kind": "Skin treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/neckasticity-nefertiti-neck-lift-treatment/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "non-surgical-face-lifts",
+   "name": "Non-Surgical Face Lifts",
+   "kind": "Skin treatment",
+   "price": "From £550",
+   "orig": "https://edgbastonwellness.co.uk/non-surgical-face-lifts/"
+  },
+  {
+   "cat": "facial-aesthetics",
+   "slug": "profhiloewc",
+   "name": "Profhilo",
+   "kind": "Injection treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/profhiloewc/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "bum-lift",
+   "name": "Bum Lift",
+   "kind": "Body treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/bum-lift/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "body-contouring",
+   "name": "Body Contouring",
+   "kind": "Body treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/body-contouring/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "hyperhidrosis-excessive-sweating",
+   "name": "Hyperhidrosis (Excessive Sweating)",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/hyperhidrosis-excessive-sweating/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "laser-tattoo-removal",
+   "name": "Laser Tattoo Removal",
+   "kind": "Laser treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/laser-tattoo-removal/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "migraine-relief-injections",
+   "name": "Migraine Relief Injections",
+   "kind": "Injection treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/migraine-relief-injections/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "mole-removal-skin-lesion-removal",
+   "name": "Mole Removal and Skin Lesion Removal",
+   "kind": "Minor procedure",
+   "price": "Consultation £85",
+   "orig": "https://edgbastonwellness.co.uk/mole-removal-skin-lesion-removal/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "stretch-mark-removal",
+   "name": "Stretch Mark Removal",
+   "kind": "Skin treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/stretch-mark-removal/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "hand-rejuvenation",
+   "name": "Hand Rejuvenation",
+   "kind": "Skin treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/hand-rejuvenation/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "radiofrequency-facial-skin-tightening",
+   "name": "Radiofrequency Skin Tightening",
+   "kind": "Skin treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/radiofrequency-facial-skin-tightening/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "thread-vein-removal-microsclerotherapy",
+   "name": "Thread Vein Removal",
+   "kind": "Procedure",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/thread-vein-removal-microsclerotherapy/"
+  },
+  {
+   "cat": "body-treatments",
+   "slug": "joint-and-soft-tissue-injections",
+   "name": "Joint and Soft Tissue Injections",
+   "kind": "Injection treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/joint-and-soft-tissue-injections/"
+  },
+  {
+   "cat": "hair-treatments",
+   "slug": "laser-hair-removal",
+   "name": "Laser Hair Removal",
+   "kind": "Laser treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/laser-hair-removal/"
+  },
+  {
+   "cat": "womens-health",
+   "slug": "vaginal-rejuvenation",
+   "name": "Vaginal Rejuvenation",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/vaginal-rejuvenation/"
+  },
+  {
+   "cat": "womens-health",
+   "slug": "vaginal-filler-treatment",
+   "name": "Vaginal Filler Treatment",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/vaginal-filler-treatment/"
+  },
+  {
+   "cat": "womens-health",
+   "slug": "vaginal-dryness-treatment",
+   "name": "Vaginal Dryness Treatment",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/vaginal-dryness-treatment/"
+  },
+  {
+   "cat": "womens-health",
+   "slug": "menopause-clinic",
+   "name": "Menopause Clinic",
+   "kind": "Clinic service",
+   "price": "Consultation £250",
+   "orig": "https://edgbastonwellness.co.uk/menopause-clinic/"
+  },
+  {
+   "cat": "womens-health",
+   "slug": "female-incontinence-treatment",
+   "name": "Female Incontinence Treatment",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/female-incontinence-treatment/"
+  },
+  {
+   "cat": "womens-health",
+   "slug": "intimate-skin-lightening",
+   "name": "Intimate Skin Lightening",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/intimate-skin-lightening/"
+  },
+  {
+   "cat": "womens-health",
+   "slug": "full-sexual-health-screening",
+   "name": "Full Sexual Health Screening",
+   "kind": "Screening",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/full-sexual-health-screening/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "baby-circumcision",
+   "name": "Baby circumcision",
+   "kind": "Procedure",
+   "price": "From £250, by age",
+   "orig": "https://edgbastonwellness.co.uk/baby-circumcision/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "adult-circumcision-birmingham",
+   "name": "Adult circumcision",
+   "kind": "Procedure",
+   "price": "Consultation £50, procedure from £1,400",
+   "orig": "https://edgbastonwellness.co.uk/adult-circumcision-birmingham/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "vasectomy",
+   "name": "Vasectomy",
+   "kind": "Procedure",
+   "price": "£750",
+   "orig": "https://edgbastonwellness.co.uk/vasectomy/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "microscopic-vasectomy-reversal",
+   "name": "Microscopic Vasectomy Reversal",
+   "kind": "Procedure",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/microscopic-vasectomy-reversal/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "peyronies-disease-treatment-3",
+   "name": "Peyronie's Disease Treatment",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/peyronies-disease-treatment-3/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "male-incontinence-treatment",
+   "name": "Male Incontinence Treatment",
+   "kind": "Treatment",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/male-incontinence-treatment/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "hydrocele-treatment",
+   "name": "Hydrocele Treatment",
+   "kind": "Procedure",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/hydrocele-treatment/"
+  },
+  {
+   "cat": "mens-health",
+   "slug": "urethral-bulking",
+   "name": "Urethral Bulking",
+   "kind": "Procedure",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/urethral-bulking/"
+  },
+  {
+   "cat": "medical-services",
+   "slug": "private-gp-consultation",
+   "name": "Private GP Consultation",
+   "kind": "Consultation",
+   "price": "From £85",
+   "orig": "https://edgbastonwellness.co.uk/private-gp-consultation/"
+  },
+  {
+   "cat": "medical-services",
+   "slug": "travel-vaccination",
+   "name": "Travel Vaccination",
+   "kind": "Vaccination",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/travel-vaccination/"
+  },
+  {
+   "cat": "medical-services",
+   "slug": "urology-treatments",
+   "name": "Urology Treatments",
+   "kind": "Clinic service",
+   "price": "Consultation £250",
+   "orig": "https://edgbastonwellness.co.uk/urology-treatments/"
+  },
+  {
+   "cat": "medical-services",
+   "slug": "flexible-cystoscopy",
+   "name": "Flexible Cystoscopy",
+   "kind": "Procedure",
+   "price": "",
+   "orig": "https://edgbastonwellness.co.uk/flexible-cystoscopy/"
+  },
+  {
+   "cat": "medical-services",
+   "slug": "minor-surgeries",
+   "name": "Minor Surgeries",
+   "kind": "Minor procedure",
+   "price": "Mole assessment from £150",
+   "orig": "https://edgbastonwellness.co.uk/minor-surgeries/"
+  }
+ ]
+}
