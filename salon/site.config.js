@@ -18,6 +18,7 @@ const config = {
   // --- Demo ribbon (set to "" to remove on a real client site) ---
   DEMO_NOTICE: "Demo website by Groundwork Studios. Sample content: this salon is not real.",
   STUDIO_URL:  "https://groundworkstudios.co.uk",
+  DEMO_LINK_URL: "https://www.instagram.com/groundworkstudios_/",
 
   // --- Hero ---
   HERO_EYEBROW:     "Hair · Colour · Beauty in Earlsdon",
