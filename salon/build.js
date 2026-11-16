@@ -216,7 +216,7 @@ function build({ dist, base = "" }) {
   </div>
   <div class="container footer-bottom">
     <span>&copy; ${year} ${esc(c.BUSINESS_NAME)}${c.DEMO_NOTICE ? " (demo site, sample content)" : ""}</span>
-    <span>Website by <a href="${esc(c.STUDIO_URL)}" rel="noopener" target="_blank">Groundwork Studios</a></span>
+    <span>Website by <a href="${esc(c.DEMO_LINK_URL || c.STUDIO_URL)}" rel="noopener" target="_blank">Groundwork Studios</a></span>
   </div>
 </footer>
 <div class="mobile-bar">
