@@ -4,14 +4,14 @@
 // Treatments and prices live in treatments.json and only show a
 // price where the clinic publishes one. Edit here, then run:
 //   node build.js clinic     → this site on its own
-//   node build.js            → driveways site + this at /edgbaston/
+//   (deployed as its own Cloudflare Pages project, build command: node build.js clinic)
 // ============================================================
 
 const config = {
 
   BUSINESS_NAME: "Edgbaston Wellness Clinic",
   LOGO_ALT:      "Edgbaston Wellness Clinic",
-  DOMAIN:        "demo-driveways.pages.dev/edgbaston",
+  DOMAIN:        "edgbaston-wellness-demo.pages.dev",
 
   // Draft ribbon (set to "" on a real client site)
   DEMO_NOTICE: "Draft concept by Groundwork Studios for Edgbaston Wellness Clinic. This is not their live website.",

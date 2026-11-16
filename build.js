@@ -1279,8 +1279,6 @@ if (fs.existsSync(path.join(ROOT, "_redirects"))) {
 
 // The salon demo also ships inside this site at /salon/ as a preview.
 require("./salon/build.js").build({ dist: path.join(DIST, "salon"), base: "/salon" });
-// The Edgbaston clinic draft ships at /edgbaston/ as a preview.
-require("./clinic/build.js").build({ dist: path.join(DIST, "edgbaston"), base: "/edgbaston" });
 
 console.log("✅ Build complete →");
 console.log(`   Home:      dist/index.html`);
