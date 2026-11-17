@@ -424,7 +424,7 @@ ${header("/treatments/")}
       <p class="search-status" id="tr-status" role="status" aria-live="polite"></p>
       ${cats.map(k => `<section class="tr-group" data-group data-cat="${k.id}">
         <header class="tr-group-head">
-          <h2 id="${k.id}"><a href="${u("/treatments/" + k.id + "/")}">${esc(k.name)}</a></h2>
+          <h2 id="area-${k.id}"><a href="${u("/treatments/" + k.id + "/")}">${esc(k.name)}</a></h2>
           <span>${treatmentsOf(k.id).length}</span>
         </header>
         <div class="tr-grid">
