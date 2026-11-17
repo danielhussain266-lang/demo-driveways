@@ -91,6 +91,21 @@
     });
   }
 
+  /* ── Email sign-up (draft: nothing is sent unless an action is set) ── */
+  function initSignup() {
+    var form = $('signup-form');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      var status = $('signup-status');
+      if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
+      if (form.getAttribute('action')) return; // live: let the email tool take it
+      e.preventDefault();
+      form.reset();
+      status.textContent = 'Thanks, you\'re on the list.';
+      status.hidden = false;
+    });
+  }
+
   /* ── Cliniko iframe height ──────────────────────── */
   // Cliniko tells the parent page how tall its content is.
   function initBookingFrame() {
@@ -110,5 +125,6 @@
   initWhatsApp();
   initSearch();
   initCallback();
+  initSignup();
   initBookingFrame();
 })();
