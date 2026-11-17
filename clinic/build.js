@@ -286,7 +286,7 @@ ${header("/")}
 
   <section class="trust-strip" aria-label="About the clinic">
     <div class="container trust-inner">
-      ${c.TRUST.map(t => `<span>${icon("check", 16)} ${esc(t)}</span>`).join("")}
+      ${c.TRUST.map(t => `<div class="trust-item"><strong>${esc(t.value.replace("{count}", String(data.treatments.length)))}</strong><span>${esc(t.label)}</span></div>`).join("")}
     </div>
   </section>
 
