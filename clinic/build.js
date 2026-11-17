@@ -412,13 +412,17 @@ ${header("/treatments/")}
   ${pageHero("Treatments", "Everything we offer", "Search the full list, or choose an area. Prices are shown where the clinic publishes them. Everything else is discussed at a consultation.")}
   <section class="section section-tight">
     <div class="container">
+      <nav class="cat-tabs" id="cat-tabs" aria-label="Choose a treatment area">
+        <button type="button" data-cat="all" aria-pressed="true">All <span>${data.treatments.length}</span></button>
+        ${cats.map(k => `<button type="button" data-cat="${k.id}" aria-pressed="false">${esc(k.name)} <span>${treatmentsOf(k.id).length}</span></button>`).join("\n        ")}
+      </nav>
       <div class="search-bar">
         ${icon("search", 20)}
         <label class="sr-only" for="tr-search">Search treatments</label>
         <input type="search" id="tr-search" placeholder="Search treatments, for example IV, peel or GP" autocomplete="off" />
       </div>
       <p class="search-status" id="tr-status" role="status" aria-live="polite"></p>
-      ${cats.map(k => `<section class="tr-group" data-group>
+      ${cats.map(k => `<section class="tr-group" data-group data-cat="${k.id}">
         <header class="tr-group-head">
           <h2 id="${k.id}"><a href="${u("/treatments/" + k.id + "/")}">${esc(k.name)}</a></h2>
           <span>${treatmentsOf(k.id).length}</span>

@@ -56,25 +56,54 @@
 
   /* ── Treatment search ───────────────────────────── */
   function initSearch() {
-    var input = $('tr-search'), status = $('tr-status');
+    var input = $('tr-search'), status = $('tr-status'), tabs = $('cat-tabs');
     if (!input) return;
     var cards = Array.prototype.slice.call(document.querySelectorAll('.tr-card'));
     var groups = Array.prototype.slice.call(document.querySelectorAll('[data-group]'));
+    var buttons = tabs ? Array.prototype.slice.call(tabs.querySelectorAll('button[data-cat]')) : [];
+    var cat = 'all';
+
     function run() {
       var q = input.value.trim().toLowerCase(), shown = 0;
-      cards.forEach(function (card) {
-        var hit = !q || (card.getAttribute('data-name') || '').toLowerCase().indexOf(q) !== -1;
-        card.hidden = !hit;
-        if (hit) shown++;
-      });
       groups.forEach(function (g) {
-        var any = g.querySelector('.tr-card:not([hidden])');
+        var inArea = cat === 'all' || g.getAttribute('data-cat') === cat;
+        var any = false;
+        g.querySelectorAll('.tr-card').forEach(function (card) {
+          var hit = inArea && (!q || (card.getAttribute('data-name') || '').toLowerCase().indexOf(q) !== -1);
+          card.hidden = !hit;
+          if (hit) { any = true; shown++; }
+        });
         g.classList.toggle('is-empty', !any);
       });
-      status.textContent = !q ? '' : shown ? shown + (shown === 1 ? ' treatment found' : ' treatments found') : 'Nothing found. Try a shorter word, or call us on the number below.';
+      if (q) {
+        status.textContent = shown
+          ? shown + (shown === 1 ? ' treatment found' : ' treatments found') + (cat === 'all' ? '' : ' in this area')
+          : (cat === 'all' ? 'Nothing found. Try a shorter word, or call us on the number below.' : 'Nothing found in this area. Choose "All" to search every treatment, or call us on the number below.');
+      } else {
+        status.textContent = '';
+      }
+    }
+
+    function choose(id, updateHash) {
+      cat = buttons.some(function (b) { return b.getAttribute('data-cat') === id; }) ? id : 'all';
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-cat') === cat)); });
+      run();
+      var on = buttons.filter(function (b) { return b.getAttribute('aria-pressed') === 'true'; })[0];
+      if (on && tabs.scrollWidth > tabs.clientWidth) tabs.scrollTo({ left: on.offsetLeft - (tabs.clientWidth - on.offsetWidth) / 2, behavior: 'auto' });
+      if (updateHash && window.history && history.replaceState) {
+        history.replaceState(null, '', cat === 'all' ? location.pathname + location.search : '#' + cat);
+      }
+    }
+
+    if (tabs) {
+      tabs.addEventListener('click', function (e) {
+        var b = e.target.closest('button[data-cat]');
+        if (b) choose(b.getAttribute('data-cat'), true);
+      });
+      window.addEventListener('hashchange', function () { choose(location.hash.slice(1), false); });
     }
     input.addEventListener('input', run);
-    run();
+    choose(location.hash.slice(1), false);
   }
 
   /* ── Call-back form (draft: nothing is sent) ────── */
