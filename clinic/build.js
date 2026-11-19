@@ -285,7 +285,7 @@ ${header("/")}
   </section>
 
   <section class="trust-strip" aria-label="About the clinic">
-    <div class="container trust-inner">
+    <div class="container trust-inner" style="--n:${c.TRUST.length};--m:${c.TRUST.length === 3 ? 3 : 2}">
       ${c.TRUST.map(t => `<div class="trust-item"><strong>${esc(t.value.replace("{count}", String(data.treatments.length)))}</strong><span>${esc(t.label)}</span></div>`).join("")}
     </div>
   </section>
