@@ -108,15 +108,18 @@
 
   /* ── Call-back form (draft: nothing is sent) ────── */
   function initCallback() {
-    var form = $('callback');
-    if (!form) return;
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var status = $('callback-status');
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      form.reset();
-      status.textContent = 'Thanks, we have your details. A member of the team will call you back.';
-      status.hidden = false;
+    [['callback', 'callback-status', 'Thanks, we have your details. A member of the team will call you back.'],
+     ['request-form', 'request-status', 'Thanks, your request has been received. The team will be in touch to confirm your appointment.']].forEach(function (f) {
+      var form = $(f[0]);
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var status = $(f[1]);
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        form.reset();
+        status.textContent = f[2];
+        status.hidden = false;
+      });
     });
   }
 

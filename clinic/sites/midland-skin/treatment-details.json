@@ -1,0 +1,1301 @@
+{
+ "initial-assessments": {
+  "intro": [
+   "Every treatment starts with an initial assessment with a specialist. Choose the appointment that matches your concern. All appointments are prepaid."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "review-consultations": {
+  "intro": [
+   "If you have seen us for the same concern in the preceding 12 months, a review consultation checks your progress and decides whether treatment should continue, change or stop."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "blood-tests-swabs-and-biopsy": {
+  "intro": [
+   "Investigations are arranged where they are needed to reach or confirm a diagnosis."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "acne-treatments": {
+  "intro": [
+   "At Midland Skin we offer AviClear acne laser treatment for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands.",
+   "AviClear is a 1726 nm laser that targets the sebaceous (oil) glands, and was the first energy-based device cleared by the US FDA for mild, moderate and severe acne. In published studies, a course of three treatments reduced inflammatory acne lesions by more than 90% at one year, without oral or topical medication. Longer-term data are still emerging."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "How does Aviclear acne laser treatment work?",
+    "a": "One of the main reasons acne spots develop is because sebaceous (oil) glands produce too much sebum (oil). Sebum is made up of various lipids and oils, and bacteria build up in the sebum and trigger acne spots. So, sebum production drives acne."
+   },
+   {
+    "q": "How effective is Aviclear?",
+    "a": "After a course of 3 Aviclear acne laser treatments, a study showed that there was a 96% reduction in inflammatory lesion count at 1 year after treatment. Inflammatory lesions are red spots (papules), white heads (pustules), cysts and nodules."
+   },
+   {
+    "q": "How does Aviclear acne laser treatment compare with Isotretinoin (Accutane/Roaccutane)?",
+    "a": "Isotretinoin is a medication which is licensed in the UK for the treatment of severe acne that has not responded to other treatments. Aviclear and Isotretinoin are the only treatments that can clear acne in the long term. There are no head-to-head studies comparing the two treatments directly to know which treatment is superior."
+   },
+   {
+    "q": "How does Aviclear compare with antibiotic treatment for acne?",
+    "a": "There are no head-to-head trials. Antibiotics generally work only while they are being taken and acne often returns after stopping, whereas the effect of AviClear in published studies persisted for at least a year after the course."
+   },
+   {
+    "q": "How does Aviclear compare with Spironolactone?",
+    "a": "There are no head-to-head trials. Spironolactone needs to be taken continuously to maintain its effect and is limited to adult women, whereas AviClear is a completed course suitable for any adult or teenager past puberty. Both are effective, and your dermatologist can advise which suits you."
+   }
+  ]
+ },
+ "acne-scar-treatments": {
+  "intro": [
+   "At Midland Skin, we offer acne scar treatment for patients from Birmingham, Solihull, Coventry, Wolverhampton, Worcester and across the Midlands.",
+   "Acne scarring often requires a staged, combination approach. At Midland Skin, we tailor each acne scar treatment session to your individual scar pattern, skin type and treatment response."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Mixed acne scarring"
+   ],
+   [
+    "Treatment",
+    "Individual or combined treatment"
+   ],
+   [
+    "Anaesthetic",
+    "Cream and/or local anaesthetic"
+   ],
+   [
+    "Duration",
+    "Varies by treatment"
+   ],
+   [
+    "Recovery",
+    "Usually around one week"
+   ],
+   [
+    "Sessions",
+    "Usually 3–5"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "Who is acne scar treatment suitable for?",
+    "a": "Not everyone benefits equally from acne scar treatment. While these procedures can make a visible difference for many people, they require time, patience and realistic expectations."
+   },
+   {
+    "q": "What results can I expect?",
+    "a": "Gradual improvement is expected with each session in the majority of suitable patients. The degree of improvement depends on scar type, skin response, previous treatment and individual healing capacity."
+   },
+   {
+    "q": "Why does an acne scar assessment need to be face to face?",
+    "a": "Acne scars cannot be assessed comprehensively from photographs or video alone. Their apparent depth and severity can change considerably with lighting, camera angle and image quality."
+   },
+   {
+    "q": "Why do I need an acne scar assessment when I already know which treatment I want?",
+    "a": "We welcome patients who have researched their options or have a particular treatment in mind. Your concerns, preferences and goals form an important part of the assessment."
+   },
+   {
+    "q": "Is the assessment fee deducted from the treatment or procedure fee?",
+    "a": "No. The assessment fee is separate and is not refunded or deducted from any later treatment or procedure fee."
+   }
+  ]
+ },
+ "keloid-hypertrophic-and-other-scars": {
+  "intro": [
+   "Specialist assessment and treatment for surgical, injury, burn, acne, keloid and hypertrophic scars",
+   "At Midland Skin we offer consultant-led scar assessment and treatment for adults and children in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Any scar, any cause"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "Which type of scar do you have?",
+    "a": "Most scars fall into one of the groups below. Choose the one that fits best to read about treatment, or book an initial scar assessment if you are not sure."
+   },
+   {
+    "q": "Not sure what type of scar you have?",
+    "a": "You do not need to work this out before you book. Many scars have more than one feature at the same time — raised in one part, red or dark in another, tethered or indented elsewhere — and the cause, the site and the age of the scar all change which treatments are sensible."
+   },
+   {
+    "q": "Which appointment should I book?",
+    "a": "Initial scar assessment — for scars from surgery, injury, burns, piercings, chickenpox or self-harm; keloid and hypertrophic scars, including keloids caused by acne; stretch marks; and any scar you are unsure about. Adults and children are seen."
+   },
+   {
+    "q": "When is the right time to be assessed?",
+    "a": "Fresh surgical or injury scars — earlier than most people expect. Treatment can start within weeks of suture removal or once the wound has healed, and early treatment can soften redness, reduce thickening and help prevent abnormal pigmentation. If you have had skin surgery with us, this is usually discussed at your post-operative review."
+   },
+   {
+    "q": "Should I send photographs when I book?",
+    "a": "You may be asked to supply photographs as they will help us allocate your appointment to the most appropriate consultant for your needs. They do not replace examination or face to face assessment."
+   }
+  ]
+ },
+ "liquid-nitrogen-cryotherapy": {
+  "intro": [
+   "Liquid nitrogen cryotherapy at Midland Skin, Birmingham. Prices are indicative and confirmed at your initial assessment."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "bleomycin-for-viral-warts": {
+  "intro": [
+   "Bleomycin injections in Birmingham for resistant hand and foot warts that have not cleared with cryotherapy or paints.",
+   "Bleomycin is a chemotherapy agent that has been used to treat viral warts since the 1970s. When used for warts it is injected directly into the lesion in very small amounts, rather than given into a vein."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is bleomycin and how does it work?",
+    "a": "Bleomycin is a chemotherapy agent that has been used to treat viral warts since the 1970s. When used for warts it is injected directly into the lesion in very small amounts, rather than given into a vein."
+   },
+   {
+    "q": "Which warts is bleomycin used for?",
+    "a": "Bleomycin can clear stubborn, resistant and recurrent warts on the hands and feet that have not cleared with time or with remedies such as salicylic acid wart paints or cryotherapy. In trials of resistant warts, bleomycin has cleared a higher proportion than cryotherapy, with low recurrence after clearance, though study methods and follow-up vary."
+   },
+   {
+    "q": "How effective is it?",
+    "a": "Bleomycin is a highly successful treatment for viral warts and can work well even when other treatments have not worked. Across published trials, clearance rates typically fall between 70% and 90%, though results vary with technique, concentration and the number of sessions given. Warts can still return after clearing."
+   },
+   {
+    "q": "What happens during treatment?",
+    "a": "We perform Bleomycin treatment as an outpatient procedure. Your healthcare professional will cleanse the area and pare down any area of hard skin with a scalpel. Bleomycin is then injected directly into the wart. A light dressing may be applied."
+   },
+   {
+    "q": "How many treatments are needed?",
+    "a": "It varies from person to person. Most patients need three to five sessions, spaced about three to four weeks apart. Some respond with fewer treatments; others may need more, and we carry on as long as we are seeing progress. If there is no clear improvement after three or four sessions, we stop."
+   }
+  ]
+ },
+ "mole-removal-same-day": {
+  "intro": [
+   "Mole removal by shave, laser or excision with stitches by specialist dermatologists and surgeons.",
+   "Our specialist dermatologists offer assessment and removal of selected raised moles for patients from Birmingham, Solihull and across the West Midlands. Selected moles may be suitable for same-day assessment and removal."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Suitable raised moles"
+   ],
+   [
+    "Treatment",
+    "Shave, laser or excision"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Recovery",
+    "10-14 days"
+   ],
+   [
+    "Consultant",
+    "Dermatologist"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "When should I consider having a mole removed?",
+    "a": "There are many reasons why you might want to have a mole removed. Cosmetic mole removal may be worth considering if:"
+   },
+   {
+    "q": "What are medical reasons for mole removal?",
+    "a": "Your dermatologist may advise that a mole is removed for medical reasons. This allows the mole to be sent for specialist examination under the microscope."
+   },
+   {
+    "q": "What is cosmetic mole removal?",
+    "a": "Cosmetic mole removal means removing a mole because of its appearance or because it repeatedly catches or becomes irritated."
+   },
+   {
+    "q": "What is medical mole removal?",
+    "a": "Medical mole removal is performed when your dermatologist recommends that a mole is removed so that it can be examined under the microscope."
+   },
+   {
+    "q": "How is a mole removed in Birmingham?",
+    "a": "Midland Skin offers three forms of mole removal: shave excision, laser mole removal and surgical excision with stitches."
+   }
+  ]
+ },
+ "skin-tags-seborrhoeic-keratoses-and-small-lesions": {
+  "intro": [
+   "At Midland Skin we offer skin tag removal treatment for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands. Skin tags can be removed from most areas of the body, including the eyelids and genital skin. Where the lesions are typical and photographs have been reviewed in advance, assessment and removal may take place at the same visit.",
+   "Skin tags are extremely common, around half of adults have at least one. At Midland Skin they are removed under local anaesthetic by a clinician trained in minor skin surgery, usually in a single short visit."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Skin tags, any body site"
+   ],
+   [
+    "Treatment",
+    "Snip excision or cautery"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Duration",
+    "15-30 minutes"
+   ],
+   [
+    "Recovery",
+    "About 5-7 days"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is a skin tag?",
+    "a": "A skin tag is a tiny bulge or bump of extra skin on a pedicle. A skin tag can be tiny, and from 1-2 mm in length, to over 3 or 4cm in length."
+   },
+   {
+    "q": "When is skin tag removal worth considering?",
+    "a": "There are many reasons why you might want to have skin tags removed. Removal may be worth considering when:"
+   },
+   {
+    "q": "Where do skin tags occur?",
+    "a": "Skin tags are fleshy projections of skin that can be found anywhere in the body. Skin tag removal is requested most often for skin tags located in the following areas:"
+   },
+   {
+    "q": "Will they come back?",
+    "a": "Skin tags do not recur once they have been treated. If you are prone to skin tags, new ones can develop elsewhere over time, and some patients return periodically to keep them under control."
+   },
+   {
+    "q": "Who will carry out my procedure?",
+    "a": "Skin tag removal is carried out by a clinician trained and experienced in minor skin surgery. You will meet the clinician treating you, and they will examine the lesions and answer your questions before anything is removed."
+   }
+  ]
+ },
+ "cyst-removal": {
+  "intro": [
+   "At Midland Skin we assess and surgically remove cysts for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the wider Midlands. Removal is carried out under local anaesthetic, usually taking 20 to 60 minutes, once a specialist has examined the lump and agreed the right technique with you.",
+   "A cyst feels like a lump or bump under the skin. Most skin cysts are small sacs that fill with keratin, the protein that makes up the surface of the skin. The contents are a white, cheesy material that often has an odour."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Cysts on face, scalp, body"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Duration",
+    "20-60 minutes"
+   ],
+   [
+    "Recovery",
+    "Desk work next day"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is a cyst?",
+    "a": "A cyst feels like a lump or bump under the skin. Most skin cysts are small sacs that fill with keratin, the protein that makes up the surface of the skin. The contents are a white, cheesy material that often has an odour."
+   },
+   {
+    "q": "When is cyst removal worth considering?",
+    "a": "Cysts are not dangerous, and a small settled cyst can be left alone if it is not bothering you. Removal is worth considering when a cyst is causing a practical or cosmetic problem, or when it is likely to keep causing trouble."
+   },
+   {
+    "q": "Which removal technique is used?",
+    "a": "Three techniques are used. Which one suits you is decided at your consultation, based on the size of the cyst, where it is, and whether it has been inflamed before."
+   },
+   {
+    "q": "Who will carry out my procedure?",
+    "a": "Your cyst removal is carried out by a Consultant Dermatologist or Consultant Surgeon experienced in skin surgery. You meet them at your consultation, so you know who will be treating you."
+   },
+   {
+    "q": "Do I need to do anything before my appointment?",
+    "a": "Eat normally, there is no need to fast. Wear comfortable clothing that does not have to be pulled over your head if the cyst is on the face, scalp or neck."
+   }
+  ]
+ },
+ "lipoma-removal": {
+  "intro": [
+   "At Midland Skin we offer Lipoma Removal treatment for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands.",
+   "A lipoma is a lump of fatty tissue that develops under the skin. It is usually soft, but may be firm and squidgy, and may move slightly if it is pushed in one direction or another."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Benign fatty lumps"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Duration",
+    "30-60 minutes"
+   ],
+   [
+    "Recovery",
+    "10-14 days"
+   ],
+   [
+    "Consultant",
+    "Dermatologist or Surgeon"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is a lipoma?",
+    "a": "A lipoma is a lump of fatty tissue that develops under the skin. It is usually soft, but may be firm and squidgy, and may move slightly if it is pushed in one direction or another."
+   },
+   {
+    "q": "When is it worth having a lipoma assessed or removed?",
+    "a": "Many lipomas can simply be left alone. Specialist assessment, and removal where appropriate, is worthwhile when:"
+   },
+   {
+    "q": "Is it definitely a lipoma?",
+    "a": "Most lipomas can be recognised by a specialist from their feel and appearance. However, other lumps under the skin can mimic a lipoma, including cysts, lymph nodes and, rarely, fatty tumours that are not benign. UK sarcoma guidance advises that any soft tissue lump that is increasing in size or larger than 5 cm should be assessed with an ultrasound scan, whether or not it is painful."
+   },
+   {
+    "q": "How is a lipoma removed at Midland Skin?",
+    "a": "Lipomas are removed by surgical excision while you are awake, using local anaesthetic injections. The skin overlying the lipoma is numbed using a local anaesthetic injection. Once numb, an incision is made as long as the lipoma. The lipoma is then removed and the wound is stitched together in a fine line. The scar is made as minimally obvious as possible."
+   },
+   {
+    "q": "Will a lipoma go away on its own?",
+    "a": "No. A lipoma is a collection of fat cells, so once it has developed it will not go away on its own. Many lipomas can simply be left alone once they have been assessed. If it bothers you, removal is the only way to get rid of it."
+   }
+  ]
+ },
+ "split-earlobe-repair": {
+  "intro": [
+   "The exact procedure and achievable result depend on an assessment of your earlobe anatomy, existing scarring and what you would like to achieve.",
+   "A split, stretched or enlarged earlobe can affect its appearance, make earrings difficult to wear and leave you unsure whether the shape can be restored. At Midland Skin, we offer surgery to repair split or stretched earlobes and reduce enlarged or elongated earlobes."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Split, stretched or enlarged earlobes"
+   ],
+   [
+    "Treatment",
+    "Surgical repair or reduction"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Duration",
+    "30–60 minutes per side"
+   ],
+   [
+    "Recovery",
+    "Light activity from next day"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "Who will perform my procedure?",
+    "a": "Your surgery will be performed by an appropriately trained Consultant. Who will be carrying out your procedure will be confirmed as part of your treatment plan before surgery."
+   },
+   {
+    "q": "Will earlobe surgery hurt?",
+    "a": "Local anaesthetic is injected into the earlobe before surgery. The injections can sting briefly, but once the area is numb you should not feel pain during the procedure, although you may still be aware of touch or movement."
+   },
+   {
+    "q": "What happens on the day of surgery?",
+    "a": "The planned repair is checked with you before treatment begins. The earlobe is marked and cleaned and local anaesthetic is given. Depending on the procedure, scarred or excess tissue is removed and the earlobe is carefully reshaped before being closed with fine stitches. You can go home after the procedure."
+   },
+   {
+    "q": "Will I have a dressing?",
+    "a": "A small dressing may be applied depending on the procedure performed. You will be given instructions about caring for the wound and keeping the area protected while it heals."
+   },
+   {
+    "q": "When do my stitches come out?",
+    "a": "Stitches are usually removed after 5–14 days. Your stitch removal appointment will be organised when you attend for your procedure."
+   }
+  ]
+ },
+ "skin-biopsy-and-histology": {
+  "intro": [
+   "A biopsy is arranged after an assessment where the diagnosis needs confirming. The histology surcharge applies over basic histology to any skin procedure."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "skin-cancer-surgery": {
+  "intro": [
+   "At Midland Skin we offer specialist skin cancer surgery for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands. A diagnosis of skin cancer is worrying — our consultant-led team removes the cancer safely and repairs the area with as much care for appearance and function as for the cancer itself.",
+   "Surgical excision is the treatment of choice for virtually all skin cancers, including the three most common in the UK — basal cell carcinoma (BCC) , squamous cell carcinoma (SCC) and melanoma . The visible cancer is removed together with a planned border of surrounding skin, the wound is repaired, and the removed tissue is examined under the microscope to confirm the cancer has been fully cleared."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "BCC, SCC & melanoma"
+   ],
+   [
+    "Treatment",
+    "Surgical excision & repair"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Recovery",
+    "Usually 1-2 weeks"
+   ],
+   [
+    "Consultant",
+    "Dermatologist / surgeon"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is skin cancer surgery?",
+    "a": "Surgical excision is the treatment of choice for virtually all skin cancers, including the three most common in the UK — basal cell carcinoma (BCC) , squamous cell carcinoma (SCC) and melanoma . The visible cancer is removed together with a planned border of surrounding skin, the wound is repaired, and the removed tissue is examined under the microscope to confirm the cancer has been fully cleared."
+   },
+   {
+    "q": "How successful is surgery?",
+    "a": "For most non-melanoma skin cancers (BCC and SCC), surgical excision has high cure rates when the cancer is completely removed. After surgery, the tissue is examined under the microscope to confirm full clearance."
+   },
+   {
+    "q": "Who will perform my surgery?",
+    "a": "Your surgery is consultant-led. Depending on the site and complexity, your care may involve a consultant dermatologist, a dermatological surgeon, or a facial plastic or oculoplastic specialist. You will meet your surgeon at your consultation, so you know who is treating you."
+   },
+   {
+    "q": "Will the procedure hurt?",
+    "a": "The area is thoroughly numbed with local anaesthetic. The injections may sting briefly, but you will not feel pain during the procedure, only pressure or touch. You stay awake throughout, and the anaesthetic is topped up if needed."
+   },
+   {
+    "q": "What should I do before surgery?",
+    "a": "Your surgeon will give you specific advice at your consultation, including anything you need to do about your usual medicines. Please tell us about any medications and health conditions when you book."
+   }
+  ]
+ },
+ "mohs-surgery": {
+  "intro": [
+   "Being given a diagnosis of skin cancer can be daunting. Mohs surgery is a technique of removing skin cancers layer by layer and checking roots under the microscope as you go. It offers the highest published cure rates for selected skin cancers, while preserving as much healthy skin as possible. This is especially important for tumours on the face.",
+   "Many skin cancers begin in the upper layer of the skin and can grow both across the surface and deeper below it. They may also develop small extensions beyond the visible edge of the tumour, a little like the roots of a weed. The part seen on the surface may not always reflect its full extent beneath the skin, and if these extensions are not completely removed, the skin cancer can return."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "BCC & SCC skin cancers"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Duration",
+    "3-6 hours"
+   ],
+   [
+    "Recovery",
+    "1-2 weeks"
+   ],
+   [
+    "Consultant",
+    "Dermatologist"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is Mohs surgery?",
+    "a": "Being given a diagnosis of skin cancer can be daunting. Mohs surgery is a technique of removing skin cancers layer by layer and checking roots under the microscope as you go. It offers the highest published cure rates for selected skin cancers, while preserving as much healthy skin as possible. This is especially important for tumours on the face."
+   },
+   {
+    "q": "Who is Mohs surgery suitable for?",
+    "a": "Mohs micrographic surgery is the gold standard treatment for selected basal cell carcinoma (BCC) and squamous cell carcinoma (SCC) , as it is the only technique that traces out invisible routes and eliminates them. Mohs surgery may be recommended when:"
+   },
+   {
+    "q": "Who will perform my Mohs surgery?",
+    "a": "Your Mohs surgery will be performed by a Consultant Dermatologist on the GMC Specialist Register, with specific training and experience in Mohs micrographic surgery. You will meet your surgeon at your initial consultation, so you know exactly who will be treating you on the day."
+   },
+   {
+    "q": "What should I bring and wear on the day?",
+    "a": "Please wear comfortable, loose-fitting clothing, ideally a top that buttons or zips at the front rather than pulls over the head, so you can dress easily afterwards without disturbing your dressing."
+   },
+   {
+    "q": "What happens on the day of Mohs surgery?",
+    "a": "Mohs surgery is done as a day case under local anaesthetic — you go home the same day. Because we examine each tissue sample under the microscope between stages, most patients are with us for 3 to 6 hours in total. Please arrange for someone to drive you home."
+   }
+  ]
+ },
+ "photodynamic-therapy": {
+  "intro": [
+   "Non-surgical treatment for selected basal cell carcinomas, Bowen’s disease and actinic keratoses",
+   "At Midland Skin, a Consultant specialising in skin cancer treatment assesses whether laser-assisted PDT is the right treatment for your skin lesion, or whether another option would suit you better."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "BCC, Bowen’s, AKs"
+   ],
+   [
+    "Treatment",
+    "Laser + light-activated gel"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is laser-assisted photodynamic therapy?",
+    "a": "Photodynamic therapy (PDT) uses a light-sensitising gel that is absorbed more strongly by abnormal skin cells than by healthy skin. When the gel is activated with light, it destroys the abnormal cells while largely sparing the surrounding normal skin."
+   },
+   {
+    "q": "PDT or surgery: which is right for me?",
+    "a": "For basal cell carcinoma, surgery has higher published cure rates than PDT. Mohs surgery has the highest cure rates of all, and it remains the preferred treatment for higher-risk BCCs and BCCs on the face."
+   },
+   {
+    "q": "Who will carry out my treatment?",
+    "a": "Your treatment is carried out by a Consultant who specialises in skin cancer."
+   },
+   {
+    "q": "How long will my treatment day take?",
+    "a": "Each treatment session has two appointments on the same day, 3 hours apart. Each appointment takes about 30 minutes. You don’t need to stay at the clinic in between."
+   },
+   {
+    "q": "What should I do before my appointment?",
+    "a": "On the morning of your appointment, wash the area to be treated with a mild soap. Don’t apply make-up, creams or ointment to it."
+   }
+  ]
+ },
+ "steroid-injections-for-hair-loss": {
+  "intro": [
+   "Consultant dermatologist led steroid injections for hair loss of the scalp, eyebrows and beard",
+   "At Midland Skin we offer steroid Injections for hair loss for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What are steroid injections for hair loss?",
+    "a": "Steroid injections are used to treat some forms of hair loss where inflammation or immune activity is affecting the hair follicles. In conditions such as alopecia areata, the body’s immune system can mistakenly target hair follicles, causing patches of hair loss. Steroids can reduce this local immune activity and inflammation, which may allow the follicles to recover and regrow hair in suitable cases."
+   },
+   {
+    "q": "Which conditions are steroid injections suitable for?",
+    "a": "The most common reason for steroid injections to be prescribed is in the treatment of alopecia areata of the scalp, eyebrows or beard."
+   },
+   {
+    "q": "Which hair loss conditions are steroid injections not suitable for?",
+    "a": "Steroid injections are not used for alopecia areata of the eyelashes."
+   },
+   {
+    "q": "What are the benefits of steroid injections in alopecia areata?",
+    "a": "When steroid injections are used for alopecia areata, they can help bring about regrowth. Steroid injections have been used for alopecia areata since 1958."
+   },
+   {
+    "q": "What are the risks of steroid injections?",
+    "a": "Tiny pin point bleeding at some injection points can be seen. We ask you not to disturb the area until the next day when it is okay to resume shampooing and shaving."
+   }
+  ]
+ },
+ "prp-for-hair-loss": {
+  "intro": [
+   "Your initial hair loss assessment at Midland Skin is an appointment with a Consultant Dermatologist. It is the starting point for every condition treated in our hair loss clinic , from pattern hair loss and alopecia areata to scarring alopecia and scalp problems.",
+   "Experiencing hair loss can be very distressing. Your Consultant Dermatologist will ask how the hair loss developed, how it has progressed and whether you have experienced shedding, thinning or scalp symptoms. Relevant medical history, medications, supplements, family history, hair-care practices and previous treatments will also be reviewed."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Hair loss, thinning, scalp concerns"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What happens during an initial hair loss assessment?",
+    "a": "Experiencing hair loss can be very distressing. Your Consultant Dermatologist will ask how the hair loss developed, how it has progressed and whether you have experienced shedding, thinning or scalp symptoms. Relevant medical history, medications, supplements, family history, hair-care practices and previous treatments will also be reviewed."
+   },
+   {
+    "q": "Why see a Consultant Dermatologist for hair loss?",
+    "a": "A Consultant Dermatologist is a medically qualified doctor who has completed specialist training in conditions affecting the skin, hair and scalp. Dermatology is the only recognised medical specialty training programme that provides comprehensive specialist training in the diagnosis and medical management of hair-loss conditions."
+   },
+   {
+    "q": "Will I need blood tests or a scalp biopsy?",
+    "a": "Not everyone with hair loss requires investigations. Tests are selected according to the history, examination and likely diagnosis rather than using the same panel for every patient."
+   },
+   {
+    "q": "How is hair loss treated at Midland Skin?",
+    "a": "Treatment depends on the diagnosis – see alopecia areata , female pattern hair loss and male pattern hair loss for what to expect with each. No particular prescription or procedure can be guaranteed before assessment."
+   },
+   {
+    "q": "What results can I expect from hair-loss treatment?",
+    "a": "Hair grows slowly, so meaningful change is normally assessed over months rather than weeks."
+   }
+  ]
+ },
+ "dutasteride-mesotherapy": {
+  "intro": [
+   "Find out more about our hair loss consultation ."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "prescription-hair-loss-products": {
+  "intro": [
+   "Find out more about our hair loss consultation ."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "scalp-biopsy": {
+  "intro": [
+   "Find out more about our hair loss consultation ."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "fully-ablative-laser-resurfacing": {
+  "intro": [
+   "At Midland Skin we offer CO2 and Erbium YAG laser resurfacing treatment for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands.",
+   "CO2 laser resurfacing is one of the most powerful techniques used on the face to promote rejuvenation whilst combatting issues associated with ageing, sun damage, texture and acne scarring."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Lines, sun damage, acne scars"
+   ],
+   [
+    "Anaesthetic",
+    "Local or sedation"
+   ],
+   [
+    "Duration",
+    "About 1 hour"
+   ],
+   [
+    "Recovery",
+    "2-3 weeks"
+   ],
+   [
+    "Consultant",
+    "Consultant dermatologist"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is fully ablative laser resurfacing?",
+    "a": "CO2 laser resurfacing is one of the most powerful techniques used on the face to promote rejuvenation whilst combatting issues associated with ageing, sun damage, texture and acne scarring."
+   },
+   {
+    "q": "How does fully ablative CO2 laser resurfacing work?",
+    "a": "The laser is used to peel the top layers of the skin, layer by layer. This eliminates aged and sun-damaged cells, forcing them to renew and regenerate. It also smoothes out any textural changes, caused by scars such as acne scars."
+   },
+   {
+    "q": "How does a fully ablative CO2 laser differ from fractional laser?",
+    "a": "A fractional laser makes tiny holes in the skin at set distances apart. The skin between the holes is not treated. This means a proportion of the skin ranging from 5% to 40% of the skin’s surface area, is treated. As fractional laser only treats a proportion of the skin, the healing is much faster however treatment often needs to be repeated."
+   },
+   {
+    "q": "Who is fully ablative laser resurfacing suitable for?",
+    "a": "Suitability is decided at consultation, but fully ablative resurfacing is most often considered when:"
+   },
+   {
+    "q": "Which lasers for fully ablative CO2 laser resurfacing do you offer at Midland Skin?",
+    "a": "Midland Skin has two fully ablative resurfacing lasers — a CO₂ laser and an Erbium YAG laser — which is unusual for a clinic in the Midlands. Having both means the laser can be matched to your skin and your concern rather than to whichever device a clinic happens to own."
+   }
+  ]
+ },
+ "fractional-laser-resurfacing": {
+  "intro": [
+   "Fractional ablative laser resurfacing for for acne scars, sun damage, texture, wrinkles and skin rejuvenation. At Midland Skin, your consultant-led assessment is used to choose the safest and most appropriate approach for your skin.",
+   "Fractional ablative laser resurfacing is a controlled skin-renewal treatment. The laser creates thousands of microscopic treatment zones in the skin, removing tiny columns of damaged surface tissue while leaving surrounding skin intact. These untreated areas help the skin heal more quickly than fully ablative resurfacing."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Scars, texture, rejuvenation, fine lines"
+   ],
+   [
+    "Anaesthetic",
+    "Numbing cream +/- injections"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is fractional ablative laser resurfacing?",
+    "a": "Fractional ablative laser resurfacing is a controlled skin-renewal treatment. The laser creates thousands of microscopic treatment zones in the skin, removing tiny columns of damaged surface tissue while leaving surrounding skin intact. These untreated areas help the skin heal more quickly than fully ablative resurfacing."
+   },
+   {
+    "q": "Who is fractional laser resurfacing suitable for?",
+    "a": "Fractional laser resurfacing is suitable for adults who want to improve the quality, texture or tone of their skin and are willing to accept a short period of healing. It is most often recommended for:"
+   },
+   {
+    "q": "What is the difference between fractional and fully ablative laser resurfacing?",
+    "a": "Fractional ablative laser resurfacing treats the skin in a pattern of tiny columns, leaving areas of untreated skin between them. These untreated areas help the skin repair more quickly, so recovery is usually shorter than with fully ablative resurfacing."
+   },
+   {
+    "q": "Can laser resurfacing be done on the same day as the consultation?",
+    "a": "No. Laser resurfacing is carried out after your consultation and written care plan. A two-week cooling-off period is allowed before treatment is booked, so you have time to consider the treatment, expected recovery, risks, aftercare and costs."
+   },
+   {
+    "q": "What should I do before I arrive?",
+    "a": "You will be given preparation instructions in your care plan. In general, you should arrive with clean skin and no make-up on the treatment area unless advised otherwise."
+   }
+  ]
+ },
+ "halo-laser": {
+  "intro": [
+   "Hybrid fractional laser resurfacing for skin tone, texture, pigmentation, fine lines and selected acne scars",
+   "Midland Skin offers Sciton Halo laser treatment for patients from Birmingham, Solihull, Coventry, Wolverhampton, Worcester and across the Midlands."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Tone, texture & pigmentation"
+   ],
+   [
+    "Treatment",
+    "Hybrid fractional laser"
+   ],
+   [
+    "Anaesthetic",
+    "Topical and/or local"
+   ],
+   [
+    "Recovery",
+    "Usually 7 days"
+   ],
+   [
+    "Sessions",
+    "Commonly 2 for the face"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is Halo laser treatment?",
+    "a": "Halo is a hybrid fractional laser treatment designed to improve several aspects of skin quality within the same session."
+   },
+   {
+    "q": "How does Halo laser work?",
+    "a": "Halo is the first hybrid fractional laser to deliver an ablative and a non-ablative wavelength into the same microscopic treatment zone."
+   },
+   {
+    "q": "What happens within the skin?",
+    "a": "Following treatment, unwanted pigment forms tiny areas of microscopic epidermal necrotic debris, known as MENDs. These appear as bronzing or small dark dots before naturally shedding over approximately seven days."
+   },
+   {
+    "q": "What results can I realistically expect?",
+    "a": "Initial improvement becomes visible as the bronzing and flaking settle, usually within the first five to seven days. Skin texture, pigmentation and overall brightness may continue to improve over the following weeks."
+   },
+   {
+    "q": "How many Halo treatments will I need?",
+    "a": "The number and intensity of treatments will be agreed during your consultation."
+   }
+  ]
+ },
+ "spectra-mdf-fractional-laser": {
+  "intro": [
+   "Hollywood Spectra MDF is a lower-downtime laser treatment for patients who want smoother, more even-looking skin without the recovery associated with more intensive ablative laser resurfacing. Suitability is confirmed at a laser treatment consultation.",
+   "Spectra MDF is a form of fractional laser resurfacing used to improve selected acne scars, enlarged pores, uneven texture, fine lines and certain fine-line scars."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Scars, pores & texture"
+   ],
+   [
+    "Anaesthetic",
+    "None, cream or local"
+   ],
+   [
+    "Duration",
+    "Around 45 minutes"
+   ],
+   [
+    "Recovery",
+    "1-3 days; marks up to 7"
+   ],
+   [
+    "Sessions",
+    "Usually four, monthly"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is Spectra MDF laser resurfacing?",
+    "a": "Spectra MDF is a form of fractional laser resurfacing used to improve selected acne scars, enlarged pores, uneven texture, fine lines and certain fine-line scars."
+   },
+   {
+    "q": "Who is Spectra MDF laser treatment suitable for?",
+    "a": "Spectra MDF assessment may be worthwhile if you would like to improve:"
+   },
+   {
+    "q": "Why choose Spectra MDF rather than a more intensive resurfacing laser?",
+    "a": "The main advantage of Spectra MDF is the balance between improvement and recovery."
+   },
+   {
+    "q": "What results can I realistically expect?",
+    "a": "Spectra MDF produces gradual improvement as new collagen forms and the skin remodels. Most patients require a treatment course rather than expecting the full result from one session."
+   },
+   {
+    "q": "Who will perform my treatment?",
+    "a": "Your treatment will be carried out by a suitably trained member of the Midland Skin laser team, following a medical assessment and agreed treatment plan."
+   }
+  ]
+ },
+ "laser-redness-and-thread-vein-reduction": {
+  "intro": [
+   "Vascular laser and Broad Band Light (BBL) treatment selected according to your vessels, skin and treatment area.",
+   "Visible thread veins can occur anywhere on the face or body. They may appear as individual red, purple or blue vessels, branching vessels or a wider network of visible redness."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Face, nose, neck & chest thread veins"
+   ],
+   [
+    "Treatment",
+    "Excel V+ & BBL"
+   ],
+   [
+    "Anaesthetic",
+    "Usually not required"
+   ],
+   [
+    "Sessions",
+    "Usually 5–7"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "Can thread veins return?",
+    "a": "Yes. Some treated vessels can reopen or become visible again, and new vessels may develop nearby. Recurrence is particularly common around the nose."
+   },
+   {
+    "q": "What happens during treatment?",
+    "a": "Clinical photographs are taken and the treatment plan and consent are confirmed. The treatment area is prepared and appropriate eye protection is used throughout treatment."
+   },
+   {
+    "q": "Can treatment take place at my first appointment?",
+    "a": "Your initial appointment is used to assess the vessels and plan treatment. Vascular laser or BBL treatment is arranged separately."
+   },
+   {
+    "q": "What should I do before treatment?",
+    "a": "Avoid tanning and fake tan on the treatment area and attend for your appointment makeup free."
+   },
+   {
+    "q": "Will the treatment hurt?",
+    "a": "Most people describe a brief pinching, snapping or hot sensation. The feeling stops quickly after each pulse, and cooling may be used where appropriate. Local anaesthetic is not normally required."
+   }
+  ]
+ },
+ "laser-rejuvenation-and-pigmentation-bbl": {
+  "intro": [
+   "At Midland Skin we offer Sciton BBL treatment for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands.",
+   "Sciton BBL (BroadBand Light) is an advanced form of intense pulsed light (IPL). Hundreds of different colours of light penetrate the skin with each flash. The light targets unwanted pigmentation, redness, thread veins, sun spots and freckles. Treatment aims to even out skin tone. Periodic maintenance treatment can help sustain the improvement."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Pigmentation, redness & rejuvenation"
+   ],
+   [
+    "Treatment",
+    "Broadband light"
+   ],
+   [
+    "Recovery",
+    "Minimal; allow 1–2 days"
+   ],
+   [
+    "Sessions",
+    "Usually 3–5 initially"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What does BBL treatment do?",
+    "a": "Sciton BBL is an advanced skin treatment with the following benefits:"
+   },
+   {
+    "q": "How does Sciton BBL treatment work?",
+    "a": "BBL is short for Broad Band Light and is an advanced form of IPL (Intense Pulsed Light), used to tone and, with regular treatment, possibly to slow visible skin ageing."
+   },
+   {
+    "q": "What is Forever Young BBL?",
+    "a": "Forever Young BBL is the name given to a full-face BBL for maintaining and preventing skin ageing once the skin has been corrected with an initial course of BBL treatments."
+   },
+   {
+    "q": "How effective is Sciton BBL?",
+    "a": "Most patients see an improvement in pigmentation, redness and overall tone after a course, and periodic treatment helps maintain it. Response varies, and a particular outcome cannot be guaranteed. BBL can be used on most body areas."
+   },
+   {
+    "q": "How many treatments are required?",
+    "a": "It is possible to see a difference after one treatment, but a series of treatments is usually required. A course of 3 to 5 treatments is generally initially needed to correct the skin from pigmentation and redness. Each treatment is given once every 3 to 4 weeks. Certain individuals can require more than five treatments in the initial course."
+   }
+  ]
+ },
+ "laser-toning-for-melasma": {
+  "intro": [
+   "Midland Skin offers a consultant-led laser programme for hyperpigmentation, serving patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands.",
+   "Hyperpigmentation is one of the most common reasons people seek laser treatment. It simply means there is too much pigment in the skin."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Melasma, post inflammatory hyperpigmentation"
+   ],
+   [
+    "Sessions",
+    "5-10"
+   ],
+   [
+    "Duration",
+    "15-30 mins"
+   ],
+   [
+    "Recovery",
+    "Immediately"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What Is Laser Toning?",
+    "a": "Laser toning uses a low-energy, large spot Q-switched 1064 nm Nd:YAG laser. It’s especially helpful for:"
+   },
+   {
+    "q": "Am I suitable for laser toning?",
+    "a": "Laser toning is safe for all skin phototypes, including darker skin (Fitzpatrick types 1–6). Suitability depends on the cause and type of your pigmentation. A consultation with a Consultant Dermatologist is required before treatment begins, to assess your phototype, confirm the diagnosis, and recommend the most appropriate laser."
+   },
+   {
+    "q": "Do I need a consultation before starting?",
+    "a": "Yes. All pigmentation concerns at Midland Skin begin with a consultation. We assess the cause and type of your pigmentation and your skin phototype before recommending any treatment. This is particularly important for pigmentation, as different causes respond differently to laser and some conditions require dermatoscopic assessment before treatment proceeds."
+   },
+   {
+    "q": "How many sessions of laser toning will I need?",
+    "a": "Laser toning typically requires 5–10 sessions, spaced three weeks apart. The exact number depends on your response to treatment. Laser toning is a gradual, cumulative treatment; results develop over the course of the programme as melanin-producing cells progressively reduce their activity. Some patients with melasma will also require periodic maintenance treatments after the initial programme."
+   },
+   {
+    "q": "What should I do before my session?",
+    "a": "Arrive without make-up applied. Do not attend with an active tan; sun-tanning during the treatment course increases the risk of adverse effects and reduces efficacy. Avoid deliberate sun exposure and apply a broad-spectrum SPF 50 sunscreen daily throughout the treatment period."
+   }
+  ]
+ },
+ "sofwave-skin-tightening": {
+  "intro": [
+   "Non-surgical lifting for the brow, jawline, under-chin and neck — and treatment for selected acne scars",
+   "Sofwave uses ultrasound to firm and lift the skin without surgery, needles or significant downtime. The improvement builds gradually over the months after treatment."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Mild-moderate skin laxity"
+   ],
+   [
+    "Anaesthetic",
+    "Numbing cream"
+   ],
+   [
+    "Duration",
+    "1.5-2.5 hours"
+   ],
+   [
+    "Recovery",
+    "Redness 1-2 days"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is Sofwave and how does it work?",
+    "a": "Sofwave delivers controlled ultrasound energy into the middle layer of the skin, at a depth of approximately 1.5 mm. This heats small treatment zones and stimulates collagen contraction followed by new collagen and elastin formation, while integrated SofCool™ technology protects the surface of the skin."
+   },
+   {
+    "q": "Who is Sofwave suitable for?",
+    "a": "Sofwave is most worthwhile when the concern is early or moderate laxity and you want a visible but natural improvement without surgery. An assessment is likely to be worthwhile if:"
+   },
+   {
+    "q": "When might another treatment suit you better?",
+    "a": "Sofwave is designed for subtle lifting and firming. If you have substantial excess skin, advanced jowling or significant neck laxity, surgery is more likely to produce the change you want."
+   },
+   {
+    "q": "What results can I realistically expect?",
+    "a": "The aim is for skin to look firmer, smoother and better supported — not for you to look different or treated. Standardised photographs taken before treatment let us assess the change objectively rather than by memory."
+   },
+   {
+    "q": "How many treatments, and when will I see the result?",
+    "a": "Most patients having Sofwave for facial lines, laxity or skin quality are recommended one or two treatments, depending on the area, the degree of laxity and the improvement being sought. Where two are recommended, facial treatments are usually spaced around eight weeks apart."
+   }
+  ]
+ },
+ "wrinkle-relaxing-injections": {
+  "intro": [
+   "Specialist assessment and treatment with muscle relaxing injections, dermal fillers and polynucleotides",
+   "At Midland Skin we offer aesthetic injectable treatments for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands. Every treatment starts with a face-to-face consultation with a consultant or aesthetics doctor, who assesses you and carries out your treatment personally."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Lines, volume & skin quality"
+   ],
+   [
+    "Treatment",
+    "Injectable treatments"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What are aesthetic injections?",
+    "a": "Aesthetic injections are treatments given through a fine needle to soften lines, restore lost volume or improve the quality of the skin itself. At Midland Skin we offer three: muscle relaxing injections, dermal fillers and polynucleotides."
+   },
+   {
+    "q": "What happens during and after treatment?",
+    "a": "Before. No special preparation is needed. To reduce the chance of bruising, avoid alcohol and non-essential aspirin or ibuprofen for 24 hours beforehand. Please arrive without makeup on the areas being treated. If you get cold sores and are having lip filler, tell your clinician in advance."
+   },
+   {
+    "q": "Who will assess and treat me?",
+    "a": "A consultant or aesthetics doctor carries out your consultation and performs your injections. You will meet your clinician before treatment, so you know exactly who is treating you."
+   },
+   {
+    "q": "Can I have treatment at my first appointment?",
+    "a": "No. Your first appointment is a consultation, and treatment is booked as a separate appointment afterwards. Returning patients can book treatment directly."
+   },
+   {
+    "q": "Do I need to stop any medication?",
+    "a": "Do not stop prescribed medication without advice. Tell your clinician about everything you take, particularly blood thinners, muscle relaxants and any recent antibiotics. Avoiding alcohol and non-essential aspirin or ibuprofen for 24 hours before treatment reduces bruising."
+   }
+  ]
+ },
+ "hyperhidrosis-excessive-sweating-treatment": {
+  "intro": [
+   "At Midland Skin we offer Hyperhidrosis consultations with a Dermatologist for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands.",
+   "Hyperhidrosis is excessive sweating that is inappropriate for the situation in which it occurs. The problem may occur all over the body or be localised to certain areas such as the underarms, palms, soles, face, scalp, groin and under the breasts."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Persistent excessive sweating"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is hyperhidrosis?",
+    "a": "Hyperhidrosis is excessive sweating that is inappropriate for the situation in which it occurs. The problem may occur all over the body or be localised to certain areas such as the underarms, palms, soles, face, scalp, groin and under the breasts."
+   },
+   {
+    "q": "How severe is your sweating?",
+    "a": "Dermatologists grade hyperhidrosis using a simple four-point scale. It is a useful way to describe the problem at your appointment:"
+   },
+   {
+    "q": "When should I see a dermatologist for hyperhidrosis?",
+    "a": "Excessive sweating is a treatable medical condition, and a dermatology assessment establishes the cause and identifies which treatments are suitable for you."
+   },
+   {
+    "q": "How is hyperhidrosis treated at Midland Skin?",
+    "a": "Treatment depends on which areas are affected, how severe the sweating is and what you have already tried. Your dermatologist will discuss the options that apply to you at your assessment."
+   },
+   {
+    "q": "Who will assess me?",
+    "a": "You meet with a consultant dermatologist, who assesses the pattern and severity of your sweating and reviews your symptoms, previous treatments, medical history and relevant medications."
+   }
+  ]
+ },
+ "botulinum-toxin-for-rosacea-flushing": {
+  "intro": [
+   "Consultant dermatologist-led diagnosis and treatment for facial redness, flushing, thread veins, inflammatory rosacea, sensitive skin and rhinophyma.",
+   "At Midland Skin we offer Rosacea, Redness and Flushing consultations with a Dermatologist for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Redness, flushing, spots"
+   ],
+   [
+    "Treatment",
+    "Prescription, skin care, laser"
+   ],
+   [
+    "Consultant",
+    "Dermatologist"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is rosacea?",
+    "a": "Rosacea is a long-term inflammatory skin condition that mainly affects the central face, including the cheeks, nose, chin and forehead. Rosacea is common and affects 1 in 20 people."
+   },
+   {
+    "q": "What symptoms can rosacea cause?",
+    "a": "Rosacea symptoms vary from person to person. Some people mainly flush, others have persistent redness or thread veins, and some develop inflammatory spots, sensitive skin or eye symptoms."
+   },
+   {
+    "q": "How to reduce rosacea symptoms?",
+    "a": "Simple daily changes can reduce flares and make medical treatment work better."
+   }
+  ]
+ },
+ "fillers-and-polynucleotides": {
+  "intro": [
+   "Find out more about aesthetic injections ."
+  ],
+  "factsList": [],
+  "faqs": []
+ },
+ "eyelid-lesions-chalazion-and-xanthelasma": {
+  "intro": [
+   "Specialist assessment and treatment for persistent or troublesome chalazia by oculoplastic surgeons",
+   "A chalazion, sometimes called a meibomian cyst, is a lump on the eyelid caused by blockage of one of the small oil-producing meibomian glands."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Persistent chalazion"
+   ],
+   [
+    "Anaesthetic",
+    "Local anaesthetic"
+   ],
+   [
+    "Duration",
+    "15–20 minutes"
+   ],
+   [
+    "Recovery",
+    "Bruising & swelling for 2-7 days"
+   ],
+   [
+    "Consultant",
+    "Oculoplastic surgeon"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is a chalazion?",
+    "a": "A chalazion, sometimes called a meibomian cyst, is a lump on the eyelid caused by blockage of one of the small oil-producing meibomian glands."
+   },
+   {
+    "q": "When should I see a specialist about a chalazion?",
+    "a": "You do not necessarily need treatment simply because you have a chalazion. Many improve with warm compresses, massage and time."
+   },
+   {
+    "q": "Is a chalazion the same as a stye?",
+    "a": "No. Although both cause eyelid lumps, they are different conditions."
+   },
+   {
+    "q": "What happens during chalazion surgery?",
+    "a": "Chalazion surgery is a relatively short procedure performed under local anaesthetic."
+   },
+   {
+    "q": "How should I prepare for my chalazion procedure?",
+    "a": "You can normally eat and drink as usual before a procedure performed under local anaesthetic unless we specifically advise you otherwise."
+   }
+  ]
+ },
+ "blepharoplasty": {
+  "intro": [
+   "Upper and lower eyelid surgery by a consultant oculoplastic surgeon, under local anaesthetic with optional sedation",
+   "At Midland Skin we offer blepharoplasty surgery for patients in Birmingham, Solihull, Coventry, Wolverhampton, Worcester and the Midlands."
+  ],
+  "factsList": [
+   [
+    "Best for",
+    "Hooded lids & eye bags"
+   ],
+   [
+    "Anaesthetic",
+    "Local ± sedation"
+   ],
+   [
+    "Duration",
+    "1–2 hours"
+   ],
+   [
+    "Recovery",
+    "1–2 weeks"
+   ],
+   [
+    "Consultant",
+    "Oculoplastic surgeon"
+   ]
+  ],
+  "faqs": [
+   {
+    "q": "What is Blepharoplasty?",
+    "a": "Blepharoplasty, commonly referred to as eyelid lift surgery or eye bag surgery , removes or repositions excess skin, muscle and fat from the upper or lower eyelids."
+   },
+   {
+    "q": "What does the consultation cost and include?",
+    "a": "Your consultation is a full oculoplastic assessment with Miss Reena Kumari, including clinical photographs. It is charged separately, and the fee is not deducted from the cost of surgery."
+   },
+   {
+    "q": "Who will perform my blepharoplasty?",
+    "a": "Your surgery is performed by Miss Reena Kumari , Consultant Oculoplastic Surgeon. She carries out your consultation, takes your consent and performs your surgery, so the surgeon who assesses you is the surgeon who operates. If you choose sedation, it is given and monitored by an anaesthetist."
+   },
+   {
+    "q": "Will I be awake during the surgery?",
+    "a": "Under local anaesthetic alone, yes: awake, comfortable and able to respond to your surgeon. With intravenous sedation you are drowsy and relaxed, can still respond when asked, and usually remember little afterwards. Blepharoplasty at Midland Skin is never done under general anaesthetic."
+   },
+   {
+    "q": "How should I prepare for surgery?",
+    "a": "Come without eye make-up, mascara or contact lenses, bring your glasses, wear a top that opens at the front, and arrange for someone to drive you home."
+   }
+  ]
+ },
+ "ectropion-and-entropion-repair": {
+  "intro": [
+   "At Midland Skin, oculoplastic surgery is led by a dual-trained Consultant Ophthalmologist and Oculoplastic, Lacrimal and Orbital Surgeon, covering both functional and cosmetic concerns of the eyelids, tear ducts and orbit.",
+   "Because eyelid skin cancers can be excised and reconstructed alongside our dermatology and Mohs service, you receive complete care under one roof. We see patients across Birmingham, Solihull, Sutton Coldfield and the Midlands."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "Why choose an oculoplastic surgeon for eyelid surgery?",
+    "a": "When considering eyelid surgery, whether for cosmetic enhancement or medical necessity, choosing the right specialist is crucial."
+   },
+   {
+    "q": "Why choose Midland Skin for oculoplastic surgery?",
+    "a": "Care led by a highly qualified and experienced oculoplastic surgeon"
+   },
+   {
+    "q": "Do I need a referral to see an oculoplastic surgeon?",
+    "a": "No referral is required to book privately. Your GP or optometrist may provide one if you are being treated for a medical eyelid condition, but it is not essential."
+   },
+   {
+    "q": "Will a specialist oculoplastic surgeon perform my procedure?",
+    "a": "Yes. All eyelid and oculoplastic procedures at Midland Skin are performed by Miss Reena Kumari, a dual-trained Consultant Ophthalmologist and Oculoplastic Surgeon."
+   },
+   {
+    "q": "What does recovery involve?",
+    "a": "Most eyelid procedures are performed under local anaesthetic as a day case. Bruising and swelling are common for one to two weeks and settle gradually. You will be given full aftercare guidance and a review appointment."
+   }
+  ]
+ },
+ "ptosis-droopy-eyelid-surgery": {
+  "intro": [
+   "A droopy or heavy upper eyelid is not always caused by the same problem. It may be true ptosis, excess upper-eyelid skin, a low eyebrow or a combination of these. At Midland Skin, your oculoplastic assessment is used to identify the cause, assess the health and function of the eye and recommend the most appropriate treatment.",
+   "Ptosis, pronounced “toe-sis”, is the medical name for an upper eyelid that sits lower than normal. It may affect one or both eyes. The drooping can be mild, or the eyelid may cover part of the pupil and reduce the upper field of vision."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is a droopy eyelid or ptosis?",
+    "a": "Ptosis, pronounced “toe-sis”, is the medical name for an upper eyelid that sits lower than normal. It may affect one or both eyes. The drooping can be mild, or the eyelid may cover part of the pupil and reduce the upper field of vision."
+   },
+   {
+    "q": "What causes adult ptosis?",
+    "a": "The most common form in adults is age-related ptosis. This happens because the skin, muscle and connective tissue in the eyelid become weaker and stretch over time."
+   },
+   {
+    "q": "Who is ptosis surgery suitable for?",
+    "a": "Ptosis surgery may be suitable for adults with a stable, longstanding or gradually developing drooping upper eyelid. Treatment may be considered for functional reasons, appearance-related concerns or a combination of both."
+   },
+   {
+    "q": "Why choose Midland Skin in Birmingham for ptosis surgery?",
+    "a": "Ptosis surgery takes place close to the eye and must balance eyelid height, movement, eye closure, comfort and appearance. It is therefore important to establish exactly why the eyelid is drooping before deciding which operation, if any, is appropriate."
+   },
+   {
+    "q": "What is the difference between ptosis and excess upper-eyelid skin?",
+    "a": "“Droopy eyelids” is a general description rather than a diagnosis. Several different problems can create a heavy or hooded upper-eyelid appearance, and the correct treatment depends on which structures are responsible."
+   }
+  ]
+ },
+ "blepharospasm": {
+  "intro": [
+   "Blepharospasm at Midland Skin, Birmingham. Prices are indicative and confirmed at your initial assessment."
+  ],
+  "factsList": [],
+  "faqs": []
+ }
+}

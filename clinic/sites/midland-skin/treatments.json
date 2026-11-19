@@ -1,0 +1,1226 @@
+{
+ "categories": [
+  {
+   "id": "consultations",
+   "name": "Consultations & tests",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  },
+  {
+   "id": "acne-scars",
+   "name": "Acne & scars",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  },
+  {
+   "id": "skin-lesions",
+   "name": "Moles, cysts & skin lesions",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  },
+  {
+   "id": "skin-cancer",
+   "name": "Skin cancer",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  },
+  {
+   "id": "hair-loss",
+   "name": "Hair loss",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  },
+  {
+   "id": "lasers",
+   "name": "Laser treatments",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  },
+  {
+   "id": "aesthetics",
+   "name": "Sofwave & injectables",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  },
+  {
+   "id": "eyelids",
+   "name": "Eyelids & oculoplastic",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/"
+  }
+ ],
+ "treatments": [
+  {
+   "cat": "consultations",
+   "slug": "initial-assessments",
+   "name": "Initial assessments",
+   "kind": "Consultation",
+   "price": "£275 to £350",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/",
+   "prices": [
+    {
+     "label": "Initial dermatology assessment",
+     "price": "£275",
+     "note": "Up to 25 minutes"
+    },
+    {
+     "label": "Initial extended dermatology assessment",
+     "price": "£350",
+     "note": "For eczema, psoriasis, complex or long-standing problems & second opinions. Up to 35 minutes"
+    },
+    {
+     "label": "Initial acne assessment",
+     "price": "£275",
+     "note": "Up to 25 minutes"
+    },
+    {
+     "label": "Initial acne scar assessment",
+     "price": "£275",
+     "note": "A separate acne assessment is required for those who also have active acne. Up to 25 minutes"
+    },
+    {
+     "label": "Initial scar assessment",
+     "price": "£275-350",
+     "note": "For keloid, hypertrophic, surgical, burn, self-harm or injury scars. Up to 25 minutes"
+    },
+    {
+     "label": "Initial mole check / skin lesion assessment",
+     "price": "£275",
+     "note": "For a mole or skin lesion you’re worried about. Up to 25 minutes"
+    },
+    {
+     "label": "Full body mole check",
+     "price": "£275",
+     "note": "A head-to-toe check of your moles and skin. Up to 25 minutes"
+    },
+    {
+     "label": "Initial skin surgery assessment",
+     "price": "£275",
+     "note": "Required before specialist skin surgery such as excision of a mole, cyst, lipoma, skin lesion or skin cancer, including Mohs surgery. Up to 25 minutes"
+    },
+    {
+     "label": "Initial hair loss and scalp assessment",
+     "price": "£350",
+     "note": "Up to 25 minutes"
+    },
+    {
+     "label": "Initial laser assessment",
+     "price": "£275",
+     "note": "Up to 25 minutes"
+    },
+    {
+     "label": "Initial Sofwave assessment",
+     "price": "£50",
+     "note": "Assessed by our aesthetic practitioners. Redeemable against treatment within 3 months. Up to 25 minutes"
+    },
+    {
+     "label": "Initial aesthetic assessment",
+     "price": "£275",
+     "note": "Up to 25 minutes"
+    },
+    {
+     "label": "Initial oculoplastic assessment",
+     "price": "£275",
+     "note": ""
+    },
+    {
+     "label": "Children's initial dermatology assessment (0-11y)",
+     "price": "£350",
+     "note": "Up to 35 minutes"
+    },
+    {
+     "label": "Initial dermatology assessment + interpreter",
+     "price": "£400",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "consultations",
+   "slug": "review-consultations",
+   "name": "Review consultations",
+   "kind": "Consultation",
+   "price": "From £195",
+   "orig": "https://www.midlandskin.co.uk/about-us-2/follow-up-appointments-2/",
+   "prices": [
+    {
+     "label": "Review consultation",
+     "price": "£195",
+     "note": "Standard, up to 20 minutes"
+    },
+    {
+     "label": "Extended review consultation",
+     "price": "£295",
+     "note": "If more time is required, up to 30 minutes"
+    },
+    {
+     "label": "Review consultation + interpreter",
+     "price": "£345",
+     "note": ""
+    },
+    {
+     "label": "Children's review dermatology consultation (0-11y)",
+     "price": "£235",
+     "note": "Up to 25 minutes"
+    }
+   ]
+  },
+  {
+   "cat": "consultations",
+   "slug": "blood-tests-swabs-and-biopsy",
+   "name": "Blood tests, swabs and biopsy",
+   "kind": "Tests",
+   "price": "From £30",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/",
+   "prices": [
+    {
+     "label": "Blood tests",
+     "price": "From £95",
+     "note": ""
+    },
+    {
+     "label": "External blood test interpretation",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Skin swab for infection",
+     "price": "From £95",
+     "note": ""
+    },
+    {
+     "label": "Biopsy of skin",
+     "price": "From £565",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "acne-scars",
+   "slug": "acne-treatments",
+   "name": "Acne treatments",
+   "kind": "Treatment",
+   "price": "From £250",
+   "orig": "https://www.midlandskin.co.uk/treatments/aviclear-acne-laser/",
+   "prices": [
+    {
+     "label": "Hyfrecation or radiofrequency of comedones",
+     "price": "From £275",
+     "note": ""
+    },
+    {
+     "label": "Forever Clear BBL treatment",
+     "price": "From £250",
+     "note": "Per session; usually 3–8 sessions"
+    },
+    {
+     "label": "Aviclear acne laser",
+     "price": "£3,000",
+     "note": "Course of 3, face only"
+    },
+    {
+     "label": "Acne redness reduction laser",
+     "price": "From £250",
+     "note": "Per session; usually 3–5 sessions"
+    },
+    {
+     "label": "Acne pigment reduction laser",
+     "price": "From £250",
+     "note": "Per session; usually 3–5 sessions"
+    }
+   ]
+  },
+  {
+   "cat": "acne-scars",
+   "slug": "acne-scar-treatments",
+   "name": "Acne scar treatments",
+   "kind": "Treatment",
+   "price": "From £350",
+   "orig": "https://www.midlandskin.co.uk/treatments/acne-scar-treatment/",
+   "prices": [
+    {
+     "label": "Combined acne scar treatment session",
+     "price": "From £950",
+     "note": "Combination of cannula subcision ± TCA Cross ± Fractional laser"
+    },
+    {
+     "label": "TCA Cross (1-9 lesions)",
+     "price": "From £450",
+     "note": ""
+    },
+    {
+     "label": "TCA Cross (10-19 lesions)",
+     "price": "From £650",
+     "note": ""
+    },
+    {
+     "label": "Punch excision (single)",
+     "price": "From £450",
+     "note": ""
+    },
+    {
+     "label": "Punch excision (up to 4)",
+     "price": "From £955",
+     "note": ""
+    },
+    {
+     "label": "Subcision - Cannula (small area <2cm²)",
+     "price": "From £350",
+     "note": ""
+    },
+    {
+     "label": "Subcision - Cannula (one cheek or temple)",
+     "price": "From £550",
+     "note": ""
+    },
+    {
+     "label": "Subcision - Cannula (both cheeks or both temples)",
+     "price": "From £950",
+     "note": ""
+    },
+    {
+     "label": "Taylor liberator subcision",
+     "price": "From £1,150",
+     "note": ""
+    },
+    {
+     "label": "Sofwave - Acne scars",
+     "price": "From £550",
+     "note": ""
+    },
+    {
+     "label": "Fractional laser resurfacing - acne scarring",
+     "price": "From £950",
+     "note": ""
+    },
+    {
+     "label": "Fully ablative laser resurfacing to the full face",
+     "price": "From £4,250",
+     "note": "Under conscious sedation"
+    },
+    {
+     "label": "Filler per ml",
+     "price": "From £400",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "acne-scars",
+   "slug": "keloid-hypertrophic-and-other-scars",
+   "name": "Keloid, hypertrophic and other scars",
+   "kind": "Treatment",
+   "price": "From £375",
+   "orig": "https://www.midlandskin.co.uk/scar-treatment-in-birmingham/",
+   "prices": [
+    {
+     "label": "Laser treatment for scars",
+     "price": "From £375",
+     "note": ""
+    },
+    {
+     "label": "Keloid or hypertrophic scar laser ± injection treatment",
+     "price": "From £375",
+     "note": ""
+    },
+    {
+     "label": "Keloid scar cryotherapy treatment",
+     "price": "From £450",
+     "note": ""
+    },
+    {
+     "label": "Surgical scar revision",
+     "price": "From £855",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-lesions",
+   "slug": "liquid-nitrogen-cryotherapy",
+   "name": "Liquid nitrogen cryotherapy",
+   "kind": "Procedure",
+   "price": "From £195",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/",
+   "prices": [
+    {
+     "label": "Cryotherapy - Small",
+     "price": "From £195",
+     "note": ""
+    },
+    {
+     "label": "Cryotherapy - Medium",
+     "price": "From £245",
+     "note": ""
+    },
+    {
+     "label": "Cryotherapy - Large",
+     "price": "From £295",
+     "note": ""
+    },
+    {
+     "label": "Keloid scar cryotherapy treatment",
+     "price": "From £450",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-lesions",
+   "slug": "bleomycin-for-viral-warts",
+   "name": "Bleomycin for viral warts",
+   "kind": "Injection",
+   "price": "From £565",
+   "orig": "https://www.midlandskin.co.uk/treatments/bleomycin/",
+   "prices": [
+    {
+     "label": "Bleomycin Band A",
+     "price": "£565",
+     "note": "Per session"
+    },
+    {
+     "label": "Bleomycin Band B",
+     "price": "£710",
+     "note": "Per session"
+    }
+   ]
+  },
+  {
+   "cat": "skin-lesions",
+   "slug": "mole-removal-same-day",
+   "name": "Mole removal (same day)",
+   "kind": "Procedure",
+   "price": "From £565",
+   "orig": "https://www.midlandskin.co.uk/treatments/mole-removal/",
+   "prices": [
+    {
+     "label": "Mole removal - shave excision, first lesion",
+     "price": "From £565",
+     "note": ""
+    },
+    {
+     "label": "Mole removal - laser removal, first lesion",
+     "price": "From £565",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-lesions",
+   "slug": "skin-tags-seborrhoeic-keratoses-and-small-lesions",
+   "name": "Skin tags, seborrhoeic keratoses and small lesions",
+   "kind": "Treatment",
+   "price": "From £150",
+   "orig": "https://www.midlandskin.co.uk/treatments/skin-tag-removal/",
+   "prices": [
+    {
+     "label": "Seborrhoeic keratosis & skin tag - 1 large or 3 small",
+     "price": "From £375",
+     "note": ""
+    },
+    {
+     "label": "Seborrhoeic keratosis & skin tag - 2 large or up to 7 small",
+     "price": "From £475",
+     "note": ""
+    },
+    {
+     "label": "Seborrhoeic keratosis & skin tag - groin, face or eyelid",
+     "price": "From £475",
+     "note": ""
+    },
+    {
+     "label": "Seborrhoeic keratosis & skin tag - complex / larger session",
+     "price": "From £575",
+     "note": ""
+    },
+    {
+     "label": "Shave excision (first lesion)",
+     "price": "From £375",
+     "note": ""
+    },
+    {
+     "label": "Shave excision (subsequent lesions)",
+     "price": "From £150",
+     "note": ""
+    },
+    {
+     "label": "Sebaceous gland hyperplasia - 1 large or 3 small",
+     "price": "From £375",
+     "note": ""
+    },
+    {
+     "label": "Sebaceous gland hyperplasia - 2 large or up to 7 small",
+     "price": "From £475",
+     "note": ""
+    },
+    {
+     "label": "Milia removal 1-3 lesions",
+     "price": "From £375",
+     "note": ""
+    },
+    {
+     "label": "Milia removal 4-7 lesions",
+     "price": "From £475",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-lesions",
+   "slug": "cyst-removal",
+   "name": "Cyst removal",
+   "kind": "Procedure",
+   "price": "From £565",
+   "orig": "https://www.midlandskin.co.uk/treatments/cyst-removal/",
+   "prices": [
+    {
+     "label": "Cyst removal - Body less than 2cm",
+     "price": "From £565",
+     "note": ""
+    },
+    {
+     "label": "Cyst removal - Body 2-4cm",
+     "price": "From £710",
+     "note": ""
+    },
+    {
+     "label": "Cyst removal - Body 4-6cm",
+     "price": "From £855",
+     "note": ""
+    },
+    {
+     "label": "Cyst removal - Face/Head/Neck less than 2cm",
+     "price": "From £710",
+     "note": ""
+    },
+    {
+     "label": "Cyst removal - Face/Head/Neck 2-3cm",
+     "price": "From £855",
+     "note": ""
+    },
+    {
+     "label": "Cyst removal - Face/Head/Neck 3-4cm",
+     "price": "From £995",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-lesions",
+   "slug": "lipoma-removal",
+   "name": "Lipoma removal",
+   "kind": "Procedure",
+   "price": "From £565",
+   "orig": "https://www.midlandskin.co.uk/treatments/lipoma-removal/",
+   "prices": [
+    {
+     "label": "Lipoma removal - Body less than 2cm",
+     "price": "From £565",
+     "note": ""
+    },
+    {
+     "label": "Lipoma removal - Body 2-3cm",
+     "price": "From £710",
+     "note": ""
+    },
+    {
+     "label": "Lipoma removal - Body 3-4cm",
+     "price": "From £855",
+     "note": ""
+    },
+    {
+     "label": "Lipoma removal - Body 4-6cm",
+     "price": "From £995",
+     "note": ""
+    },
+    {
+     "label": "Lipoma removal - Face/Head/Neck less than 1cm",
+     "price": "From £710",
+     "note": ""
+    },
+    {
+     "label": "Lipoma removal - Face/Head/Neck 1-2cm",
+     "price": "From £855",
+     "note": ""
+    },
+    {
+     "label": "Lipoma removal - Face/Head/Neck 2-3cm",
+     "price": "From £995",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-lesions",
+   "slug": "split-earlobe-repair",
+   "name": "Split earlobe repair",
+   "kind": "Procedure",
+   "price": "From £495",
+   "orig": "https://www.midlandskin.co.uk/earlobe-repair-birmingham/",
+   "prices": [
+    {
+     "label": "Split earlobe repair",
+     "price": "From £495",
+     "note": "Per side"
+    }
+   ]
+  },
+  {
+   "cat": "skin-cancer",
+   "slug": "skin-biopsy-and-histology",
+   "name": "Skin biopsy and histology",
+   "kind": "Procedure",
+   "price": "From £565",
+   "orig": "https://www.midlandskin.co.uk/fees-and-terms/",
+   "prices": [
+    {
+     "label": "Biopsy of skin",
+     "price": "From £565",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-cancer",
+   "slug": "skin-cancer-surgery",
+   "name": "Skin cancer surgery",
+   "kind": "Procedure",
+   "price": "From £1,150",
+   "orig": "https://www.midlandskin.co.uk/treatments/skin-cancer-surgery/",
+   "prices": [
+    {
+     "label": "Skin cancer excision (per lesion)",
+     "price": "From £1,150",
+     "note": ""
+    },
+    {
+     "label": "Skin cancer excision plus flap or skin graft",
+     "price": "From £1,445",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "skin-cancer",
+   "slug": "mohs-surgery",
+   "name": "Mohs surgery",
+   "kind": "Procedure",
+   "price": "From £3,795",
+   "orig": "https://www.midlandskin.co.uk/treatments/mohs-micrographic-surgery/",
+   "prices": [
+    {
+     "label": "Mohs surgery for skin cancer",
+     "price": "From £3,795",
+     "note": "Includes first review consultation"
+    }
+   ]
+  },
+  {
+   "cat": "skin-cancer",
+   "slug": "photodynamic-therapy",
+   "name": "Photodynamic therapy",
+   "kind": "Laser and light",
+   "price": "From £950",
+   "orig": "https://www.midlandskin.co.uk/treatments/photodynamic-therapy/",
+   "prices": [
+    {
+     "label": "Laser-assisted photodynamic therapy (PDT)",
+     "price": "From £950",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "hair-loss",
+   "slug": "steroid-injections-for-hair-loss",
+   "name": "Steroid injections for hair loss",
+   "kind": "Injection",
+   "price": "From £195",
+   "orig": "https://www.midlandskin.co.uk/conditions/steroid-injection-hair-loss/",
+   "prices": [
+    {
+     "label": "Steroid injection - Small area (up to 5cm²)",
+     "price": "From £195",
+     "note": ""
+    },
+    {
+     "label": "Steroid injection - Medium area (5-10cm²)",
+     "price": "From £245",
+     "note": ""
+    },
+    {
+     "label": "Steroid injection - Large area (10-15cm²)",
+     "price": "From £295",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "hair-loss",
+   "slug": "prp-for-hair-loss",
+   "name": "PRP for hair loss",
+   "kind": "Injection",
+   "price": "From £500",
+   "orig": "https://www.midlandskin.co.uk/conditions/hair-loss/consultation/",
+   "prices": [
+    {
+     "label": "Platelet-rich plasma (PRP) - Single treatment",
+     "price": "£500",
+     "note": ""
+    },
+    {
+     "label": "Platelet-rich plasma (PRP) - Course of 3",
+     "price": "£1,350",
+     "note": ""
+    },
+    {
+     "label": "Platelet-rich plasma (PRP) - Course of 3, high dose",
+     "price": "£2,050",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "hair-loss",
+   "slug": "dutasteride-mesotherapy",
+   "name": "Dutasteride mesotherapy",
+   "kind": "Injection",
+   "price": "From £200",
+   "orig": "https://www.midlandskin.co.uk/conditions/hair-loss/consultation/",
+   "prices": [
+    {
+     "label": "Dutasteride mesotherapy - Single treatment",
+     "price": "£500",
+     "note": ""
+    },
+    {
+     "label": "Dutasteride mesotherapy - Course of 3",
+     "price": "£1,350",
+     "note": ""
+    },
+    {
+     "label": "Dutasteride mesotherapy (add-on to PRP)",
+     "price": "£200",
+     "note": "Per session"
+    }
+   ]
+  },
+  {
+   "cat": "hair-loss",
+   "slug": "prescription-hair-loss-products",
+   "name": "Prescription hair loss products",
+   "kind": "Treatment",
+   "price": "From £110",
+   "orig": "https://www.midlandskin.co.uk/conditions/hair-loss/consultation/",
+   "prices": [
+    {
+     "label": "Bespoke prescription hair loss tonic (100ml)",
+     "price": "From £110",
+     "note": ""
+    },
+    {
+     "label": "Bespoke prescription hair loss foam (110ml)",
+     "price": "From £140",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "hair-loss",
+   "slug": "scalp-biopsy",
+   "name": "Scalp biopsy",
+   "kind": "Procedure",
+   "price": "From £850",
+   "orig": "https://www.midlandskin.co.uk/conditions/hair-loss/consultation/",
+   "prices": [
+    {
+     "label": "Alopecia/scalp/hair loss biopsy",
+     "price": "From £850",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "lasers",
+   "slug": "fully-ablative-laser-resurfacing",
+   "name": "Fully ablative laser resurfacing",
+   "kind": "Laser and light",
+   "price": "From £700",
+   "orig": "https://www.midlandskin.co.uk/treatments/ablative-laser-resurfacing/",
+   "prices": [
+    {
+     "label": "Fully ablative laser resurfacing to the full face",
+     "price": "From £4,250",
+     "note": "Under conscious sedation"
+    },
+    {
+     "label": "Sedation",
+     "price": "From £700-1000",
+     "note": "For some procedures the cost of sedation is included in the procedure fee; for others it is an additional fee. Your care plan will tell you which applies."
+    }
+   ]
+  },
+  {
+   "cat": "lasers",
+   "slug": "fractional-laser-resurfacing",
+   "name": "Fractional laser resurfacing",
+   "kind": "Laser and light",
+   "price": "From £350",
+   "orig": "https://www.midlandskin.co.uk/treatments/fractional-laser-resurfacing/",
+   "prices": [
+    {
+     "label": "3D Miracl",
+     "price": "£350",
+     "note": ""
+    },
+    {
+     "label": "Fractional laser resurfacing - face excluding eyelids",
+     "price": "From £1,495",
+     "note": ""
+    },
+    {
+     "label": "Fractional laser resurfacing - face including eyelids",
+     "price": "From £2,095",
+     "note": ""
+    },
+    {
+     "label": "Fractional laser resurfacing - periorbital (eyelids)",
+     "price": "From £1,295",
+     "note": ""
+    },
+    {
+     "label": "Fractional laser resurfacing - neck (stand alone)",
+     "price": "From £1,295",
+     "note": ""
+    },
+    {
+     "label": "Fractional laser resurfacing - decollete (stand alone)",
+     "price": "From £1,295",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "lasers",
+   "slug": "halo-laser",
+   "name": "Halo laser",
+   "kind": "Laser and light",
+   "price": "From £1,250",
+   "orig": "https://www.midlandskin.co.uk/treatments/halo-laser/",
+   "prices": [
+    {
+     "label": "Halo laser - face",
+     "price": "From £1,250",
+     "note": ""
+    },
+    {
+     "label": "Halo laser and BBL - face",
+     "price": "From £1,495",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "lasers",
+   "slug": "spectra-mdf-fractional-laser",
+   "name": "Spectra MDF fractional laser",
+   "kind": "Laser and light",
+   "price": "From £250",
+   "orig": "https://www.midlandskin.co.uk/treatments/spectra-mdf/",
+   "prices": [
+    {
+     "label": "Spectra MDF Fractional laser - small area",
+     "price": "From £250",
+     "note": ""
+    },
+    {
+     "label": "Spectra MDF Fractional laser - intermediate area",
+     "price": "From £350",
+     "note": ""
+    },
+    {
+     "label": "Spectra MDF Fractional laser - full face",
+     "price": "From £450",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "lasers",
+   "slug": "laser-redness-and-thread-vein-reduction",
+   "name": "Laser redness and thread vein reduction",
+   "kind": "Laser and light",
+   "price": "From £250",
+   "orig": "https://www.midlandskin.co.uk/thread-vein-removal/",
+   "prices": [
+    {
+     "label": "Laser redness / thread vein reduction - Small area",
+     "price": "From £250",
+     "note": ""
+    },
+    {
+     "label": "Laser redness / thread vein reduction - Intermediate area",
+     "price": "From £350",
+     "note": ""
+    },
+    {
+     "label": "Laser redness / thread vein reduction - Full face",
+     "price": "From £450",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "lasers",
+   "slug": "laser-rejuvenation-and-pigmentation-bbl",
+   "name": "Laser rejuvenation and pigmentation (BBL)",
+   "kind": "Laser and light",
+   "price": "From £250",
+   "orig": "https://www.midlandskin.co.uk/treatments/bbl/",
+   "prices": [
+    {
+     "label": "Laser rejuvenation – Small area",
+     "price": "£250",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – Intermediate area",
+     "price": "£350",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – Face (excluding eyelids)",
+     "price": "£450",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – Neck, sides & front (stand‑alone)",
+     "price": "£350",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – Face and neck (front and sides)",
+     "price": "£650",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – décolletage",
+     "price": "£450",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – Face, neck & décolletage",
+     "price": "£850",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – Upper back",
+     "price": "£550",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – forearms",
+     "price": "£450",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – upper arms",
+     "price": "£550",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – hands",
+     "price": "£250",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – Thighs / upper Legs",
+     "price": "£850",
+     "note": ""
+    },
+    {
+     "label": "Laser rejuvenation – lower legs",
+     "price": "£600",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "lasers",
+   "slug": "laser-toning-for-melasma",
+   "name": "Laser toning for melasma",
+   "kind": "Laser and light",
+   "price": "£1,250",
+   "orig": "https://www.midlandskin.co.uk/laser-pigmentation-toning/",
+   "prices": [
+    {
+     "label": "Laser toning - Course of 5, face or neck",
+     "price": "£1,250",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "aesthetics",
+   "slug": "sofwave-skin-tightening",
+   "name": "Sofwave skin tightening",
+   "kind": "Laser and light",
+   "price": "From £550",
+   "orig": "https://www.midlandskin.co.uk/treatments/sofwave/",
+   "prices": [
+    {
+     "label": "Initial Sofwave assessment",
+     "price": "£50",
+     "note": "Assessed by our aesthetic practitioners. Redeemable against treatment within 3 months. Up to 25 minutes"
+    },
+    {
+     "label": "Sofwave - Brow lift and eyes",
+     "price": "£995",
+     "note": "Course of 2: £1,600"
+    },
+    {
+     "label": "Sofwave - Full face and neck",
+     "price": "£2,495",
+     "note": "Course of 2: £3,995"
+    },
+    {
+     "label": "Sofwave - Full face",
+     "price": "£1,995",
+     "note": "Course of 2: £3,495"
+    },
+    {
+     "label": "Sofwave - Lower face and neck",
+     "price": "£1,995",
+     "note": "Course of 2: £3,495"
+    },
+    {
+     "label": "Sofwave - Lower face",
+     "price": "£1,250",
+     "note": "Course of 2: £2,350"
+    },
+    {
+     "label": "Sofwave - Neck",
+     "price": "£1,250",
+     "note": "Course of 2: £2,350"
+    },
+    {
+     "label": "Sofwave - Acne scars",
+     "price": "From £550",
+     "note": ""
+    },
+    {
+     "label": "Sofwave - Arms",
+     "price": "From £2,500",
+     "note": ""
+    },
+    {
+     "label": "Sofwave central abdomen or décolletage",
+     "price": "£1,250",
+     "note": "Course of 2: £2,350"
+    }
+   ]
+  },
+  {
+   "cat": "aesthetics",
+   "slug": "wrinkle-relaxing-injections",
+   "name": "Wrinkle-relaxing injections",
+   "kind": "Injection",
+   "price": "From £240",
+   "orig": "https://www.midlandskin.co.uk/treatments/muscle-relaxing-injections/",
+   "prices": [
+    {
+     "label": "Botulinum toxin - One area",
+     "price": "£240",
+     "note": "£310 higher dose"
+    },
+    {
+     "label": "Botulinum toxin - Two areas",
+     "price": "£310",
+     "note": "£380 higher dose"
+    },
+    {
+     "label": "Botulinum toxin - Three areas",
+     "price": "£380",
+     "note": "£495 higher dose"
+    },
+    {
+     "label": "Botulinum toxin - Four areas",
+     "price": "£450",
+     "note": "£585 higher dose"
+    },
+    {
+     "label": "Botulinum toxin - Masseter muscle slimming",
+     "price": "£380-495",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "aesthetics",
+   "slug": "hyperhidrosis-excessive-sweating-treatment",
+   "name": "Hyperhidrosis (excessive sweating) treatment",
+   "kind": "Treatment",
+   "price": "From £580",
+   "orig": "https://www.midlandskin.co.uk/conditions/hyperhidrosis/",
+   "prices": [
+    {
+     "label": "Botulinum toxin - Armpit sweating, small",
+     "price": "From £580",
+     "note": ""
+    },
+    {
+     "label": "Botulinum toxin - Armpit sweating, large",
+     "price": "£750",
+     "note": ""
+    },
+    {
+     "label": "Botulinum toxin - Forehead and scalp sweating",
+     "price": "From £850",
+     "note": ""
+    },
+    {
+     "label": "Botulinum toxin - Palms or soles sweating",
+     "price": "From £850",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "aesthetics",
+   "slug": "botulinum-toxin-for-rosacea-flushing",
+   "name": "Botulinum toxin for rosacea flushing",
+   "kind": "Injection",
+   "price": "From £380",
+   "orig": "https://www.midlandskin.co.uk/conditions/rosacea-redness-thread-veins/",
+   "prices": [
+    {
+     "label": "Botulinum toxin - Flushing / redness",
+     "price": "From £380",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "aesthetics",
+   "slug": "fillers-and-polynucleotides",
+   "name": "Fillers and polynucleotides",
+   "kind": "Injection",
+   "price": "From £350",
+   "orig": "https://www.midlandskin.co.uk/treatments/muscle-relaxing-injections/",
+   "prices": [
+    {
+     "label": "Filler per ml",
+     "price": "From £400",
+     "note": ""
+    },
+    {
+     "label": "Polynucleotides - Full face (4ml)",
+     "price": "£500",
+     "note": ""
+    },
+    {
+     "label": "Polynucleotides - Eyes (2ml)",
+     "price": "£350",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "eyelids",
+   "slug": "eyelid-lesions-chalazion-and-xanthelasma",
+   "name": "Eyelid lesions (chalazion and xanthelasma)",
+   "kind": "Treatment",
+   "price": "From £200",
+   "orig": "https://www.midlandskin.co.uk/chalazion/",
+   "prices": [
+    {
+     "label": "Chalazion removal (first)",
+     "price": "From £670",
+     "note": "Includes first review consultation"
+    },
+    {
+     "label": "Chalazion removal (subsequent)",
+     "price": "From £200",
+     "note": ""
+    },
+    {
+     "label": "Xanthelasma excision",
+     "price": "From £855",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "eyelids",
+   "slug": "blepharoplasty",
+   "name": "Blepharoplasty",
+   "kind": "Procedure",
+   "price": "From £3,190",
+   "orig": "https://www.midlandskin.co.uk/blepharoplasty/",
+   "prices": [
+    {
+     "label": "Upper lid blepharoplasty (both sides)",
+     "price": "From £3,190",
+     "note": "Includes first review consultation"
+    },
+    {
+     "label": "Lower lid blepharoplasty (both sides)",
+     "price": "From £3,570",
+     "note": "Includes first review consultation"
+    },
+    {
+     "label": "Upper and lower lid blepharoplasty (both sides)",
+     "price": "From £6,045",
+     "note": "Includes first review consultation"
+    }
+   ]
+  },
+  {
+   "cat": "eyelids",
+   "slug": "ectropion-and-entropion-repair",
+   "name": "Ectropion and entropion repair",
+   "kind": "Procedure",
+   "price": "From £2,190",
+   "orig": "https://www.midlandskin.co.uk/oculoplastic-birmingham/",
+   "prices": [
+    {
+     "label": "Ectropion or entropion repair (one lid)",
+     "price": "From £2,190",
+     "note": "includes first review consultation"
+    },
+    {
+     "label": "Ectropion or entropion repair (two lids)",
+     "price": "From £3,190",
+     "note": "includes first review consultation"
+    }
+   ]
+  },
+  {
+   "cat": "eyelids",
+   "slug": "ptosis-droopy-eyelid-surgery",
+   "name": "Ptosis (droopy eyelid) surgery",
+   "kind": "Procedure",
+   "price": "From £3,190",
+   "orig": "https://www.midlandskin.co.uk/droopy-eyelids/",
+   "prices": [
+    {
+     "label": "Ptosis surgery (one lid)",
+     "price": "From £3,190",
+     "note": "Includes follow up consultation"
+    },
+    {
+     "label": "Ptosis surgery (both eyelids)",
+     "price": "From £4,460",
+     "note": "Includes follow up consultation"
+    }
+   ]
+  },
+  {
+   "cat": "eyelids",
+   "slug": "blepharospasm",
+   "name": "Blepharospasm",
+   "kind": "Treatment",
+   "price": "From £645",
+   "orig": "https://www.midlandskin.co.uk/oculoplastic-birmingham/",
+   "prices": [
+    {
+     "label": "Blepharospasm botulinum toxin treatment",
+     "price": "From £645",
+     "note": "Includes first review consultation"
+    }
+   ]
+  }
+ ]
+}

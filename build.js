@@ -23,7 +23,7 @@ if (process.argv[2] === "salon" || process.env.SITE === "salon") {
 // `node build.js clinic` (or SITE=clinic) builds only the clinic draft, at the site root.
 if (process.argv[2] === "clinic" || process.env.SITE === "clinic") {
   fs.rmSync(DIST, { recursive: true, force: true });
-  require("./clinic/build.js").build({ dist: DIST, base: "" });
+  require("./clinic/build.js").build({ dist: DIST, base: "", site: process.argv[3] || process.env.CLINIC_SITE || "edgbaston" });
   return;
 }
 

@@ -48,12 +48,46 @@ function icon(name, size = 20) {
 const WA_PATH = "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z";
 const waIcon = (s = 24) => `<svg class="icon" width="${s}" height="${s}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="${WA_PATH}"/></svg>`;
 
-function build({ dist, base = "" }) {
-  const c    = require("./site.config.js");
-  const data = JSON.parse(fs.readFileSync(path.join(SRC, "treatments.json"), "utf8"));
+function build({ dist, base = "", site = "edgbaston" }) {
+  const SITE = path.join(SRC, "sites", site);
+  if (!fs.existsSync(SITE)) throw new Error(`No such site: clinic/sites/${site}`);
+  const c    = require(path.join(SITE, "site.config.js"));
+  const data = JSON.parse(fs.readFileSync(path.join(SITE, "treatments.json"), "utf8"));
   const year = new Date().getFullYear();
   const u    = (p) => base + p;
-  const details = JSON.parse(fs.readFileSync(path.join(SRC, "treatment-details.json"), "utf8"));
+  const detailsFile = path.join(SITE, "treatment-details.json");
+  const details = fs.existsSync(detailsFile) ? JSON.parse(fs.readFileSync(detailsFile, "utf8")) : {};
+  // Wording that differs between clinics. Defaults are the Edgbaston wording.
+  const T = Object.assign({
+    HERO_CTA: "Book a consultation",
+    NAV_BOOK: "Book online",
+    CTA_TEXT: "Book a consultation and talk it through with a member of the team, or ask for a call back.",
+    CATS_HEADING: "Treatments and medical services",
+    CATS_SUB: "Seven areas of care under one roof. Choose one to see everything we offer.",
+    BOOK_EYEBROW: "Booking, made simple",
+    BOOK_HEADING: "Everything in one place",
+    BOOK_LEAD: "Choose a consultation, pick a practitioner and a time, and book. No bouncing between websites.",
+    BOOK_STEPS: [
+      ["Choose a consultation", "Aesthetic, IV drip, GP or specialist."],
+      ["Pick a practitioner and time", "See the real availability."],
+      ["Talk it through", "Your treatment plan starts with a conversation."],
+    ],
+    PRICE_PANEL_TITLE: "Consultation prices",
+    PRICE_PANEL_LINK: "See all consultations",
+    ABOUT_EYEBROW: "About the clinic",
+    ABOUT_HEADING: "Look and feel great for life",
+    ABOUT_IMG_ALT: "A doctor talking with a patient in a consultation",
+    ABOUT_SECTION_HEADING: "The clinic",
+    VISIT_HEADING: "In Edgbaston Village",
+    TEAM_SUB: "As listed on the clinic's booking page. Photos and profiles to come.",
+    BOOK_HERO_TEXT: "Choose a consultation, pick a practitioner and a time that suits you. Your booking is made with the clinic directly.",
+    BOOK_PRICES_NOTE: "Prices as listed on the clinic's booking page, including tax where applicable.",
+    TRUST_LABEL: "About the clinic",
+    PRICES_FOOT: "Prices as published by the clinic.",
+    REQUEST_HEADING: "Request an appointment",
+    REQUEST_TEXT: "Tell us what you need and the team will confirm your appointment.",
+  }, c.TEXT || {});
+  const logoSrc = c.LOGO_FILE || "/images/logo.png";
   const cats = data.categories;
   const catName = (id) => cats.find(k => k.id === id).name;
   const treatmentsOf = (id) => data.treatments.filter(t => t.cat === id);
@@ -93,7 +127,7 @@ function build({ dist, base = "" }) {
     const schema = {
       "@context": "https://schema.org", "@type": "MedicalClinic",
       name: c.BUSINESS_NAME, telephone: c.PHONE, email: c.EMAIL,
-      address: { "@type": "PostalAddress", streetAddress: c.ADDRESS_LINES[0], addressLocality: "Birmingham", postalCode: "B15 3AU", addressCountry: "GB" },
+      address: { "@type": "PostalAddress", streetAddress: c.ADDRESS_LINES[0], addressLocality: c.CITY || "Birmingham", postalCode: c.POSTCODE || "B15 3AU", addressCountry: "GB" },
     };
     return `<!DOCTYPE html>
 <html lang="en-GB" data-theme="${c.DEFAULT_THEME}">
@@ -110,8 +144,9 @@ function build({ dist, base = "" }) {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>try{var t=localStorage.getItem("clinic-theme");if(t==="navy"||t==="teal")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <script>try{var t=localStorage.getItem("clinic-theme");if(${c.THEMES.map(x => `t==="${x.id}"`).join("||")})document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
   <link rel="stylesheet" href="${u("/css/clinic.css")}" />
+  ${c.PALETTE ? `<style>:root,html[data-theme]{${Object.entries(c.PALETTE).map(([k, v]) => `--${k}:${v}`).join(";")}}</style>` : ""}
   <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, "\\u003c")}</script>
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ""}>
@@ -125,7 +160,7 @@ function build({ dist, base = "" }) {
 
   const NAV = [
     ["/treatments/", "Treatments"],
-    ["/book/",       "Book online"],
+    ["/book/",       T.NAV_BOOK],
     ["/about/",      "About"],
     ["/contact/",    "Contact"],
   ];
@@ -136,13 +171,13 @@ function build({ dist, base = "" }) {
     return `${demoBar()}
 <header class="site-header">
   <div class="container header-inner">
-    <a href="${u("/")}" class="logo" aria-label="${esc(c.BUSINESS_NAME)} home"><img src="${u("/images/logo.png")}" alt="${esc(c.LOGO_ALT)}" width="150" height="50" /></a>
+    <a href="${u("/")}" class="logo" aria-label="${esc(c.BUSINESS_NAME)} home"><img src="${u(logoSrc)}" alt="${esc(c.LOGO_ALT)}" width="150" height="50" /></a>
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul>${links}</ul>
       <a href="tel:${esc(c.PHONE_HREF)}" class="nav-phone">${icon("phone", 16)} ${esc(c.PHONE)}</a>
     </nav>
     <div class="header-actions">
-      <a href="${u("/book/")}" class="btn btn-primary btn-sm">Book a consultation</a>
+      <a href="${u("/book/")}" class="btn btn-primary btn-sm">${esc(T.HERO_CTA)}</a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">${icon("menu", 22)}</button>
     </div>
   </div>
@@ -154,10 +189,10 @@ function build({ dist, base = "" }) {
   <div class="container cta-inner">
     <div>
       <h2>Not sure where to start?</h2>
-      <p>Book a consultation and talk it through with a member of the team, or ask for a call back.</p>
+      <p>${esc(T.CTA_TEXT)}</p>
     </div>
     <div class="cta-actions">
-      <a href="${u("/book/")}" class="btn btn-gold">Book a consultation ${icon("arrow", 18)}</a>
+      <a href="${u("/book/")}" class="btn btn-gold">${esc(T.HERO_CTA)} ${icon("arrow", 18)}</a>
       <a href="tel:${esc(c.PHONE_HREF)}" class="btn btn-ghost-light">${icon("phone", 18)} ${esc(c.PHONE)}</a>
     </div>
   </div>
@@ -175,9 +210,9 @@ function build({ dist, base = "" }) {
     return `<footer class="site-footer">
   <div class="container footer-grid">
     <div>
-      <a href="${u("/")}" class="footer-logo"><img src="${u("/images/logo.png")}" alt="${esc(c.LOGO_ALT)}" width="150" height="50" /></a>
+      <a href="${u("/")}" class="footer-logo"><img src="${u(logoSrc)}" alt="${esc(c.LOGO_ALT)}" width="150" height="50" /></a>
       <p class="footer-about">Private medical and aesthetics clinic in Edgbaston, Birmingham.</p>
-      <p class="footer-insta">${icon("insta", 18)} <a href="https://www.instagram.com/${esc(c.INSTAGRAM_HANDLE)}/" target="_blank" rel="noopener">@${esc(c.INSTAGRAM_HANDLE)}</a></p>
+      ${c.INSTAGRAM_HANDLE ? `<p class="footer-insta">${icon("insta", 18)} <a href="https://www.instagram.com/${esc(c.INSTAGRAM_HANDLE)}/" target="_blank" rel="noopener">@${esc(c.INSTAGRAM_HANDLE)}</a></p>` : ""}
     </div>
     <div>
       <h3>Visit</h3>
@@ -185,7 +220,7 @@ function build({ dist, base = "" }) {
     </div>
     <div>
       <h3>Contact</h3>
-      <p><a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a><br /><a href="mailto:${esc(c.EMAIL)}">${esc(c.EMAIL)}</a></p>
+      <p><a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a>${c.EMAIL ? `<br /><a href="mailto:${esc(c.EMAIL)}">${esc(c.EMAIL)}</a>` : ""}</p>
     </div>
     <div>
       <h3>Explore</h3>
@@ -201,10 +236,10 @@ function build({ dist, base = "" }) {
 </footer>
 <div class="mobile-bar">
   <a href="tel:${esc(c.PHONE_HREF)}" class="mobile-bar-call">${icon("phone", 18)} Call</a>
-  <a href="${u("/book/")}" class="mobile-bar-book">${icon("calendar", 18)} Book a consultation</a>
+  <a href="${u("/book/")}" class="mobile-bar-book">${icon("calendar", 18)} ${esc(T.HERO_CTA)}</a>
 </div>
 ${whatsappWidget()}
-${c.DEMO_NOTICE ? themeToggle() : ""}
+${c.DEMO_NOTICE && c.THEMES.length > 1 ? themeToggle() : ""}
 ${dataScript}
 <script src="${u("/js/clinic.js")}" defer></script>
 </body>
@@ -240,7 +275,7 @@ ${dataScript}
       ${sum ? `<p class="tr-summary">${esc(sum)}</p>` : ""}
       <a class="text-link tr-more" href="${detailHref(t)}">Read more ${icon("arrow", 16)}</a>
       <div class="tr-actions">
-        <a class="btn btn-primary btn-sm" href="${u("/book/")}">Book a consultation</a>
+        <a class="btn btn-primary btn-sm" href="${u("/book/")}">${esc(T.HERO_CTA)}</a>
         ${waOn ? `<a class="btn btn-outline btn-sm" href="${esc(waAbout(t.name))}" target="_blank" rel="noopener">${waIcon(16)} Ask about this</a>` : ""}
       </div>
     </article>`;
@@ -248,6 +283,7 @@ ${dataScript}
 
   function instagramSection() {
     const posts = c.INSTAGRAM_POSTS || [];
+    if (!c.INSTAGRAM_HANDLE || !posts.length) return "";
     const profile = `https://www.instagram.com/${c.INSTAGRAM_HANDLE}/`;
     return `<section class="section section-tint" id="instagram">
     <div class="container">
@@ -271,31 +307,31 @@ ${dataScript}
 ${header("/")}
 <main id="main">
   <section class="hero">
-    <img class="hero-img" src="${u(c.HERO_IMAGE)}" alt="" fetchpriority="high" />
+    <img class="hero-img" src="${u(c.HERO_IMAGE)}" alt=""${c.HERO_POSITION ? ` style="object-position:${esc(c.HERO_POSITION)}"` : ""} fetchpriority="high" />
     <div class="hero-shade"></div>
     <div class="container hero-inner">
       <span class="eyebrow eyebrow-gold">${esc(c.HERO_EYEBROW)}</span>
       <h1>${esc(c.HERO_HEADLINE)}</h1>
       <p class="hero-sub">${esc(c.HERO_SUBHEADLINE)}</p>
       <div class="hero-actions">
-        <a href="${u("/book/")}" class="btn btn-gold">Book a consultation ${icon("arrow", 18)}</a>
+        <a href="${u("/book/")}" class="btn btn-gold">${esc(T.HERO_CTA)} ${icon("arrow", 18)}</a>
         <a href="${u("/contact/")}#callback" class="btn btn-ghost-light">Request a call back</a>
       </div>
     </div>
   </section>
 
-  <section class="trust-strip" aria-label="About the clinic">
+  ${(c.TRUST || []).length ? `<section class="trust-strip" aria-label="${esc(T.TRUST_LABEL)}">
     <div class="container trust-inner" style="--n:${c.TRUST.length};--m:${c.TRUST.length === 3 ? 3 : 2}">
       ${c.TRUST.map(t => `<div class="trust-item"><strong>${esc(t.value.replace("{count}", String(data.treatments.length)))}</strong><span>${esc(t.label)}</span></div>`).join("")}
     </div>
-  </section>
+  </section>` : ""}
 
   <section class="section">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">What we do</span>
-        <h2>Treatments and medical services</h2>
-        <p>Seven areas of care under one roof. Choose one to see everything we offer.</p>
+        <h2>${esc(T.CATS_HEADING)}</h2>
+        <p>${esc(T.CATS_SUB)}</p>
       </div>
       <div class="cat-grid">
         ${cats.map(k => `<a class="cat-card" href="${u("/treatments/" + k.id + "/")}">
@@ -313,23 +349,21 @@ ${header("/")}
   <section class="section section-tint">
     <div class="container split">
       <div class="split-body">
-        <span class="eyebrow">Booking, made simple</span>
-        <h2>Everything in one place</h2>
-        <p class="lead">Choose a consultation, pick a practitioner and a time, and book. No bouncing between websites.</p>
+        <span class="eyebrow">${esc(T.BOOK_EYEBROW)}</span>
+        <h2>${esc(T.BOOK_HEADING)}</h2>
+        <p class="lead">${esc(T.BOOK_LEAD)}</p>
         <ol class="steps-list">
-          <li><span>1</span><div><strong>Choose a consultation</strong><small>Aesthetic, IV drip, GP or specialist.</small></div></li>
-          <li><span>2</span><div><strong>Pick a practitioner and time</strong><small>See the real availability.</small></div></li>
-          <li><span>3</span><div><strong>Talk it through</strong><small>Your treatment plan starts with a conversation.</small></div></li>
+          ${T.BOOK_STEPS.map((st, i) => `<li><span>${i + 1}</span><div><strong>${esc(st[0])}</strong><small>${esc(st[1])}</small></div></li>`).join("\n          ")}
         </ol>
         <a class="btn btn-primary" href="${u("/book/")}">Book online ${icon("arrow", 18)}</a>
       </div>
-      <div class="price-panel">
-        <h3>Consultation prices</h3>
+      ${(c.CONSULTATIONS || []).length ? `<div class="price-panel">
+        <h3>${esc(T.PRICE_PANEL_TITLE)}</h3>
         <ul>
-          ${c.CONSULTATIONS.slice(0, 6).map(x => `<li><span>${esc(x.name)}<small>${x.mins} min</small></span><strong>${esc(x.price)}</strong></li>`).join("\n          ")}
+          ${c.CONSULTATIONS.slice(0, 6).map(x => `<li><span>${esc(x.name)}${x.mins ? `<small>${x.mins} min</small>` : ""}</span><strong>${esc(x.price)}</strong></li>`).join("\n          ")}
         </ul>
-        <a class="text-link" href="${u("/book/")}#prices">See all consultations ${icon("arrow", 16)}</a>
-      </div>
+        <a class="text-link" href="${u("/book/")}#prices">${esc(T.PRICE_PANEL_LINK)} ${icon("arrow", 16)}</a>
+      </div>` : ""}
     </div>
   </section>
 
@@ -338,11 +372,11 @@ ${header("/")}
   <section class="section">
     <div class="container split split-reverse">
       <div class="split-media">
-        <img src="${u(c.ABOUT_IMAGE)}" alt="A doctor talking with a patient in a consultation" loading="lazy" width="1200" height="900" />
+        <img src="${u(c.ABOUT_IMAGE)}" alt="${esc(T.ABOUT_IMG_ALT)}" loading="lazy" width="1200" height="900" />
       </div>
       <div class="split-body">
-        <span class="eyebrow">About the clinic</span>
-        <h2>Look and feel great for life</h2>
+        <span class="eyebrow">${esc(T.ABOUT_EYEBROW)}</span>
+        <h2>${esc(T.ABOUT_HEADING)}</h2>
         <p class="lead">${esc(c.ABOUT_INTRO)}</p>
         <a class="text-link" href="${u("/about/")}">Our story ${icon("arrow", 16)}</a>
       </div>
@@ -355,10 +389,10 @@ ${header("/")}
     <div class="container visit">
       <div>
         <span class="eyebrow">Find us</span>
-        <h2>In Edgbaston Village</h2>
+        <h2>${esc(T.VISIT_HEADING)}</h2>
         <p class="visit-line">${icon("pin", 18)} <span>${c.ADDRESS_LINES.map(esc).join(", ")}</span></p>
         <p class="visit-line">${icon("phone", 18)} <a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a></p>
-        <p class="visit-line">${icon("mail", 18)} <a href="mailto:${esc(c.EMAIL)}">${esc(c.EMAIL)}</a></p>
+        ${c.EMAIL ? `<p class="visit-line">${icon("mail", 18)} <a href="mailto:${esc(c.EMAIL)}">${esc(c.EMAIL)}</a></p>` : ""}
       </div>
       ${mapEmbed()}
     </div>
@@ -432,7 +466,7 @@ ${header("/treatments/")}
   ${pageHero("Treatments", "Everything we offer", "Search the full list, or choose an area. Prices are shown where the clinic publishes them. Everything else is discussed at a consultation.")}
   <section class="section section-tight">
     <div class="container">
-      <nav class="cat-tabs" id="cat-tabs" aria-label="Choose a treatment area">
+      <nav class="cat-tabs" id="cat-tabs" aria-label="Choose a treatment area" style="--cols:${cats.length + 1 <= 5 ? cats.length + 1 : Math.ceil((cats.length + 1) / 2)}">
         <button type="button" data-cat="all" aria-pressed="true">All <span>${data.treatments.length}</span></button>
         ${cats.map(k => `<button type="button" data-cat="${k.id}" aria-pressed="false">${esc(k.name)} <span>${treatmentsOf(k.id).length}</span></button>`).join("\n        ")}
       </nav>
@@ -489,15 +523,17 @@ ${footer()}`;
   function treatmentPage(t) {
     const k = cats.find(x => x.id === t.cat);
     const d = details[t.slug] || { intro: [], facts: {}, faqs: [] };
+    const dFacts = d.facts || {};
     const factRows = [
       ["Price", t.price || "On consultation"],
-      d.facts.time ? ["Treatment time", d.facts.time] : null,
-      d.facts.downtime ? ["Downtime", d.facts.downtime] : null,
-      d.facts.risks ? ["Possible effects", d.facts.risks] : null,
+      dFacts.time ? ["Treatment time", dFacts.time] : null,
+      dFacts.downtime ? ["Downtime", dFacts.downtime] : null,
+      dFacts.risks ? ["Possible effects", dFacts.risks] : null,
+      ...(d.factsList || []).map(f => [f[0], f[1]]),
     ].filter(Boolean);
     return head({
       title: `${t.name} | ${c.BUSINESS_NAME}`,
-      description: (d.intro[0] || `${t.name} at ${c.BUSINESS_NAME}, Edgbaston.`).slice(0, 155),
+      description: ((d.intro || [])[0] || `${t.name} at ${c.BUSINESS_NAME}, Edgbaston.`).slice(0, 155),
       canonical: `/treatments/${t.cat}/${t.slug}/`,
     }) + `
 ${header("/treatments/")}
@@ -512,8 +548,13 @@ ${header("/treatments/")}
   <section class="section section-tight">
     <div class="container detail-layout">
       <div class="detail-main">
-        ${d.intro.map((x, i) => `<p${i === 0 ? ' class="lead"' : ""}>${esc(x)}</p>`).join("\n        ")}
-        ${d.faqs.length ? `<h2 class="detail-h">Common questions</h2>
+        ${(d.intro || []).map((x, i) => `<p${i === 0 ? ' class="lead"' : ""}>${esc(x)}</p>`).join("\n        ")}
+        ${(t.prices || []).length ? `<h2 class="detail-h">Prices</h2>
+        <ul class="price-rows detail-prices">
+          ${t.prices.map(r => `<li><span>${esc(r.label)}${r.note ? `<small>${esc(r.note)}</small>` : ""}</span><strong>${esc(r.price)}</strong></li>`).join("\n          ")}
+        </ul>
+        <p class="fine">${esc(T.PRICES_FOOT)}</p>` : ""}
+        ${(d.faqs || []).length ? `<h2 class="detail-h">Common questions</h2>
         <div class="faq">
           ${d.faqs.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("\n          ")}
         </div>` : ""}
@@ -526,7 +567,7 @@ ${header("/treatments/")}
             ${factRows.map(r => `<li><span>${esc(r[0])}</span><strong>${esc(r[1])}</strong></li>`).join("\n            ")}
           </ul>
           <p class="detail-actions">
-            <a class="btn btn-primary" href="${u("/book/")}">Book a consultation</a>
+            <a class="btn btn-primary" href="${u("/book/")}">${esc(T.HERO_CTA)}</a>
             ${waOn ? `<a class="btn btn-outline" href="${esc(waAbout(t.name))}" target="_blank" rel="noopener">${waIcon(18)} Ask about this</a>` : ""}
           </p>
         </div>
@@ -546,24 +587,43 @@ ${footer()}`;
     }) + `
 ${header("/book/")}
 <main id="main">
-  ${pageHero("Book online", "Book a consultation", "Choose a consultation, pick a practitioner and a time that suits you. Your booking is made with the clinic directly.")}
+  ${pageHero("Book online", T.HERO_CTA, T.BOOK_HERO_TEXT)}
   <section class="section section-tight">
     <div class="container book-layout">
       <div class="book-main">
         ${c.BOOKING_NOTE ? `<p class="book-note">${icon("shield", 18)} <span>${esc(c.BOOKING_NOTE)}</span></p>` : ""}
-        <div class="book-frame">
+        ${c.BOOKING_MODE === "request" ? `<form class="message-form" id="request-form" novalidate>
+          <h2>${esc(T.REQUEST_HEADING)}</h2>
+          <p>${esc(T.REQUEST_TEXT)}</p>
+          <div class="field"><label for="r-name">Name</label><input type="text" id="r-name" name="name" autocomplete="name" required /></div>
+          <div class="field"><label for="r-phone">Phone number</label><input type="tel" id="r-phone" name="phone" autocomplete="tel" inputmode="tel" required /></div>
+          <div class="field"><label for="r-email">Email</label><input type="email" id="r-email" name="email" autocomplete="email" required /></div>
+          <div class="field"><label for="r-type">Which appointment?</label>
+            <select id="r-type" name="type" required><option value="">Choose one</option>${(c.CONSULTATIONS || []).map(x => `<option>${esc(x.name)}</option>`).join("")}<option>Not sure, please advise</option></select></div>
+          <div class="field"><label for="r-note">Anything we should know? <span class="optional">(optional)</span></label><textarea id="r-note" name="note" rows="3"></textarea></div>
+          <button type="submit" class="btn btn-primary">${esc(T.REQUEST_HEADING)}</button>
+          <p class="form-status" id="request-status" role="status" hidden></p>
+          ${c.DEMO_NOTICE ? '<p class="fine">Draft: this form does not send anything yet.</p>' : ""}
+        </form>
+        <p class="book-fallback">Prefer to talk? <a href="tel:${esc(c.PHONE_HREF)}">Call ${esc(c.PHONE)}</a>${c.PHONE_NOTE ? ` (${esc(c.PHONE_NOTE)})` : ""}.</p>` : c.BOOKING_EMBED === false ? `<div class="book-link-card">
+          <h2>Book on the clinic's booking page</h2>
+          <p>${esc(c.BOOKING_LINK_TEXT || "Choose a time and book. The booking page opens in a new tab.")}</p>
+          <a class="btn btn-primary" href="${esc(c.BOOKING_URL)}" target="_blank" rel="noopener">Open the booking page ${icon("arrow", 18)}</a>
+          <p class="fine">${esc(c.BOOKING_LINK_NOTE || "In a finished website this booking would sit inside the page, so patients never leave it.")}</p>
+        </div>
+        <p class="book-fallback">Prefer to talk? <a href="tel:${esc(c.PHONE_HREF)}">Call ${esc(c.PHONE)}</a> or <a href="${u("/contact/")}#callback">request a call back</a>.</p>` : `<div class="book-frame">
           <iframe id="book-iframe" title="Online booking for ${esc(c.BUSINESS_NAME)}" src="${esc(c.BOOKING_URL)}" scrolling="no" loading="lazy"></iframe>
         </div>
-        <p class="book-fallback">Having trouble? <a href="${esc(c.BOOKING_URL)}" target="_blank" rel="noopener">Open the booking page in a new tab</a> or <a href="tel:${esc(c.PHONE_HREF)}">call ${esc(c.PHONE)}</a>.</p>
+        <p class="book-fallback">Having trouble? <a href="${esc(c.BOOKING_URL)}" target="_blank" rel="noopener">Open the booking page in a new tab</a> or <a href="tel:${esc(c.PHONE_HREF)}">call ${esc(c.PHONE)}</a>.</p>`}
       </div>
       <aside class="book-side" id="prices">
-        <div class="info-card">
-          <h2>Consultation prices</h2>
+        ${(c.CONSULTATIONS || []).length ? `<div class="info-card">
+          <h2>${esc(T.PRICE_PANEL_TITLE)}</h2>
           <ul class="price-rows">
-            ${c.CONSULTATIONS.map(x => `<li><span>${esc(x.name)}<small>${x.mins} min${x.note ? " · " + esc(x.note) : ""}</small></span><strong>${esc(x.price)}</strong></li>`).join("\n            ")}
+            ${c.CONSULTATIONS.map(x => { const meta = [x.mins ? x.mins + " min" : "", x.note || ""].filter(Boolean).join(" · "); return `<li><span>${esc(x.name)}${meta ? `<small>${esc(meta)}</small>` : ""}</span><strong>${esc(x.price)}</strong></li>`; }).join("\n            ")}
           </ul>
-          <p class="fine">Prices as listed on the clinic's booking page, including tax where applicable.</p>
-        </div>
+          <p class="fine">${esc(T.BOOK_PRICES_NOTE)}</p>
+        </div>` : ""}
         <div class="info-card">
           <h2>Prefer to talk?</h2>
           <p>Call <a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a>, or <a href="${u("/contact/")}#callback">request a call back</a>.</p>
@@ -583,26 +643,26 @@ ${footer()}`;
     }) + `
 ${header("/about/")}
 <main id="main">
-  ${pageHero("About us", "Look and feel great for life", c.ABOUT_INTRO)}
+  ${pageHero("About us", T.ABOUT_HEADING, c.ABOUT_INTRO)}
   <section class="section section-tight">
     <div class="container split">
       <div class="split-media">
-        <img src="${u(c.ABOUT_IMAGE)}" alt="A doctor talking with a patient in a consultation" loading="lazy" width="1200" height="900" />
+        <img src="${u(c.ABOUT_IMAGE)}" alt="${esc(T.ABOUT_IMG_ALT)}" loading="lazy" width="1200" height="900" />
       </div>
       <div class="split-body">
-        <h2>The clinic</h2>
+        <h2>${esc(T.ABOUT_SECTION_HEADING)}</h2>
         ${c.ABOUT_TEXT.map(p => `<p>${esc(p)}</p>`).join("\n        ")}
       </div>
     </div>
   </section>
-  <section class="section section-tint">
+  ${(c.TEAM || []).length ? `<section class="section section-tint">
     <div class="container">
-      <div class="section-head"><span class="eyebrow">The team</span><h2>Practitioners you can book with</h2><p>As listed on the clinic's booking page. Photos and profiles to come.</p></div>
+      <div class="section-head"><span class="eyebrow">The team</span><h2>Practitioners you can book with</h2><p>${esc(T.TEAM_SUB)}</p></div>
       <div class="team-grid">
         ${c.TEAM.map(m => `<article class="team-card"><div class="avatar" aria-hidden="true">${esc(m.name.replace(/^(Miss|Dr|Mr|Mrs)\s+/, "")[0])}</div><h3>${esc(m.name)}</h3><p>${esc(m.role)}</p></article>`).join("\n        ")}
       </div>
     </div>
-  </section>
+  </section>` : ""}
   ${instagramSection()}
   ${ctaBand()}
 </main>
@@ -627,7 +687,7 @@ ${header("/contact/")}
         </div>
         <div class="info-card">
           <h2>${icon("phone", 20)} Talk to us</h2>
-          <p><a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a><br /><a href="mailto:${esc(c.EMAIL)}">${esc(c.EMAIL)}</a></p>
+          <p><a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a>${c.EMAIL ? `<br /><a href="mailto:${esc(c.EMAIL)}">${esc(c.EMAIL)}</a>` : ""}${c.PHONE_NOTE ? `<br /><small>${esc(c.PHONE_NOTE)}</small>` : ""}</p>
         </div>
         ${waOn ? `<div class="info-card">
           <h2>${waIcon(20)} WhatsApp us</h2>
@@ -666,7 +726,7 @@ ${footer()}`;
   writeFile(path.join(dist, "contact/index.html"),    contactPage());
   copyDir(path.join(SRC, "css"),    path.join(dist, "css"));
   copyDir(path.join(SRC, "js"),     path.join(dist, "js"));
-  copyDir(path.join(SRC, "images"), path.join(dist, "images"));
+  copyDir(path.join(SITE, "images"), path.join(dist, "images"));
 
   console.log(`✅ Clinic build complete → ${path.relative(process.cwd(), dist) || "."}${base ? ` (served at ${base}/)` : ""}`);
 }

@@ -245,6 +245,15 @@ p { text-wrap: pretty; }
 .info-card a:not(.btn) { color: var(--mid); font-weight: 600; text-decoration: none; }
 .fine { color: var(--muted); font-size: .84rem; margin-top: 10px; }
 
+.book-link-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 26px; box-shadow: var(--shadow); }
+.book-link-card h2 { font-size: 1.6rem; margin-bottom: 8px; }
+.book-link-card .btn { margin-top: 16px; }
+.book-main .message-form textarea { width: 100%; padding: 13px 14px; border: 1.5px solid var(--border); border-radius: var(--radius); background: #fff; }
+.detail-prices { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 4px 20px; box-shadow: var(--shadow); }
+.detail-prices li:last-child { border-bottom: 0; }
+.detail-prices span small { max-width: 52ch; }
+.field select { width: 100%; padding: 13px 14px; border: 1.5px solid var(--border); border-radius: var(--radius); background: #fff; }
+
 /* ── About / team ─────────────────────────────────── */
 .team-grid { display: grid; gap: 16px; }
 .team-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow); }
@@ -371,7 +380,7 @@ p { text-wrap: pretty; }
   .footer-grid { grid-template-columns: 1.3fr 1fr 1.3fr .8fr; gap: 40px; }
   .contact-grid { grid-template-columns: 4fr 7fr; gap: 32px; }
   .book-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 28px; }
-  .cat-tabs { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 880px; margin: 0 auto 22px; padding: 0; overflow: visible; }
+  .cat-tabs { display: grid; grid-template-columns: repeat(var(--cols, 4), 1fr); max-width: min(1140px, calc(var(--cols, 4) * 225px)); margin: 0 auto 22px; padding: 0; overflow: visible; }
   .cat-tabs button { justify-content: center; }
   .detail-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 40px; }
   .assurance-logos img { height: 68px; }
