@@ -54,6 +54,20 @@ const config = {
       message: "Hi {name}, I have a question." },
   ],
 
+  // "A clinic you can trust" block on the home page. Wording and logos are the clinic's own,
+  // taken from their website. The clinic must confirm each one before this goes live.
+  ASSURANCE: {
+    EYEBROW: "Regulated and qualified",
+    HEADING: "A clinic you can",
+    HEADING_EM: "trust",
+    TEXT: "We are a professional and regulated clinic that specialises in a wide range of aesthetic, wellness, private medical and surgical services. We pride ourselves on delivering the highest quality services and treatments in the UK. We have qualified NHS Surgeons, Doctors, GPs and highly qualified Aesthetic Practitioners. This means we are uniquely placed to help with all of your aesthetic, wellness, medical and surgical requirements.",
+    LOGOS: [
+      { src: "/images/accred-rcgp.png", alt: "Royal College of General Practitioners" },
+      { src: "/images/accred-cqc.png",  alt: "Care Quality Commission" },
+      { src: "/images/accred-rcog.jpg", alt: "Royal College of Obstetricians and Gynaecologists" },
+    ],
+  },
+
   // Email sign-up on the home page. In this draft nothing is sent or stored.
   // To go live, set ACTION to the form address from the clinic's email tool
   // (Mailchimp, Brevo, etc.) and check the field names it expects.

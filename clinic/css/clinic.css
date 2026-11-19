@@ -262,6 +262,15 @@ p { text-wrap: pretty; }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
 .contact-cards, .contact-side { display: grid; gap: 16px; align-content: start; }
 
+/* ── Regulated and qualified ──────────────────────── */
+.assurance { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.assurance-inner { max-width: 820px; margin: 0 auto; text-align: center; }
+.assurance-inner h2 em { font-style: italic; color: var(--gold-dk); }
+.assurance-inner > p { color: var(--muted); margin-top: 14px; font-size: 1.05rem; }
+.assurance-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 22px 44px; margin-top: 30px; }
+.assurance-logos img { height: 56px; width: auto; max-width: 100%; object-fit: contain; }
+.assurance .fine { margin-top: 22px; }
+
 /* ── Email sign-up ────────────────────────────────── */
 .signup { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 22px; box-shadow: var(--shadow); border-top: 4px solid var(--gold); }
 .signup-text p { color: var(--muted); margin-top: 10px; }
@@ -365,6 +374,7 @@ p { text-wrap: pretty; }
   .cat-tabs { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 880px; margin: 0 auto 22px; padding: 0; overflow: visible; }
   .cat-tabs button { justify-content: center; }
   .detail-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 40px; }
+  .assurance-logos img { height: 68px; }
   .signup { grid-template-columns: 1fr 1fr; gap: 56px; padding: 40px 44px; }
   .signup-form .btn { width: auto; }
   .detail-side { position: sticky; top: 96px; }
