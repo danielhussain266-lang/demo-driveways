@@ -349,6 +349,8 @@ ${header("/")}
     </div>
   </section>
 
+  ${assuranceSection()}
+
   <section class="section section-tint">
     <div class="container visit">
       <div>
@@ -367,6 +369,24 @@ ${header("/")}
   ${ctaBand()}
 </main>
 ${footer()}`;
+  }
+
+  function assuranceSection() {
+    const a = c.ASSURANCE;
+    if (!a) return "";
+    return `<section class="section assurance" id="trust">
+    <div class="container">
+      <div class="assurance-inner">
+        <span class="eyebrow">${esc(a.EYEBROW)}</span>
+        <h2>${esc(a.HEADING)} <em>${esc(a.HEADING_EM)}</em></h2>
+        <p>${esc(a.TEXT)}</p>
+        <ul class="assurance-logos" aria-label="Regulators and professional bodies">
+          ${a.LOGOS.map(l => `<li><img src="${u(l.src)}" alt="${esc(l.alt)}" loading="lazy" /></li>`).join("\n          ")}
+        </ul>
+        ${c.DEMO_NOTICE ? `<p class="fine">Draft: wording and logos are taken from the clinic's current website, and the clinic must confirm them.</p>` : ""}
+      </div>
+    </div>
+  </section>`;
   }
 
   function emailSignup() {
