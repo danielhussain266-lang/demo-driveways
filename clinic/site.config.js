@@ -69,8 +69,7 @@ const config = {
   // Figures shown under the hero. A value of "{count}" becomes the number of treatments listed.
   TRUST: [
     { value: "2019",      label: "Established" },
-    { value: "{count}",   label: "Treatments across 7 areas of care" },
-    { value: "From £25",  label: "Consultations" },
+    { value: "{count}",   label: "Treatments in 7 areas of care" },
     { value: "4.9/5",     label: "Google rating" },
   ],
   GOOGLE_RATING_NOTE: "Rating as stated on their website: to be confirmed by the clinic.",
