@@ -46,7 +46,7 @@ const config = {
   // Figures. The clinic should confirm each one.
   TRUST: [
     { value: "2011",    label: "Established" },
-    { value: "{count}", label: "Treatments and procedures with published fees" },
+    { value: "{count}", label: "Treatments with published fees" },
     { value: "4.9/5",   label: "Google rating, 370 reviews" },
   ],
 

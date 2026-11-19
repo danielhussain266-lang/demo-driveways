@@ -88,6 +88,8 @@ function build({ dist, base = "", site = "edgbaston" }) {
     REQUEST_TEXT: "Tell us what you need and the team will confirm your appointment.",
   }, c.TEXT || {});
   const logoSrc = c.LOGO_FILE || "/images/logo.png";
+  // For logos made for dark backgrounds: show them on a coloured plate.
+  const logoStyle = c.LOGO_BG ? ` style="background:${esc(c.LOGO_BG)};padding:7px 14px;border-radius:10px;box-sizing:content-box"` : "";
   const cats = data.categories;
   const catName = (id) => cats.find(k => k.id === id).name;
   const treatmentsOf = (id) => data.treatments.filter(t => t.cat === id);
@@ -171,7 +173,7 @@ function build({ dist, base = "", site = "edgbaston" }) {
     return `${demoBar()}
 <header class="site-header">
   <div class="container header-inner">
-    <a href="${u("/")}" class="logo" aria-label="${esc(c.BUSINESS_NAME)} home"><img src="${u(logoSrc)}" alt="${esc(c.LOGO_ALT)}" width="150" height="50" /></a>
+    <a href="${u("/")}" class="logo" aria-label="${esc(c.BUSINESS_NAME)} home"><img src="${u(logoSrc)}" alt="${esc(c.LOGO_ALT)}" width="150" height="50"${logoStyle} /></a>
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul>${links}</ul>
       <a href="tel:${esc(c.PHONE_HREF)}" class="nav-phone">${icon("phone", 16)} ${esc(c.PHONE)}</a>
@@ -210,7 +212,7 @@ function build({ dist, base = "", site = "edgbaston" }) {
     return `<footer class="site-footer">
   <div class="container footer-grid">
     <div>
-      <a href="${u("/")}" class="footer-logo"><img src="${u(logoSrc)}" alt="${esc(c.LOGO_ALT)}" width="150" height="50" /></a>
+      <a href="${u("/")}" class="footer-logo"${c.LOGO_BG ? ' style="background:transparent;padding:0"' : ""}><img src="${u(logoSrc)}" alt="${esc(c.LOGO_ALT)}" width="150" height="50"${logoStyle} /></a>
       <p class="footer-about">Private medical and aesthetics clinic in Edgbaston, Birmingham.</p>
       ${c.INSTAGRAM_HANDLE ? `<p class="footer-insta">${icon("insta", 18)} <a href="https://www.instagram.com/${esc(c.INSTAGRAM_HANDLE)}/" target="_blank" rel="noopener">@${esc(c.INSTAGRAM_HANDLE)}</a></p>` : ""}
     </div>
@@ -322,7 +324,7 @@ ${header("/")}
 
   ${(c.TRUST || []).length ? `<section class="trust-strip" aria-label="${esc(T.TRUST_LABEL)}">
     <div class="container trust-inner" style="--n:${c.TRUST.length};--m:${c.TRUST.length === 3 ? 3 : 2}">
-      ${c.TRUST.map(t => `<div class="trust-item"><strong>${esc(t.value.replace("{count}", String(data.treatments.length)))}</strong><span>${esc(t.label)}</span></div>`).join("")}
+      ${c.TRUST.map(t => `<div class="trust-item"><strong>${esc(t.value.replace("{count}", String(data.treatments.length)).replace("{prices}", String(data.treatments.reduce((n, x) => n + (x.prices || []).length, 0))))}</strong><span>${esc(t.label)}</span></div>`).join("")}
     </div>
   </section>` : ""}
 

@@ -1,0 +1,1036 @@
+{
+ "categories": [
+  {
+   "id": "laser",
+   "name": "Laser hair removal",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  },
+  {
+   "id": "threading-waxing",
+   "name": "Threading & waxing",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  },
+  {
+   "id": "brows-lashes",
+   "name": "Brows & lashes",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  },
+  {
+   "id": "facials",
+   "name": "Facials",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  },
+  {
+   "id": "massage",
+   "name": "Massage",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  },
+  {
+   "id": "nails",
+   "name": "Nails & toes",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  },
+  {
+   "id": "hair",
+   "name": "Hair",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  },
+  {
+   "id": "piercing-extras",
+   "name": "Piercing & extras",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/"
+  }
+ ],
+ "treatments": [
+  {
+   "cat": "laser",
+   "slug": "laser-hair-removal",
+   "name": "Laser hair removal",
+   "kind": "Laser",
+   "price": "From £20",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Upper / lower lip",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Between brows",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Nose",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Forehead",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Chin",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Sides",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Cheeks",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Jawline",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Neck (front)",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Neck (back)",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Ear lobes",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Hair line",
+     "price": "£40",
+     "note": ""
+    },
+    {
+     "label": "Knuckles",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Full face",
+     "price": "£40",
+     "note": ""
+    },
+    {
+     "label": "Full face with neck",
+     "price": "£50",
+     "note": ""
+    },
+    {
+     "label": "Full arms (underarms not included)",
+     "price": "£40",
+     "note": ""
+    },
+    {
+     "label": "Full arms (underarms included)",
+     "price": "£50",
+     "note": ""
+    },
+    {
+     "label": "Half arms",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Under arms",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Shoulder",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Nipple area",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Chest",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Stomach",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Navel",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Toes",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Full back",
+     "price": "£50",
+     "note": ""
+    },
+    {
+     "label": "Bikini",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Brazilian",
+     "price": "£40",
+     "note": ""
+    },
+    {
+     "label": "Hollywood",
+     "price": "£50",
+     "note": ""
+    },
+    {
+     "label": "Buttocks",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Full legs",
+     "price": "£60",
+     "note": ""
+    },
+    {
+     "label": "Half legs",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Full body",
+     "price": "£200",
+     "note": "Was £300"
+    }
+   ]
+  },
+  {
+   "cat": "threading-waxing",
+   "slug": "eyebrow-and-face-threading",
+   "name": "Eyebrow and face threading",
+   "kind": "Threading",
+   "price": "From £3",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Eyebrows",
+     "price": "£4",
+     "note": ""
+    },
+    {
+     "label": "Upper / lower lip",
+     "price": "£3",
+     "note": ""
+    },
+    {
+     "label": "Forehead",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Chin",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Sides",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "Neck",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "Eyebrows & upper lip",
+     "price": "£7",
+     "note": ""
+    },
+    {
+     "label": "Knuckles",
+     "price": "£3",
+     "note": ""
+    },
+    {
+     "label": "Full face (neck not including)",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Full face & neck",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "HD brows (7 steps)",
+     "price": "£20",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "threading-waxing",
+   "slug": "waxing",
+   "name": "Waxing",
+   "kind": "Waxing",
+   "price": "From £2",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Eyebrows",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Upper / lower lip",
+     "price": "£4",
+     "note": ""
+    },
+    {
+     "label": "Between brows",
+     "price": "£2",
+     "note": ""
+    },
+    {
+     "label": "Nose wax",
+     "price": "£7",
+     "note": ""
+    },
+    {
+     "label": "Forehead",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Chin",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Side burns",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Sides",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "Cheeks",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Jawline",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Neck front",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "Neck back",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "Ear lobes",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Hair line",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Knuckles",
+     "price": "£3",
+     "note": ""
+    },
+    {
+     "label": "Full face",
+     "price": "£18",
+     "note": ""
+    },
+    {
+     "label": "Full arms (underarms not included)",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Full arms (underarms included)",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Half arms",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "Under arms",
+     "price": "£6",
+     "note": ""
+    },
+    {
+     "label": "Shoulder",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "Nipple area",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Chest",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "Stomach",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "Navel",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Toes",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Full back",
+     "price": "£18",
+     "note": ""
+    },
+    {
+     "label": "Bikini",
+     "price": "£12",
+     "note": ""
+    },
+    {
+     "label": "Brazilian",
+     "price": "£17",
+     "note": ""
+    },
+    {
+     "label": "Hollywood",
+     "price": "£22",
+     "note": ""
+    },
+    {
+     "label": "Buttocks",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "Full legs",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Half legs",
+     "price": "£14",
+     "note": ""
+    },
+    {
+     "label": "Full body",
+     "price": "£70",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "brows-lashes",
+   "slug": "hd-brows",
+   "name": "HD brows",
+   "kind": "Brows",
+   "price": "From £20",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "High definition brows (7 steps to your perfect eyebrows)",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "HD brows & lash extensions",
+     "price": "£38",
+     "note": "About 35 mins"
+    }
+   ]
+  },
+  {
+   "cat": "brows-lashes",
+   "slug": "tinting-lash-lift-and-brow-lamination",
+   "name": "Tinting, lash lift and brow lamination",
+   "kind": "Brows and lashes",
+   "price": "From £6",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Eyebrow tinting",
+     "price": "£6",
+     "note": "About 3-4 mins"
+    },
+    {
+     "label": "Eyelash tinting",
+     "price": "£10",
+     "note": "About 7-8 mins"
+    },
+    {
+     "label": "Full face threading + tinting",
+     "price": "£21",
+     "note": ""
+    },
+    {
+     "label": "Lash lift",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Ombre brows",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Brow lamination",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Henna brows",
+     "price": "£25",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "brows-lashes",
+   "slug": "eyelash-extensions",
+   "name": "Eyelash extensions",
+   "kind": "Lashes",
+   "price": "From £30",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Royal",
+     "price": "£60",
+     "note": "About 1 hr 30 mins"
+    },
+    {
+     "label": "Maintenance available",
+     "price": "£5",
+     "note": "Price dependant on amount of lashes required"
+    },
+    {
+     "label": "Trending lashes",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Russian lashes",
+     "price": "£45",
+     "note": ""
+    },
+    {
+     "label": "Hybrid lashes",
+     "price": "£50",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "facials",
+   "slug": "facials",
+   "name": "Facials",
+   "kind": "Facial",
+   "price": "From £12",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Mini facial massage (cleanse, tone, mask & moisturiser)",
+     "price": "£22",
+     "note": "About 20 mins"
+    },
+    {
+     "label": "Herbal facial (cleanse, exfoliation, steam, extraction, massage & mask)",
+     "price": "£32",
+     "note": "About 45 mins"
+    },
+    {
+     "label": "Gold facial (cleanse, exfoliation, steam, extraction, massage & mask)",
+     "price": "£32",
+     "note": "About 45 mins"
+    },
+    {
+     "label": "Diamond facial (cleanse, exfoliation, steam, extraction, massage & mask)",
+     "price": "£34",
+     "note": "About 45 mins"
+    },
+    {
+     "label": "Luxury facial (bleach, cleanse, exfoliation, steam, massage, mask & moisturiser)",
+     "price": "£40",
+     "note": "About 1 hr"
+    },
+    {
+     "label": "Face bleach (bleach, cleanse and moisturiser)",
+     "price": "£12",
+     "note": ""
+    },
+    {
+     "label": "Vitamin C facial",
+     "price": "£45",
+     "note": ""
+    },
+    {
+     "label": "Microdermabrasion (cleanse, massage, mask, moisturiser & exfoliation)",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Lymphatic massage facial",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Vacuum suction facial",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Anti-acne facial",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Back cleansing (cleanse, exfoliation, steam, extraction, massage, mask and moisturiser)",
+     "price": "£35",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "facials",
+   "slug": "hydrafacial",
+   "name": "HydraFacial",
+   "kind": "Facial",
+   "price": "From £80",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "HydraFacial",
+     "price": "£80",
+     "note": ""
+    },
+    {
+     "label": "HydraFacial deluxe",
+     "price": "£100",
+     "note": ""
+    },
+    {
+     "label": "HydraFacial platinum",
+     "price": "£120",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "massage",
+   "slug": "massage",
+   "name": "Massage",
+   "kind": "Massage",
+   "price": "From £20",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Indian head massage",
+     "price": "£20",
+     "note": "About 20 mins"
+    },
+    {
+     "label": "Back & shoulder",
+     "price": "£25",
+     "note": "About 25 mins"
+    },
+    {
+     "label": "Full body massage",
+     "price": "£50",
+     "note": "About 50 mins"
+    },
+    {
+     "label": "Full body and Indian head",
+     "price": "£60",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "nails",
+   "slug": "gel-extensions-and-nail-repair",
+   "name": "Gel, extensions and nail repair",
+   "kind": "Nails",
+   "price": "From £3",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "BIAB extra strong gel",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Gel polish (lasts 3wks)",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Gel French (lasts 3wks)",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Nail extensions & gel polish",
+     "price": "£30",
+     "note": ""
+    },
+    {
+     "label": "Extensions & gel French",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Gel nail soak off",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "Overlay (gel only)",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Infills",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Nail repair (single tip)",
+     "price": "£3",
+     "note": ""
+    },
+    {
+     "label": "Acrylic soak off",
+     "price": "£10",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "nails",
+   "slug": "manicures-and-pedicures",
+   "name": "Manicures and pedicures",
+   "kind": "Nails",
+   "price": "From £10",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "File & normal polish",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "File & French polish",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Basic manicure",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Mani & normal polish",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Mani & French polish",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Luxury manicure",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Paraffin manicure",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Basic pedicure",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Pedi & normal polish",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Pedi & French polish",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Luxury pedicure",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Paraffin pedicure",
+     "price": "£25",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "nails",
+   "slug": "toes",
+   "name": "Toes",
+   "kind": "Nails",
+   "price": "From £2",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Gel polish (lasts 3wks)",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Gel French (lasts 3wks)",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Gel soak off",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "Nail repair (single tip)",
+     "price": "£2",
+     "note": ""
+    },
+    {
+     "label": "Normal polish",
+     "price": "£8",
+     "note": ""
+    },
+    {
+     "label": "French polish",
+     "price": "£10",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "hair",
+   "slug": "hair-cuts",
+   "name": "Hair cuts",
+   "kind": "Hair",
+   "price": "From £5",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Fringe cut",
+     "price": "£5",
+     "note": ""
+    },
+    {
+     "label": "Dry hair cut (straight)",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "Dry hair cut (u-cut, v-cut)",
+     "price": "£12",
+     "note": ""
+    },
+    {
+     "label": "Wet hair cut (straight)",
+     "price": "£16",
+     "note": ""
+    },
+    {
+     "label": "Wet hair cut (u-cut, v-cut)",
+     "price": "£18",
+     "note": ""
+    },
+    {
+     "label": "Dry hair cut (layers cut)",
+     "price": "£20",
+     "note": ""
+    },
+    {
+     "label": "Wet hair cut (layers cut)",
+     "price": "£24",
+     "note": ""
+    },
+    {
+     "label": "Shampoo & blow dry",
+     "price": "£15",
+     "note": ""
+    },
+    {
+     "label": "Shampoo & cut & dry",
+     "price": "£24",
+     "note": ""
+    },
+    {
+     "label": "Hair straighten (above the shoulders)",
+     "price": "£10",
+     "note": ""
+    },
+    {
+     "label": "Hair straighten (below the shoulders)",
+     "price": "£12",
+     "note": ""
+    },
+    {
+     "label": "Hair straighten (below the waist)",
+     "price": "£16",
+     "note": ""
+    },
+    {
+     "label": "Hair cut (up to 14 years)",
+     "price": "£10",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "hair",
+   "slug": "hair-colour",
+   "name": "Hair colour",
+   "kind": "Hair",
+   "price": "From £20",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Full head permanent",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Full head semi-permanent",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Regrowth",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "T-section highlight",
+     "price": "£40",
+     "note": ""
+    },
+    {
+     "label": "Full head highlight",
+     "price": "£55",
+     "note": ""
+    },
+    {
+     "label": "Cap highlight",
+     "price": "£35",
+     "note": ""
+    },
+    {
+     "label": "Hair conditioning",
+     "price": "£25",
+     "note": ""
+    },
+    {
+     "label": "Hair mask",
+     "price": "£20",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "piercing-extras",
+   "slug": "ear-and-nose-piercing",
+   "name": "Ear and nose piercing",
+   "kind": "Piercing",
+   "price": "From £12",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "One ear piercing",
+     "price": "£12",
+     "note": ""
+    },
+    {
+     "label": "Two ear piercing",
+     "price": "£18",
+     "note": ""
+    },
+    {
+     "label": "9CT gold piercing",
+     "price": "£28",
+     "note": ""
+    },
+    {
+     "label": "18CT gold piercing",
+     "price": "£38",
+     "note": ""
+    },
+    {
+     "label": "Nose piercing",
+     "price": "£22",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "cat": "piercing-extras",
+   "slug": "tooth-gems",
+   "name": "Tooth gems",
+   "kind": "Extras",
+   "price": "£12",
+   "orig": "https://thelookbeautyandlaserclinic.com/price-list/",
+   "prices": [
+    {
+     "label": "Tooth gem (with coloured stone)",
+     "price": "£12",
+     "note": ""
+    }
+   ]
+  }
+ ]
+}
