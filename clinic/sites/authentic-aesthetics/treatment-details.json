@@ -1,0 +1,582 @@
+{
+ "skincare-consultation": {
+  "intro": [
+   "We recognise the abundance of available treatments and understand the challenge of determining the right one for your skin. That’s why we provide personalised consultations either face-to-face or via video call. During these consultations, we delve into your skin concerns, preferences, and budget to craft a tailored treatment plan aligned with your goals. Our goal is to ensure that you feel confident and informed in your skincare journey.",
+   "Skincare is deeply personal, with everyone’s skin having unique needs and concerns. That’s why, during a skincare consultation one of our expert Aestheticians will utilise advanced skin analysis technology to assess the underlying condition of your skin. This comprehensive analysis allows us to understand your skin type, identify specific concerns, and learn about your skincare goals, budget, and lifestyle."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "Should I get a skincare consultation?",
+    "a": "The world of skincare can be extremely confusing with so many products and treatments available it can be really hard to know what’s right for you."
+   },
+   {
+    "q": "What happens at a skincare consultation?",
+    "a": "During a skincare consultation one of our expert Aestheticians will use a skin analysis machine to see what’s going on underneath your skin, find out about your skin type, skin goals, budget and lifestyle, at which point we can make recommendations that will target your personal skin needs. Skincare consultations are included for free with any treatment for a new client or can be booked as a stand alone consultation."
+   },
+   {
+    "q": "Is a good skincare routine worth it?",
+    "a": "A good skincare routine is fundamental when it comes to treating all skin conditions and concerns, beautiful skin starts at home and prevention is so much easier than cure, so it’s never too early to start investing in your skin health."
+   },
+   {
+    "q": "What is a professional skin analysis?",
+    "a": "During a skincare consultation one of our expert Aestheticians will use a skin analysis machine to see what’s going on underneath your skin, find out about your skin type, skin goals, budget and lifestyle, at which point we can make recommendations that will target your personal skin needs."
+   },
+   {
+    "q": "What are the benefits of skin analysis?",
+    "a": "A skin analysis using a skin analysis machine such as our Observ 360 system shows you what is not visible to the naked eye. It shows sun damage, pigmentation, inflammation, dehydration, congestion, free flowing oil so the overall health of your skin can be determined and prescriptive skincare and skin treatments can be advised."
+   }
+  ]
+ },
+ "mole-mapping": {
+  "intro": [
+   "Using the clinically approved Map My Mole technology, a high-resolution image of your mole is captured and securely sent to a UK consultant dermatologist for expert analysis with results delivered quickly, clearly and with recommended next steps where needed.",
+   "Mole mapping is a professional method of monitoring and analysing moles using advanced imaging technology, helping to detect early signs of skin cancer before they develop into something more serious."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is mole mapping?",
+    "a": "Mole mapping is a professional skin screening process that uses advanced imaging technology to capture detailed images of your moles, which are then analysed by a consultant dermatologist to check for any signs of abnormality or skin cancer."
+   },
+   {
+    "q": "How does mole mapping work?",
+    "a": "At your appointment, a professional dermatoscope is used to capture high-resolution images of your moles. These are securely sent to a UK consultant dermatologist for expert analysis, and you receive a full written report with results and recommended next steps within 24–48 hours."
+   },
+   {
+    "q": "How much does mole mapping cost in the UK?",
+    "a": "At Authentic Aesthetics, mole analysis starts from just £50 for a single mole, £30 for each additional mole, or £99 for a three mole bundle, making professional dermatologist-reviewed mole analysis accessible without the cost of a private dermatology referral."
+   },
+   {
+    "q": "How long does mole mapping take?",
+    "a": "The in-clinic appointment is quick and straightforward, typically taking between 15 and 30 minutes depending on how many moles are being assessed. Your dermatologist report is then returned to you within 24–48 hours."
+   },
+   {
+    "q": "Is mole mapping worth it?",
+    "a": "Absolutely. Skin cancer is one of the most common cancers in the UK and early detection dramatically improves outcomes. Mole mapping gives you fast access to expert consultant review without long NHS waiting times, making it one of the most valuable health checks you can invest in."
+   }
+  ]
+ },
+ "hydrafacial": {
+  "intro": [
+   "Experience the transformative power of our multi award-winning facial, the HydraFacial. This cutting-edge treatment combines a host of skincare procedures into one seamless experience, leaving your skin deeply exfoliated, nourished, and radiant. Say goodbye to blackheads and hello to an instant glow, noticeable from the very first session. HydraFacial is renowned as a medical-grade facial, penetrating an impressive 20 times deeper than traditional facials, yet it’s entirely painless, requires no downtime, and is suitable for all skin types.",
+   "The internationally renowned, award winning skin health treatment. HydraFacial is a multi step facial that effectively extracts congestion, softens fine lines, smooths and deeply hydrates the skin with instant results visible and long term benefits, suitable for all skin types with no pain and no downtime."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is Hydrafacial?",
+    "a": "Hydrafacial is a deeply exfoliating and hydrating medical grade facial designed to treat any and all skin conditions and improve overall skin health."
+   },
+   {
+    "q": "What does HydraFacial do to the skin?",
+    "a": "Our most popular treatment is the skin health for life HydraFacial which is a 6 step treatment involving;"
+   },
+   {
+    "q": "Is HydraFacial better than a regular facial?",
+    "a": "Hydrafacial works within the living layer of the skin so you will see long term changes, facials will only treat the surface dead skin cells so won’t see long term benefits or changes to the skin."
+   },
+   {
+    "q": "Does HydraFacial really work?",
+    "a": "Yes! In fact it is one of the top rated treatments on real self, 98% of people who have it done say that it’s worth it. The best thing about HydraFacial is that any skin type and skin colour can have it done and see real changes in their skin. It also involves no pain and minimal to no downtime, it’s no wonder why it’s our most popular treatment in the clinic."
+   },
+   {
+    "q": "Who should not get a HydraFacial?",
+    "a": "Hydrafacial will benefit everyone but is not recommended if you are currently pregnant and have not had the treatment done before, if you are going through any active cancer treatment, if you have extremely thin skin, if you are using any steroid cream in the treatment area or if you are anaphylactically allergic to shellfish, honey or aspirin."
+   }
+  ]
+ },
+ "dermaplaning": {
+  "intro": [
+   "Dermaplaning is a cosmetic treatment that involves using a small, sterile blade to gently scrape off the top layer of dead skin cells and fine hair from the face. This process helps to exfoliate the skin and remove any buildup of oil, dirt, or debris, resulting in a smoother and brighter complexion.",
+   "Dermaplaning is a method used to remove unwanted peach fuzz hair and dead skin cells from the face."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "How long does Dermaplaning last?",
+    "a": "This can be different from client to client, but approximately 4-6 weeks. Although it is not a permanent form of hair removal, many clients find that results last longer the more treatments they have."
+   },
+   {
+    "q": "What does Dermaplaning do to the skin?",
+    "a": "Dermaplaning aids exfoliation and removes fluffy ‘peach fuzz’ hair leaving the skin glowing and smooth."
+   },
+   {
+    "q": "Is Dermaplaning good for your skin?",
+    "a": "Yes, the removal of dead skin cells helps products to penetrate further into the skin. By removing the fluffy ‘peach fuzz’ hair, the application of make-up looks much smoother."
+   },
+   {
+    "q": "Is there a downside to Dermaplaning?",
+    "a": "Dermaplaning is not suitable for men and isn’t a permanent hair removal method."
+   },
+   {
+    "q": "Does hair grow back after Dermaplaning?",
+    "a": "Yes, dermaplaning is not a permanent hair removal option, however many clients find that their hair grows back slower after multiple sessions."
+   }
+  ]
+ },
+ "dermalux-led-light-therapy": {
+  "intro": [
+   "Dermalux harnesses the power of light energy, utilising LED (light-emitting diodes) technology. This non-invasive, pain-free treatment offers a sense of well-being and relaxation. With no downtime, you can seamlessly continue with your day as usual, without the need for time off work.",
+   "Dermalux LED Light Therapy is a non-invasive skin treatment that uses specific wavelengths of light to stimulate the natural healing process of the skin. It involves exposing the skin to low-level light emitting diodes (LEDs) that emit light energy at different wavelengths."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "How long does Dermalux last?",
+    "a": "Dermalux LED is clinically proven to work on the skin in just 10 minutes."
+   },
+   {
+    "q": "What does Dermalux do to the skin?",
+    "a": "Dermalux uses unique combinations of clinically proven Blue, Red and Near Infrared wavelengths to boost collagen production, increase hydration, calm redness and reduce acne causing bacteria."
+   },
+   {
+    "q": "Is Dermalux worth it?",
+    "a": "The results with Dermlaux are clinically proven, however we find that we can get the best results when combining it alongside other clinically proven treatments. We do not offer Dermalux as a stand alone treatment but use it alongside our HydraFacial, Microneedling, HydraTite & Obagi blue radiance peels to get optimum benefits and increase wound healing time."
+   },
+   {
+    "q": "What skincare to use with Dermalux?",
+    "a": "Skincare is extremely unique to each individual, we would always recommend a skin analysis and consultation with one of our expert Aestheticians to see what’s going on underneath your skin, find out about your skin type, skin goals, budget and lifestyle, at which point we can make recommendations that will treat your personal skin needs."
+   },
+   {
+    "q": "How often should you have Dermalux?",
+    "a": "Dermalux can be performed as often as 1 week apart for a course of 6-8 treatments or can be carried out alongside other medical grade treatments to enhance the effects."
+   }
+  ]
+ },
+ "blemiderm-acne-peel": {
+  "intro": [
+   "The Blemiderm Acne Skin Peel System is a highly effective treatment program designed to reduce and eliminate acne-related blemishes, helping to restore a clearer, healthier complexion.",
+   "The Blemiderm® peel is a professional, medical-grade skin treatment developed by Mesoestetic, primarily aimed at treating active acne. It works by targeting and reducing acne lesions, helping to clear the skin and prevent future breakouts. The peel combines various exfoliating and anti-inflammatory ingredients to effectively control acne-causing factors, minimise inflammation, and restore skin balance"
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is a Blemiderm peel?",
+    "a": "The Blemiderm peel is a professional, medical-grade acne treatment designed to target and eliminate acne lesions while addressing the underlying causes of acne, such as excess sebum, clogged pores, and inflammation."
+   },
+   {
+    "q": "How long does the Blemiderm peel last?",
+    "a": "The effects of the Blemiderm peel can last for several weeks, depending on factors like the severity of the acne, the individual’s skin type, and adherence to the recommended aftercare and at-home skincare regimen."
+   },
+   {
+    "q": "What does the Blemiderm peel do to the skin?",
+    "a": "The Blemiderm peel works to improve the overall health and appearance of the skin by addressing multiple factors that contribute to acne. Here’s what it does to the skin:"
+   },
+   {
+    "q": "Is the Blemiderm peel worth it?",
+    "a": "Blemiderm peel is worth it because it can help with acne, improve skin clarity, and reduce inflammation:"
+   },
+   {
+    "q": "What to expect after a Blemiderm peel?",
+    "a": "After your treatment your skin will look rejuvenated and be smooth in texture, there is no down time with this peel so you can go about your daily activities. Exposure to heat and excessive sweating are not advised for at least 24 hours following the treatment."
+   }
+  ]
+ },
+ "cosmelan": {
+  "intro": [
+   "Cosmelan is a professional depigmenting treatment that fully removes spots and prevents their reappearance for a short- and long-term outcome.",
+   "The Cosmelan procedure is the world’s leading professional pigmentation removal method. The treatment is suitable for all forms of hyperpigmentation from melasma, post inflammatory hyperpigmentation, solar lentigo to ephelides (freckles) and can be used on all skin colours."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "How long does the Cosmelan peel last?",
+    "a": "If you stick to the programme, follow the advice and continue to use a pigment regulator and high factor SPF then your pigmentation removal should be permanent."
+   },
+   {
+    "q": "What does Cosmelan do to the skin?",
+    "a": "Cosmelan works by using a complex mix of acids and retinoids to initiate skin renewal and resurfacing, alongside pigment regulators to control future pigmentation being made in the skin."
+   },
+   {
+    "q": "Is the Cosmelan peel worth it?",
+    "a": "Yes, Cosmelan has a very high client satisfaction with the results but the process is not for everyone. You have to be extremely committed to the process and be sure to be using the products as instructed everyday, there are no days off from the at home maintenance so it’s important to consider if you can be compliant."
+   },
+   {
+    "q": "What is Cosmelan 1?",
+    "a": "Cosmelan 1 is the professional stage of the Cosmelan process. It’s applied in clinic by a practitioner, it has the consistency of a mud mask. Once applied this must be left on the skin for 8-12 hours depending on your skin phototype."
+   },
+   {
+    "q": "What is Cosmelan 2?",
+    "a": "This is the continual home care stage of the Cosmelan process. It’s applied at home by the client, this is the product that must be used for a full year following the Cosmelan process to prevent repigmentation. It is used 3 times per day for the first month after the professional application, 2 times per day for the following 2 months then just in the evening for the following 9 months."
+   }
+  ]
+ },
+ "depigmentation-peel": {
+  "intro": [
+   "This corrective superficial chemical peel targets surface hyperpigmentation such as mild to moderate age spots and sun damage with minimal discomfort or downtime.",
+   "The Melanostop depigmentation peel is a chemical peel which consists of azelaic acid, resorcinol and phytic acid. These ingredients accelerate epidermis renewal of built-up pigmentation. This lightens and reduces the appearance of pigmentation on the surface of the skin."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is Melanostop Depigmentation peel?",
+    "a": "It is a chemical peel which consists of azelaic acid, resorcinol and phytic acid. These ingredients accelerate epidermis renewal of built up pigmentation. This lightens and reduces the appearance of pigmentation on the surface."
+   },
+   {
+    "q": "How long does the Melanostop Depigmentation peel last?",
+    "a": "This will be dependent on the participant, A tyrosinase inhibitor (pigment regulator) and SPF are required to use on an ongoing basis to stabilise the melanin production within the skin."
+   },
+   {
+    "q": "What does Melanostop Depigmentation peel do to the skin?",
+    "a": "The peel lightens visible pigmentation on the surface of the epidermis by accelerating natural exfoliation."
+   },
+   {
+    "q": "Is the Melanostop Depigmentation peel worth it?",
+    "a": "Yes, the treatment boasts minimal downtime and long term results. For the best long term results we would always advise using a tyrosinase inhibitor (pigment regulator) and SPF to continue to reduce the melanin production, and reduce UV exposure by wearing a sun hat in warmer months."
+   },
+   {
+    "q": "What to expect after Melanostop Depigmentation peel?",
+    "a": "After your treatment your skin will look rejuvenated and be smooth in texture, there is no down time with this peel so you can go about your daily activities. Exposure to heat and excessive sweating are not advised for at least 24 hours following the treatment."
+   }
+  ]
+ },
+ "mesopeel": {
+  "intro": [
+   "Our MesoPeel’s are specially formulated to address a range of skin concerns, including mild acne, pigmentation, premature ageing, and dullness. These targeted peels are designed to brighten your complexion, offering a quick and effective glow-up that leaves your skin looking refreshed and radiant with little to no discomfort or downtime",
+   "MesoPeel is a range of advanced chemical peels designed for professional use to address various skin concerns. These peels are formulated with a combination of active ingredients, such as AHAs, BHAs, and other specialised compounds, which are carefully selected to target specific skin issues. MesoPeel treatments can effectively treat:"
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What does MesoPeel do to the skin?",
+    "a": "MesoPeel works by exfoliating the skin and addressing various skin concerns through the use of active ingredients like AHAs, BHAs, and other specialised compounds. Here’s what it does to the skin:"
+   },
+   {
+    "q": "Is the MesoPeel worth it?",
+    "a": "If you’re looking for a treatment to address multiple skin concerns (like acne, pigmentation, and fine lines) and want noticeable results with minimal downtime, MesoPeel can be a great option. The versatility and effectiveness of the peel make it a worthwhile investment, especially for those seeking regular skin maintenance or a targeted glow-up."
+   },
+   {
+    "q": "What to expect after a MesoPeel?",
+    "a": "After a MesoPeel, you can expect mild redness for a few hours, followed by dryness and peeling over the next 3-5 days. Your skin may feel sensitive and you’ll need to avoid sun exposure, using oil-free SPF. Some may experience a temporary breakout (purging), but this clears up quickly. Results typically show in 2-4 weeks, with smoother, brighter, and more even-toned skin."
+   },
+   {
+    "q": "What to do after MesoPeel?",
+    "a": "You will not need to do anything to your skin that day, a minimum of 6-8 hours is best before you do your normal skincare, aftercare instructions will be given by your practitioner. This will include a breakdown of which products to use and what to avoid following your treatment"
+   },
+   {
+    "q": "What skincare to use with MesoPeel?",
+    "a": "Everyone’s skincare needs are unique, depending on individual concerns. As part of your treatment, your Aesthetician will review your current skincare routine, recommend the best products to help you achieve your goals, and provide free samples so you can try before you buy."
+   }
+  ]
+ },
+ "obagi-blue-radiance-peel": {
+  "intro": [
+   "A chemical peel is a non-invasive way to improve the appearance of your skin. It works by using a chemical solution to smooth the texture of your skin by removing the damaged surface layers.",
+   "The Obagi blue radiance peel is a superficial salicylic acid-based peel containing 20% salicylic acid, 2% glycolic acid and 2% lactic acid. It exfoliates the skin and aids in drying out active acne, reducing the appearance of superficial pigmentation and improving the overall complexion.."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "How long does the Obagi Blue Radiance peel last?",
+    "a": "Following a course of 3 treatments results will typically last 3-4 months."
+   },
+   {
+    "q": "What does Obagi Blue Radiance peel do to the skin?",
+    "a": "The combination of target acids increases exfoliation to the skin while simultaneously reducing oil production and drying out active acne."
+   },
+   {
+    "q": "What to expect after Obagi Blue Radiance peel?",
+    "a": "Immediately after, the skin will feel a little warm from the stimulation of the acids. This eases off after a few minutes. Around 3 days after the peel, mild to moderate flaking can be expected and can last up to 7 days. Peeling varies from person to person and a small percentage may not notice visible peeling/flaking if their skin is already well exfoliated prior to the treatment."
+   },
+   {
+    "q": "What to do after Obagi Blue Radiance peel?",
+    "a": "You can go about your day as normal following the peel, avoid make up, swimming and excessive exercise for the rest of the day. An SPF will be applied to your skin at the end of the treatment, be sure to continue to apply SPF for a minimum of 1 week following the treatment, however we would always say the application of SPF everyday is essential."
+   },
+   {
+    "q": "What skincare to use with Obagi Blue Radiance peel?",
+    "a": "Skincare is extremely unique to each individual, we would always recommend a skin analysis and consultation with one of our expert Aestheticians to see what’s going on underneath your skin, find out about your skin type, skin goals, budget and lifestyle, at which point we can make recommendations that will treat your personal skin needs."
+   }
+  ]
+ },
+ "perfect-peel-superblend": {
+  "intro": [
+   "The Perfect Peel Superblend works from the outside and inside to repair and nourish the skin, refine pores, improve skin hyperpigmentation, reduce fine lines and improve active acne.",
+   "The Perfect Peel Superblend works from the outside AND inside to repair and nourish the skin, refine pores, improve skin hyperpigmentation, lift melasma, diminish fine lines, improve acne and acne marks."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is the Perfect Peel Superblend?",
+    "a": "The Perfect Peel Superblend is a hybrid peel, combining acids that work at both medium and superficial depths. Founded on Glutathione- the mother of all antioxidants- The Perfect Peel Superblend blends 8 skin-loving acids into a formula that delivers maximum impact with minimal risks."
+   },
+   {
+    "q": "How is the Perfect Peel Superblend different to the Perfect Peel?",
+    "a": "The original Perfect Peel is a doctor led treatment due to it’s high levels of Phenol acid, due to its high acid potency and having to be performed by a medic this incurs longer downtime and more cost. The Perfect Peel® Superblend brings you a hybrid chemical peel to reach both medium and superficial depths in a single treatment, blowing individual peeling agents out of the water!"
+   },
+   {
+    "q": "How long does the Perfect Peel Superblend last?",
+    "a": "The peel requires no period of skin preparation, takes 15 minutes to apply, and after less than a week of downtime skin tone, texture and elasticity is visibly improved. To follow the Perfect Peel Superblend you are given an individual Home Kit."
+   },
+   {
+    "q": "What does the Perfect Peel Superblend do to your skin?",
+    "a": "The Perfect Peel Superblend works from the outside AND inside to repair and nourish the skin, refine pores, improve skin hyperpigmentation, lift melasma, diminish fine lines, improve acne and acne marks."
+   },
+   {
+    "q": "What does the Perfect Peel Superblend do to the skin?",
+    "a": "The combination of target acids increases exfoliation due to the unique combination of ingredients, it is classified as a medium depth peel meaning it will cause exfoliation and stimulation in the surface and deeper layers of the skin."
+   }
+  ]
+ },
+ "microneedling": {
+  "intro": [
+   "The microneedling treatment is highly effective in treating various concerns such as acne scarring, body scars, fine lines and wrinkles, enlarged pores, and stretch marks. Additionally, microneedling can be utilised to enhance overall skin tone and texture, providing a revitalised and refreshed appearance.",
+   "Microneedling, also referred to as collagen induction therapy, is a cosmetic procedure designed to stimulate collagen production by creating controlled micro-injuries to the skin. This clinically proven treatment targets fine lines, wrinkles, acne scarring, and enlarged pores while promoting overall skin rejuvenation."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is Microneedling?",
+    "a": "Microneedling is also known as collagen induction therapy. It is a cosmetic procedure which involves creating a controlled wound to the skin which in turn stimulates collagen production. It is clinically proven to target fine lines, wrinkles, acne scarring, open pores and generally rejuvenate the skin."
+   },
+   {
+    "q": "How long does Microneedling last?",
+    "a": "Following a course of 3 treatments results will typically last 12-18 months. An annual course of top up treatment once every 6-12 months is recommended to maintain results for rejuvenation. Scar correction is permanent however additional treatments may be required. We are aiming to get a 70% reduction in scars after a course of 3 treatments."
+   },
+   {
+    "q": "What does Microneedling do to the skin?",
+    "a": "Microneedling creates a controlled wound to the skin to initiate a wound healing response. Small single use needles penetrate the skin’s surface enough to stimulate cell regeneration. As the skin then starts to produce more collagen and elastin, it leaves the skin tight, youthful, smooth and more even in texture."
+   },
+   {
+    "q": "Is Microneedling worth it?",
+    "a": "Yes, Microneedling is a clinically proven technology to effectively treat wrinkles, open pores, acne scars, uneven skin texture and generally improve the overall health of the skin."
+   },
+   {
+    "q": "Is Microneedling better than laser?",
+    "a": "Microneedling is generally considered a safer option than laser as there is less risk of post inflammatory hyper-pigmentation."
+   }
+  ]
+ },
+ "exosomes": {
+  "intro": [
+   "The EXO|E Rejuvenation line is the next generation of regenerative skincare. Using meticulously crafted, active organic plant stem cells formulated to cater to every stage of your skincare journey—before, during, and after treatment.",
+   "Exosomes represent a comprehensive array of active plant-based secretory factors, embodying the forefront of bio-based patented technology in contemporary skincare. Patients acclaim its ability to minimise downtime and amplify aesthetic outcomes. The EXO|E COMPLEX SYSTEM serves as a versatile adjunct to existing treatments. They work to mitigate inflammation, minimise downtime, and elevate results. Alternatively, EXO|E can be administered at home as part as a daily skincare regime or in conjunction with micro-needling for added efficacy."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What are exosomes, and how do they benefit the skin?",
+    "a": "Exosomes are tiny vesicles containing potent growth factors and signalling molecules that facilitate cellular communication. When applied to the skin, they promote skin regeneration, repair damaged tissues, and enhance overall skin health."
+   },
+   {
+    "q": "How are exosomes incorporated into skincare products?",
+    "a": "Exosomes are typically extracted from stem cells and incorporated into skincare formulations such as serums, creams, and masks. These products are designed to deliver exosomes directly to the skin, where they can exert their rejuvenating effects."
+   },
+   {
+    "q": "What skin concerns can exosomes address?",
+    "a": "Exosomes are versatile and can help address various skin concerns, including fine lines and wrinkles, hyperpigmentation, uneven texture, and loss of elasticity. They can also aid in wound healing and reduce inflammation."
+   },
+   {
+    "q": "Are exosomes suitable for all skin types?",
+    "a": "Yes, exosomes are generally well-tolerated by all skin types, including sensitive and acne-prone skin. They are natural and non-toxic, making them suitable for a wide range of individuals seeking skin rejuvenation."
+   },
+   {
+    "q": "How do exosomes differ from other skincare ingredients like retinol or hyaluronic acid?",
+    "a": "While ingredients like retinol and hyaluronic acid target specific skin concerns, exosomes work at a cellular level to promote overall skin health and rejuvenation. They facilitate intercellular communication and stimulate the skin’s natural repair processes, leading to comprehensive benefits."
+   }
+  ]
+ },
+ "plasma-skin-rejuvenation": {
+  "intro": [
+   "Jovena Plasma Skin Rejuvenation is a cutting-edge treatment that delivers powerful skin resurfacing and tightening results without the need for invasive procedures. Using precise plasma energy, this treatment targets the surface of the skin and deeper layers to improve tone, texture, and firmness",
+   "Plasma Skin Rejuvenation is a cutting-edge treatment that uses focused plasma energy to resurface the skin and tighten areas of laxity. It works by delivering controlled thermal injury to the upper layers of the skin, triggering a powerful healing response. As the skin repairs itself, it produces more collagen and elastin—resulting in smoother texture, firmer tone, and a noticeable reduction in fine lines, wrinkles, pigmentation, and scarring. It’s an ideal treatment for clients looking to refresh and restore their skin without going under the knife"
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is Plasma Skin Rejuvenation?",
+    "a": "Plasma Skin Rejuvenation is a non-surgical treatment that uses plasma energy to tighten, resurface, and regenerate the skin. It stimulates collagen and elastin production for firmer, smoother, and more youthful-looking skin."
+   },
+   {
+    "q": "How does Plasma Skin Rejuvenation work?",
+    "a": "The treatment delivers targeted plasma energy to the skin’s surface, creating controlled micro-injuries. This triggers the body’s natural healing response, leading to improved skin tone, texture, and firmness over time."
+   },
+   {
+    "q": "What areas can be treated with plasma rejuvenation?",
+    "a": "Common areas include the face, neck, eyelids, lip lines, forehead, décolletage, stomach, and acne-scarred areas. It’s ideal for skin laxity, fine lines, wrinkles, scarring, and uneven skin texture."
+   },
+   {
+    "q": "Is Plasma Skin Rejuvenation painful?",
+    "a": "A topical numbing cream is applied before the procedure to keep discomfort minimal. Most clients describe the sensation as a warm, prickly feeling rather than painful."
+   },
+   {
+    "q": "What is the downtime after plasma treatment?",
+    "a": "Downtime typically includes redness, swelling, and the formation of small carbon crusts that last around 7-10 days. These naturally fall off as the skin heals and renews itself"
+   }
+  ]
+ },
+ "hydratite": {
+  "intro": [
+   "HydraTite merges two powerful treatments, HydraFacial and Radio-frequency, to create a comprehensive solution for tightening the neck and lower face. Experience the ultimate treatment with no pain, no downtime, and instant results.",
+   "Radiofrequency skin tightening targets water molecules in the skin to create a heat build up in the dermal (living) layer of the skin where collagen is made. By creating heat this stimulates collagen and elastin production to lift and tighten the skin."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is Radiofrequency skin tightening?",
+    "a": "Radiofrequency skin tightening targets water molecules in the skin to create a heat build up in the dermal (living) layer of the skin where collagen is made. By creating heat this stimulates collagen and elastin production to lift and tighten the skin."
+   },
+   {
+    "q": "How long do the results of Radiofrequency (RF) skin tightening last?",
+    "a": "Following a course of 3 treatments the results will typically last 12-18 months. A top up treatment is recommended once every 6-12 months to maintain the results."
+   },
+   {
+    "q": "What does Radiofrequency skin tightening or HydraTite do to the skin?",
+    "a": "Radiofrequency skin tightening targets water molecules in the skin to create a heat build up in the dermal (living) layer of the skin where collagen is made. By creating heat this stimulates collagen and elastin production to lift and tighten the skin."
+   },
+   {
+    "q": "Does Radiofrequency work to tighten the skin?",
+    "a": "Yes, Radiofrequency skin tightening targets water molecules in the skin to create a heat build up in the dermal (living) layer of the skin where collagen is made. By creating heat this stimulates collagen and elastin production to lift and tighten the skin."
+   },
+   {
+    "q": "How often should you have Radiofrequency skin tightening/HydraTite?",
+    "a": "A course of 3 treatments is recommended 4-6 weeks apart, results will typically last 12-18 months following a course. A top up treatment is recommended once every 6-12 months to maintain the results. Many of our clients love the effects so much however that they carry on having it even more regularly. We offer packages and interest free payment plans on a course of 3 and annual courses of HydraTite."
+   }
+  ]
+ },
+ "facestim": {
+  "intro": [
+   "FaceSTIM is also known as a non-surgical facelift and aims to improve the appearance of skin and muscles, including lifting eyebrows, reducing wrinkles, and defining the jawline using a combination of Radio Frequency and Electric muscle stimulation.",
+   "Facestim works by combining Electrical Muscle Stimulation (EMS) and Radiofrequency (RF) technology. EMS gently contracts and tones the facial muscles, improving firmness and definition—like a workout for your face. At the same time, RF heats the deeper layers of the skin to stimulate collagen and elastin production, helping to tighten and smooth the skin. Together, they lift, sculpt, and rejuvenate for a fresher, more youthful appearance"
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What is Face Stim treatment?",
+    "a": "Face Stim is a non-invasive treatment that uses electrical muscle stimulation (EMS) and radiofrequency (RF) to tone facial muscles, tighten skin, and boost collagen for a more lifted, youthful look."
+   },
+   {
+    "q": "How does Face Stim work?",
+    "a": "It combines EMS, which contracts and strengthens facial muscles, with RF, which gently heats the skin to stimulate collagen and elastin production. Together, they improve muscle tone and skin firmness"
+   },
+   {
+    "q": "Is Face Stim painful?",
+    "a": "No, it’s not painful. Most clients describe it as a warm, gentle tingling sensation. It’s a comfortable and relaxing experience with no downtime."
+   },
+   {
+    "q": "What are the benefits of Face Stim?",
+    "a": "This treatment helps lift and tone facial muscles, improve firmness and elasticity, enhance circulation, and stimulate collagen — all without needles or surgery"
+   },
+   {
+    "q": "How many sessions will I need of Electric Muscle Stimulation?",
+    "a": "We recommend a course of six weekly treatments for best results. After that, you can maintain your results with quarterly sessions or monthly visits to continue building on your progress"
+   }
+  ]
+ },
+ "advanced-electrolysis-acp-blemish-removal": {
+  "intro": [
+   "ACP is an advanced form of Electrolysis used to safely and effectively treat multiple skin lesions, leaving you with a smooth even skin tone and complexion",
+   "Advanced electrolysis is an advanced form of electrolysis that uses a hot probe to cauterise blemishes from the skin."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "What does ACP stand for?",
+    "a": "ACP is an acronym for Advanced cosmetic procedures."
+   },
+   {
+    "q": "What can you treat with advanced electrolysis?",
+    "a": "Milia, thread veins, spider veins, skin tags, blood spots, seborrheic keratosis, DNP & Xanthelasma."
+   },
+   {
+    "q": "What are the side effects of advanced electrolysis?",
+    "a": "Side effects are mild, these include redness, swelling , scabs and dryness."
+   },
+   {
+    "q": "How long will healing take following treatment?",
+    "a": "1 to 2 weeks, this will depend on how long your crusting takes to shed off. Redness and swelling can be expected for 24 hours after treatment"
+   },
+   {
+    "q": "Does advanced electrolysis hurt?",
+    "a": "There is a little discomfort but most clients find it very tolerable and the procedure is quick to perform."
+   }
+  ]
+ },
+ "alumier-skincare": {
+  "intro": [
+   "AlumierMD is a true professionally-dispensed medical-grade skincare brand dedicated to the latest advancements in Clean Science – Finally, skincare that’s been prescribed for your skin and yours alone.",
+   "AlumierMD skincare is renowned for its cutting-edge formulations and clinically proven results. Rooted in science and innovation, AlumierMD offers a comprehensive range of skincare products designed to address various skin concerns, from acne to ageing. Their expertly crafted formulations utilise potent ingredients such as retinol, antioxidants, and peptides, meticulously formulated to deliver visible improvements in skin health and appearance. With a commitment to quality and efficacy, AlumierMD skincare stands as a trusted choice for those seeking professional-grade solutions for their skincare needs."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "Is AlumierMD medical grade?",
+    "a": "All of AlumierMD’s products are medical grade – that’s what makes them so special."
+   },
+   {
+    "q": "Is AlumierMD skincare vegan?",
+    "a": "AlumierMD products are cruelty-free, environmentally friendly, and sustainably sourced; however, we cannot consider our products vegan due to the fact that some of their products contain Sea Whip and Honey."
+   },
+   {
+    "q": "Is AlumierMD a good skincare range?",
+    "a": "AlumierMD’s product claims are backed up by clinical research. Through validated clinical studies involving tens of thousands of women, they have discovered the best ingredients, optimum concentrations and advanced delivery molecules to provide prescription strength products to treat a variety of skin issues."
+   },
+   {
+    "q": "Is AlumierMD skincare expensive?",
+    "a": "This will depend on your budget. They will be more expensive than most high street products because they are a cosmeceutical range. This means you are getting much better quality and higher levels of active ingredients needed to see real change in your skin."
+   },
+   {
+    "q": "Is AlumierMD skincare an eco friendly brand?",
+    "a": "AlumierMD is proud to be an eco-friendly skincare brand. All their packaging is recyclable, and no products are covered in cellophane. Their exfoliating agents are biodegradable, and all ingredients are sustainable. Furthermore, none of their products are tested on animals."
+   }
+  ]
+ },
+ "mesoestetic-skincare": {
+  "intro": [
+   "Mesoestetic are committed to the development and marketing of top-quality products, with scientifically proven result. Their progress is linked to ongoing research and collaboration with hospitals, universities and experienced specialists from the sector as the company works closely with these to research and develop new treatments.",
+   "Mesoestetic skin care products are the most technologically advanced medical cosmetic treatments available today. Scientifically formulated with advanced ingredients, Mesoestetic offers proven results and is recommended by professionals and industry leaders around the world."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "Is Mesoestetic medical grade?",
+    "a": "Yes, these are cosmeceutical products, meaning they reach the living layers of the skin and have higher quantities of active ingredients."
+   },
+   {
+    "q": "Is Mesoestetic vegan?",
+    "a": "Yes, Mesoestetic products are suitable for vegans."
+   },
+   {
+    "q": "Is Mesoestetic a good skincare range?",
+    "a": "Yes, these are cosmeceutical products, meaning they reach the living layers of the skin and have higher quantities of active ingredients."
+   },
+   {
+    "q": "Is Mesoestetic expensive?",
+    "a": "This will depend on your budget. They will be more expensive than most high street products because they are a cosmeceutical range. This means you are getting much better quality and higher levels of active ingredients needed to see real change in your skin."
+   },
+   {
+    "q": "Is Mesoestetic an eco friendly brand?",
+    "a": "There’s still a long way to go for true sustainability in the Aesthetic industry but comparably Mesoestetic are really leading the way when it comes to making eco conscious choices in how they run their business with more sustainable packaging and ditching single use plastics."
+   }
+  ]
+ },
+ "zo-skin-health": {
+  "intro": [
+   "ZO Skin Health has curated an extensive range of advanced skincare protocols and products designed to cater to diverse needs. This comprehensive selection encompasses highly potent products, and everyday skincare solutions, all crafted to foster and sustain healthy skin. Leveraging the latest scientific breakthroughs in skin therapy technologies, these meticulously formulated products and protocols empower physicians to deliver consistent skin health benefits across all skin types, genders and ages.",
+   "ZO Skin Health stands as a premier medical-grade skincare brand pioneered by Dr. Zein Obagi, a distinguished board-certified dermatologist and esteemed skincare authority. Offering a diverse array of products and professional treatments, the brand is dedicated to enhancing both the health and aesthetics of the skin."
+  ],
+  "factsList": [],
+  "faqs": [
+   {
+    "q": "Can I buy ZO Skincare online?",
+    "a": "ZO skincare products are only available through an authorised stockist. Due to the high levels of active ingredients a consultation is essential before purchasing any products."
+   },
+   {
+    "q": "Why is ZO Skincare so good?",
+    "a": "ZO products are highly effective because they contain highly active ingredients that penetrate through the outer dead skin layer of the skin (epidermis) to work effectively in the deeper layer of the skin (dermis). This leads to quicker, effective and longer lasting results."
+   },
+   {
+    "q": "Is ZO Skincare medical grade?",
+    "a": "ZO offers solutions for everyone. This is medical grade skincare that outshines multiple brands available on the market. All the products have evidence-based research behind them."
+   },
+   {
+    "q": "Is ZO Skincare a good skincare range?",
+    "a": "ZO products are highly effective because they contain highly active ingredients that penetrate through the outer dead skin layer of the skin (epidermis) to work effectively in the deeper layer of the skin (dermis). This leads to quicker, effective and longer lasting results."
+   },
+   {
+    "q": "Is ZO Skincare good for skin?",
+    "a": "ZO products are highly effective because they contain highly active ingredients that penetrate through the outer dead skin layer of the skin (epidermis) to work effectively in the deeper layer of the skin (dermis). This leads to quicker, effective and longer lasting results."
+   }
+  ]
+ }
+}

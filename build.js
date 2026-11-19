@@ -27,6 +27,16 @@ if (process.argv[2] === "clinic" || process.env.SITE === "clinic") {
   return;
 }
 
+// `node build.js clinics` builds every clinic demo except Edgbaston (which has its
+// own project) into one site: /midland-skin/, /the-look/, /authentic-aesthetics/.
+if (process.argv[2] === "clinics" || process.env.SITE === "clinics") {
+  fs.rmSync(DIST, { recursive: true, force: true });
+  const sites = fs.readdirSync(path.join(__dirname, "clinic", "sites")).filter(n => n !== "edgbaston");
+  sites.forEach(n => require("./clinic/build.js").build({ dist: path.join(DIST, n), base: "/" + n, site: n }));
+  fs.writeFileSync(path.join(DIST, "index.html"), `<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Clinic drafts</title><p>Draft concepts by Groundwork Studios.</p>`);
+  return;
+}
+
 // ── helpers ──────────────────────────────────────────────
 
 function esc(str) {

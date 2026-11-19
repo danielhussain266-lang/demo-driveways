@@ -1,0 +1,504 @@
+{
+ "categories": [
+  {
+   "id": "consultations",
+   "name": "Consultations & skin checks",
+   "orig": "https://authenticaesthetics.co.uk/treatments/"
+  },
+  {
+   "id": "facials",
+   "name": "Facials & LED",
+   "orig": "https://authenticaesthetics.co.uk/treatments/"
+  },
+  {
+   "id": "peels",
+   "name": "Peels & pigmentation",
+   "orig": "https://authenticaesthetics.co.uk/treatments/"
+  },
+  {
+   "id": "rejuvenation",
+   "name": "Rejuvenation & tightening",
+   "orig": "https://authenticaesthetics.co.uk/treatments/"
+  },
+  {
+   "id": "blemish",
+   "name": "Blemish removal",
+   "orig": "https://authenticaesthetics.co.uk/treatments/"
+  },
+  {
+   "id": "skincare",
+   "name": "Skincare ranges",
+   "orig": "https://authenticaesthetics.co.uk/treatments/"
+  }
+ ],
+ "treatments": [
+  {
+   "cat": "consultations",
+   "slug": "skincare-consultation",
+   "name": "Skincare consultation",
+   "kind": "Consultation",
+   "price": "£25",
+   "orig": "https://authenticaesthetics.co.uk/Skincare-Consultation/",
+   "prices": [
+    {
+     "label": "General Skincare Consultation",
+     "price": "£25",
+     "note": "Per Session · During your initial skincare consultation you will be provided with a full skin analysis using our Observ Skin scanner."
+    }
+   ]
+  },
+  {
+   "cat": "consultations",
+   "slug": "mole-mapping",
+   "name": "Mole mapping",
+   "kind": "Skin check",
+   "price": "From £30",
+   "orig": "https://authenticaesthetics.co.uk/mole-mapping/",
+   "prices": [
+    {
+     "label": "Single Mole",
+     "price": "£50",
+     "note": "Professional analysis of one mole using advanced dermatoscope imaging and UK consultant dermatologist review. Includes a full written report delivered within 24–48 hours with expert guidance and recommended next steps if required."
+    },
+    {
+     "label": "Subsequent Moles",
+     "price": "£30",
+     "note": "Additional moles can be assessed during the same appointment at a reduced rate, allowing multiple areas of concern to be professionally reviewed quickly and affordably."
+    },
+    {
+     "label": "Mole Bundle",
+     "price": "£99",
+     "note": "Our most popular package, ideal for anyone wanting several moles checked at once. Includes professional imaging and consultant dermatologist review for up to three moles with detailed written results delivered directly to your inbox."
+    },
+    {
+     "label": "Mole Removal After Mole Check",
+     "price": "£70",
+     "note": "Save £15 · Once your mole has been professionally assessed and confirmed as benign, we can safely remove it using our ACP Blemish Removal treatment. A quick, precise treatment with minimal downtime and excellent cosmetic results."
+    }
+   ]
+  },
+  {
+   "cat": "facials",
+   "slug": "hydrafacial",
+   "name": "HydraFacial",
+   "kind": "Facial",
+   "price": "From £99",
+   "orig": "https://authenticaesthetics.co.uk/hydrafacial/",
+   "prices": [
+    {
+     "label": "Express HydraFacial",
+     "price": "£99",
+     "note": "Per Session · An express 30 minute version of the HydraFacial for those who want a quick fix, the treatment utilises the core four stages of HydraFacial; deep cleanse & exfoliation, light glycolic peel, extractions and hydration infusion, leaving your skin deep cleaned and…"
+    },
+    {
+     "label": "Express Hydra-Planing",
+     "price": "£129",
+     "note": "Per Session · The core 4 stage of the HydraFacial with dermaplaning to give a quick effective treatment leaving the skin irresistibly soft and smooth. Includes; Dermaplaning, deep cleanse & exfoliation, light glycolic peel, extractions, antioxidant & hydration infusion."
+    },
+    {
+     "label": "Skin Health for Life Hydrafacial",
+     "price": "£140",
+     "note": "Per Session · Our most popular 6 in 1 facial is suitable for all skin types and includes; lymphatic drainage, deep cleanse & exfoliation, light glycolic peel, extractions, antioxidant & hydration infusion, LED light therapy. Treatment delivered within 1 hour."
+    },
+    {
+     "label": "Hydra - Bacial (Back Treatment)",
+     "price": "£150",
+     "note": "Per Session · This deep cleaning, multi step back treatment is machine based and includes; deep cleanse and exfoliation, glycolic peel, extraction, hydration infusion and LED light therapy. Treatment delivered within 75 minutes."
+    },
+    {
+     "label": "Hydra-Planing",
+     "price": "£170",
+     "note": "Per Session · The ultimate 7 step treatment to remove fluffy 'peach fuzz' from skin and ensure even deeper penetration of key ingredients from the HydraFacial."
+    },
+    {
+     "label": "Signature Hydrafacial",
+     "price": "£180",
+     "note": "Per Session · The ultimate tailored 7 step treatment, after a full consultation and skin assessment your Aesthetician will deliver your HydraFacial with the added benefit of having a booster, specific to your skin needs and concerns infused in."
+    },
+    {
+     "label": "Hydra-Zen",
+     "price": "£190",
+     "note": "Per Session · Perfect for those wanting a more relaxing, luxurious version of the HydraFacial. Includes; Neck, chest & scalp massage, lymphatic drainage, deep cleanse & exfoliation, light glycolic peel, extractions, antioxidant & hydration infusion, LED light therapy, hand…"
+    },
+    {
+     "label": "Hydra-Needling",
+     "price": "£250",
+     "note": "Per Session · Ready to supercharge your HydraFacial results? Well now's your chance with microneedling, all performed in 1 session with minimal to no downtime."
+    },
+    {
+     "label": "Hydra-Needling with Exosomes",
+     "price": "£300",
+     "note": "Per Session · For those wanting to maximise their Hydra-Needling benefits with revoluationary Exosomes. These plant derived stem cells reduce downtime while supercharge collagen and hydration production."
+    }
+   ]
+  },
+  {
+   "cat": "facials",
+   "slug": "dermaplaning",
+   "name": "Dermaplaning",
+   "kind": "Facial",
+   "price": "From £129",
+   "orig": "https://authenticaesthetics.co.uk/Dermaplaning/",
+   "prices": [
+    {
+     "label": "Express Hydra-Planing",
+     "price": "£129",
+     "note": "Per Session · The core 4 stage of the HydraFacial with dermaplaning to give a quick effective treatment leaving the skin irresistibly soft and smooth. Includes; Dermaplaning, deep cleanse & exfoliation, light glycolic peel, extractions, antioxidant & hydration infusion."
+    },
+    {
+     "label": "Hydra-Planing",
+     "price": "£170",
+     "note": "Per Session · The ultimate 7 step treatment to remove fluffy 'peach fuzz' from skin and ensure even deeper penetration of key ingredients from the HydraFacial."
+    }
+   ]
+  },
+  {
+   "cat": "facials",
+   "slug": "dermalux-led-light-therapy",
+   "name": "Dermalux LED light therapy",
+   "kind": "Light therapy",
+   "price": "",
+   "orig": "https://authenticaesthetics.co.uk/Dermalux-Led-Light-Therapy/",
+   "prices": []
+  },
+  {
+   "cat": "peels",
+   "slug": "blemiderm-acne-peel",
+   "name": "Blemiderm acne peel",
+   "kind": "Peel",
+   "price": "From £175",
+   "orig": "https://authenticaesthetics.co.uk/blemiderm-acne-peel/",
+   "prices": [
+    {
+     "label": "Blemiderm Peel",
+     "price": "£175",
+     "note": "Per Session · Blemiderm is a comprehensive treatment for eliminating active acne lesions regulating the triggers which contribute to acne formation, and restoring the skin’s natural balance"
+    },
+    {
+     "label": "Blemiderm Peel",
+     "price": "£499",
+     "note": "Three Session · Blemiderm is a comprehensive treatment for eliminating active acne lesions regulating the triggers which contribute to acne formation, and restoring the skin’s natural balance"
+    }
+   ]
+  },
+  {
+   "cat": "peels",
+   "slug": "cosmelan",
+   "name": "Cosmelan",
+   "kind": "Pigmentation",
+   "price": "From £995",
+   "orig": "https://authenticaesthetics.co.uk/Cosmelan/",
+   "prices": [
+    {
+     "label": "Cosmelan Consultation",
+     "price": "£25",
+     "note": "A consultation prior to treatment is mandatory to fully assess your skin and determine suitability for the treatment. We charge a small fee to hold your appointment, however this is fully refundable from the Cosmelan cost following the consultation."
+    },
+    {
+     "label": "The Cosmelan Method",
+     "price": "£995",
+     "note": "Includes: Initial consultation; Depigmentation kit to prep skin; Pre-treatment prep peel; Cosmelan application; All products needed for 4 week after Cosmelan application; Unlimited access to an aesthetician by phone to help with any questions…"
+    },
+    {
+     "label": "The Cosmelan System",
+     "price": "£2000",
+     "note": "Includes: Initial consultation; Depigmentation kit to prep skin; Pre-treatment prep peel; Cosmelan application; All products needed for the full 1 year following treatment; Unlimited access to an aesthetician by phone to help with any questions…"
+    }
+   ]
+  },
+  {
+   "cat": "peels",
+   "slug": "depigmentation-peel",
+   "name": "Depigmentation peel",
+   "kind": "Peel",
+   "price": "£520 course",
+   "orig": "https://authenticaesthetics.co.uk/Depigmentation-Peel/",
+   "prices": [
+    {
+     "label": "Depigmentation Peel Consultation",
+     "price": "£25",
+     "note": "A consultation prior to treatment is mandatory to fully assess your skin and determine suitability for the treatment. We charge a small fee to hold your appointment, however this is fully refundable from the Depigmentation peel cost following the consultation."
+    },
+    {
+     "label": "Course of 6 Depigmentation Peel",
+     "price": "£520",
+     "note": "For the best, lasting results, we recommend a series of 6 treatments with our pigment-regulating skincare regimen at home. This regimen helps prevent adverse reactions and maximises your skin's potential for long-term improvement."
+    }
+   ]
+  },
+  {
+   "cat": "peels",
+   "slug": "mesopeel",
+   "name": "Mesopeel",
+   "kind": "Peel",
+   "price": "From £80",
+   "orig": "https://authenticaesthetics.co.uk/mesopeel/",
+   "prices": [
+    {
+     "label": "Mesopeel",
+     "price": "£80",
+     "note": "Per Session · Our Mesopeels are specially formulated to address a range of skin concerns, including mild acne, pigmentation, premature aging, and dullness."
+    },
+    {
+     "label": "Mesopeel",
+     "price": "£200",
+     "note": "Three Session · Our Mesopeels are specially formulated to address a range of skin concerns, including mild acne, pigmentation, premature aging, and dullness."
+    }
+   ]
+  },
+  {
+   "cat": "peels",
+   "slug": "obagi-blue-radiance-peel",
+   "name": "Obagi Blue Radiance peel",
+   "kind": "Peel",
+   "price": "From £90",
+   "orig": "https://authenticaesthetics.co.uk/obagi-blue-radiance-peel/",
+   "prices": [
+    {
+     "label": "Obagi Blue Radiance Peel",
+     "price": "£90",
+     "note": "Per Session · The Obagi blue radiance peel is a quick and effective peel suitable for all skin types. It's especially good for acne, pigmentation and anti-ageing. Performed in just 30 minutes it leaves your skin instantly glowing and smooth."
+    },
+    {
+     "label": "Obagi Blue Radiance Peel course of 3 treatments",
+     "price": "£240",
+     "note": "Per Session · A course of 3 treatments is recommended 2-4 weeks apart when we are treating specific skin concerns such as acne, mild pigmentation and fine lines."
+    }
+   ]
+  },
+  {
+   "cat": "peels",
+   "slug": "perfect-peel-superblend",
+   "name": "Perfect Peel Superblend",
+   "kind": "Peel",
+   "price": "From £175",
+   "orig": "https://authenticaesthetics.co.uk/PerfectPeel/",
+   "prices": [
+    {
+     "label": "Perfect Peel Superblend",
+     "price": "£175",
+     "note": "Per session · The Perfect Peel® Superblend brings you a hybrid chemical peel to reach both medium and superficial depths in a single treatment, blowing individual peeling agents out of the water!"
+    },
+    {
+     "label": "Perfect Peel Superblend Course",
+     "price": "£375",
+     "note": "Course of 3 · The Perfect Peel® Superblend brings you a hybrid chemical peel to reach both medium and superficial depths in a single treatment, blowing individual peeling agents out of the water!"
+    }
+   ]
+  },
+  {
+   "cat": "rejuvenation",
+   "slug": "microneedling",
+   "name": "Microneedling",
+   "kind": "Skin rejuvenation",
+   "price": "From £120",
+   "orig": "https://authenticaesthetics.co.uk/microneedling/",
+   "prices": [
+    {
+     "label": "Single session",
+     "price": "£220",
+     "note": "Per Session · Great for those wanting to give their skin a regenerative boost and leave the skin glowing. Includes numbing prior to treatment, delivery of skin specific serums into the skin to target your main skin concerns in each area, peptide soothing mask application &…"
+    },
+    {
+     "label": "Microneedling with Exosomes single session",
+     "price": "£360",
+     "note": "Per Session · Take your Microneedling to the next level with the infusion of Exosomes during your treatment. Great for those wanting to give their skin a total rejuvenation while also reducing the downtime and inflammation associated with Microneedling."
+    },
+    {
+     "label": "Microneedling add on to another treatment",
+     "price": "£120",
+     "note": "Designed to supercharge your results, microneedling can be added onto any HydraFacial or HydraTite treatment."
+    }
+   ]
+  },
+  {
+   "cat": "rejuvenation",
+   "slug": "exosomes",
+   "name": "Exosomes",
+   "kind": "Skin rejuvenation",
+   "price": "",
+   "orig": "https://authenticaesthetics.co.uk/exosomes/",
+   "prices": []
+  },
+  {
+   "cat": "rejuvenation",
+   "slug": "plasma-skin-rejuvenation",
+   "name": "Plasma skin rejuvenation",
+   "kind": "Skin rejuvenation",
+   "price": "From £50",
+   "orig": "https://authenticaesthetics.co.uk/plasma-skin-rejuvenation/",
+   "prices": [
+    {
+     "label": "Plasma Lip Lines",
+     "price": "£100",
+     "note": "Per Session · Smooth out fine vertical lines around the mouth (often called smoker’s lines) for a softer, more youthful appearance. Includes numbing cream for your comfort. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Total Eye Rejuvenation (Upper & Lower)",
+     "price": "£100",
+     "note": "Per Session · Combines upper eyelid and under-eye treatment to refresh the entire eye area. Includes numbing cream to ensure a more comfortable experience. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "½ Face (Lower Face or Forehead)",
+     "price": "£200",
+     "note": "Per Session · Firms and rejuvenates either the lower face (jawline/jowls) or forehead to reduce sagging and fine lines. Treatment includes numbing cream. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Decolletage Treatment",
+     "price": "£250",
+     "note": "Per Session · Smooths and firms the chest area to reduce sun damage, fine lines, and crepey skin. Numbing cream ensures comfort during treatment. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Neck Treatment",
+     "price": "£250",
+     "note": "Per Session · Tightens loose, crepey neck skin for a smoother, firmer neckline. Numbing cream is used to enhance comfort during the procedure. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Full Face & Eyes Treatment",
+     "price": "£250",
+     "note": "Per Session · A full facial rejuvenation to smooth wrinkles, tighten skin, and improve tone and texture over the full face & eyes. Numbing cream is applied to keep the treatment comfortable. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Full Face, Neck & Eyes Treatment",
+     "price": "£300",
+     "note": "Per Session · A total rejuvenation targeting all facial & neck areas for maximum rejuvenation. Numbing cream is included for comfort throughout the treatment. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Full Face, Neck, Eyes & Decolletage Treatment",
+     "price": "£350",
+     "note": "Per Session · A complete transformation targeting all key areas for maximum rejuvenation. Numbing cream is included for comfort throughout the treatment. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Stretch Mark Treatment",
+     "price": "£250",
+     "note": "Per Session · Targets loose skin and stretch marks on the stomach, helping to tighten and improve skin texture. Numbing cream is used for a more comfortable session. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Back Acne Scar Treatment",
+     "price": "£250",
+     "note": "Per Session · Targets acne scarring and uneven skin texture on the back, helping to smooth and rejuvenate the skin. Numbing cream is used for a more comfortable session. A consultation is mandatory prior to treatment to access suitability."
+    },
+    {
+     "label": "Small Area (20 shots or less)",
+     "price": "£50",
+     "note": "Per Session · Perfect for targeting small, specific areas like isolated lines or blemishes. A precise, affordable option with numbing cream included to keep you comfortable. A consultation is mandatory prior to treatment to access suitability."
+    }
+   ]
+  },
+  {
+   "cat": "rejuvenation",
+   "slug": "hydratite",
+   "name": "HydraTite",
+   "kind": "Skin tightening",
+   "price": "From £165",
+   "orig": "https://authenticaesthetics.co.uk/Hydratite/",
+   "prices": [
+    {
+     "label": "Express HydraTite Full Face Single Session",
+     "price": "£165",
+     "note": "Per Session · The Express version of our HydraTite treatment designed to tighten the jawline and improve overall complexion with no pain and no downtime."
+    },
+    {
+     "label": "Express HydraTite Full Face & Neck Single Session",
+     "price": "£185",
+     "note": "Per Session · The Express version of our HydraTite treatment designed to tighten the jawline, neck and improve overall complexion with no pain and no downtime."
+    },
+    {
+     "label": "HydraTite Full Face Single Session",
+     "price": "£225",
+     "note": "Per Session · The ultimate treatment for pain free skin tightening for a full face rejuvenation. Treatment includes; Lymphatic drainage, deep cleanse & exfoliation, light glycolic peel, extractions, Radio-frequency skin tightening, antioxidant & hydration infusion, LED…"
+    },
+    {
+     "label": "HydraTite Full Face & Neck Single Session",
+     "price": "£255",
+     "note": "Per Session · The ultimate treatment for pain free skin tightening for a full face & neck rejuvenation. Treatment includes; Lymphatic drainage, deep cleanse & exfoliation, light glycolic peel, extractions, Radio-frequency skin tightening, antioxidant & hydration infusion,…"
+    }
+   ]
+  },
+  {
+   "cat": "rejuvenation",
+   "slug": "facestim",
+   "name": "FaceSTIM",
+   "kind": "Skin tightening",
+   "price": "From £200",
+   "orig": "https://authenticaesthetics.co.uk/facestim/",
+   "prices": [
+    {
+     "label": "FaceSTIM treatment",
+     "price": "£200",
+     "note": "Per Session · Face Stim is a non-invasive facial treatment that combines advanced technologies to lift, tone, and rejuvenate the skin."
+    },
+    {
+     "label": "Express HydraSTIM treatment",
+     "price": "£250",
+     "note": "Per Session · An Express version of our popular HydraStim treatment. This is the ultimate skin and muscle reboot, combining the deep cleansing and hydrating power of a HydraFacial with the lifting and firming benefits of FaceStim."
+    },
+    {
+     "label": "HydraSTIM treatment",
+     "price": "£300",
+     "note": "Per Session · This is the ultimate skin and muscle reboot, combining the deep cleansing and hydrating power of a HydraFacial with the lifting and firming benefits of FaceStim."
+    }
+   ]
+  },
+  {
+   "cat": "blemish",
+   "slug": "advanced-electrolysis-acp-blemish-removal",
+   "name": "Advanced electrolysis: ACP blemish removal",
+   "kind": "Blemish removal",
+   "price": "£85",
+   "orig": "https://authenticaesthetics.co.uk/ACP-Blemish-Removal/",
+   "prices": [
+    {
+     "label": "ACP Blemish Removal",
+     "price": "£85",
+     "note": "Per Session · We do a full consultation prior to treatment. Anything up to 15 minutes counts as 1 session, we can treat as many lesions as necessary within this time. A small deposit is required upon booking, this is fully refundable against your treatment cost."
+    }
+   ]
+  },
+  {
+   "cat": "skincare",
+   "slug": "alumier-skincare",
+   "name": "Alumier skincare",
+   "kind": "Skincare",
+   "price": "Consultation £25",
+   "orig": "https://authenticaesthetics.co.uk/Alumier/",
+   "prices": [
+    {
+     "label": "Alumier skincare consultation",
+     "price": "£25",
+     "note": "Fully deductible from skincare or treatment purchases over £150. Includes a full skin analysis and free samples."
+    }
+   ]
+  },
+  {
+   "cat": "skincare",
+   "slug": "mesoestetic-skincare",
+   "name": "Mesoestetic skincare",
+   "kind": "Skincare",
+   "price": "Consultation £25",
+   "orig": "https://authenticaesthetics.co.uk/Mesoestetic/",
+   "prices": [
+    {
+     "label": "Mesoestetic skincare consultation",
+     "price": "£25",
+     "note": "Fully deductible from skincare or treatment purchases over £150. Includes a full skin analysis and free samples."
+    }
+   ]
+  },
+  {
+   "cat": "skincare",
+   "slug": "zo-skin-health",
+   "name": "ZO Skin Health",
+   "kind": "Skincare",
+   "price": "Consultation £25",
+   "orig": "https://authenticaesthetics.co.uk/ZO-Skin-Health/",
+   "prices": [
+    {
+     "label": "ZO Skin Health skincare consultation",
+     "price": "£25",
+     "note": "Fully deductible from skincare or treatment purchases over £150. Includes a full skin analysis and free samples."
+    }
+   ]
+  }
+ ]
+}

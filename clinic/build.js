@@ -89,7 +89,8 @@ function build({ dist, base = "", site = "edgbaston" }) {
   }, c.TEXT || {});
   const logoSrc = c.LOGO_FILE || "/images/logo.png";
   // For logos made for dark backgrounds: show them on a coloured plate.
-  const logoStyle = c.LOGO_BG ? ` style="background:${esc(c.LOGO_BG)};padding:7px 14px;border-radius:10px;box-sizing:content-box"` : "";
+  const logoCss = [c.LOGO_BG ? `background:${esc(c.LOGO_BG)};padding:7px 14px;border-radius:10px;box-sizing:content-box` : "", c.LOGO_HEIGHT ? `height:${Number(c.LOGO_HEIGHT)}px` : ""].filter(Boolean).join(";");
+  const logoStyle = logoCss ? ` style="${logoCss}"` : "";
   const cats = data.categories;
   const catName = (id) => cats.find(k => k.id === id).name;
   const treatmentsOf = (id) => data.treatments.filter(t => t.cat === id);
@@ -335,7 +336,7 @@ ${header("/")}
         <h2>${esc(T.CATS_HEADING)}</h2>
         <p>${esc(T.CATS_SUB)}</p>
       </div>
-      <div class="cat-grid">
+      <div class="cat-grid"${cats.length === 6 ? ' style="--ccols:3"' : ""}>
         ${cats.map(k => `<a class="cat-card" href="${u("/treatments/" + k.id + "/")}">
           <img src="${u(c.CATEGORY_IMAGES[k.id])}" alt="" loading="lazy" width="900" height="700" />
           <div class="cat-card-body">
@@ -416,7 +417,7 @@ ${footer()}`;
         <span class="eyebrow">${esc(a.EYEBROW)}</span>
         <h2>${esc(a.HEADING)} <em>${esc(a.HEADING_EM)}</em></h2>
         <p>${esc(a.TEXT)}</p>
-        <ul class="assurance-logos" aria-label="Regulators and professional bodies">
+        <ul class="assurance-logos" aria-label="Regulators and professional bodies"${a.LOGO_HEIGHT ? ` style="--logo-h:${Number(a.LOGO_HEIGHT)}px"` : ""}>
           ${a.LOGOS.map(l => `<li><img src="${u(l.src)}" alt="${esc(l.alt)}" loading="lazy" /></li>`).join("\n          ")}
         </ul>
         ${c.DEMO_NOTICE ? `<p class="fine">Draft: wording and logos are taken from the clinic's current website, and the clinic must confirm them.</p>` : ""}
@@ -691,6 +692,12 @@ ${header("/contact/")}
           <h2>${icon("phone", 20)} Talk to us</h2>
           <p><a href="tel:${esc(c.PHONE_HREF)}">${esc(c.PHONE)}</a>${c.EMAIL ? `<br /><a href="mailto:${esc(c.EMAIL)}">${esc(c.EMAIL)}</a>` : ""}${c.PHONE_NOTE ? `<br /><small>${esc(c.PHONE_NOTE)}</small>` : ""}</p>
         </div>
+        ${(c.HOURS || []).length ? `<div class="info-card">
+          <h2>${icon("calendar", 20)} Opening hours</h2>
+          <ul class="price-rows hours-rows">
+            ${c.HOURS.map(h => `<li><span>${esc(h[0])}</span><strong>${esc(h[1])}</strong></li>`).join("\n            ")}
+          </ul>
+        </div>` : ""}
         ${waOn ? `<div class="info-card">
           <h2>${waIcon(20)} WhatsApp us</h2>
           <p>Pick what it's about and we'll open WhatsApp with the message ready.</p>

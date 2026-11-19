@@ -277,7 +277,7 @@ p { text-wrap: pretty; }
 .assurance-inner h2 em { font-style: italic; color: var(--gold-dk); }
 .assurance-inner > p { color: var(--muted); margin-top: 14px; font-size: 1.05rem; }
 .assurance-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 22px 44px; margin-top: 30px; }
-.assurance-logos img { height: 56px; width: auto; max-width: 100%; object-fit: contain; }
+.assurance-logos img { height: var(--logo-h, 56px); width: auto; max-width: 100%; object-fit: contain; }
 .assurance .fine { margin-top: 22px; }
 
 /* ── Email sign-up ────────────────────────────────── */
@@ -368,7 +368,7 @@ p { text-wrap: pretty; }
   .section-tight { padding: 56px 0 88px; }
   .trust-inner { grid-template-columns: repeat(var(--n, 4), 1fr); max-width: 900px; }
   .trust-item + .trust-item { border-left: 1px solid var(--border); }
-  .cat-grid { grid-template-columns: repeat(4, 1fr); }
+  .cat-grid { grid-template-columns: repeat(var(--ccols, 4), 1fr); }
   .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; }
   .split-reverse .split-media { order: -1; }
   .tr-grid { grid-template-columns: repeat(3, 1fr); }
@@ -383,7 +383,7 @@ p { text-wrap: pretty; }
   .cat-tabs { display: grid; grid-template-columns: repeat(var(--cols, 4), 1fr); max-width: min(1140px, calc(var(--cols, 4) * 225px)); margin: 0 auto 22px; padding: 0; overflow: visible; }
   .cat-tabs button { justify-content: center; }
   .detail-layout { grid-template-columns: minmax(0, 1fr) 360px; gap: 40px; }
-  .assurance-logos img { height: 68px; }
+  .assurance-logos img { height: var(--logo-h, 68px); }
   .signup { grid-template-columns: 1fr 1fr; gap: 56px; padding: 40px 44px; }
   .signup-form .btn { width: auto; }
   .detail-side { position: sticky; top: 96px; }
